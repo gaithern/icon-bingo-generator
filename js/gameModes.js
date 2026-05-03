@@ -173,6 +173,7 @@ function generateGame() {
   document.getElementById("listPreview").style.display = "none";
   document.getElementById("controls").classList.add("hidden");
   document.getElementsByTagName("h1")[0].classList.add("hidden");
+  document.getElementsByTagName("p")[0].classList.add("hidden");
 
   // display in-game options
   document.getElementById("copyShareLink2").classList.remove("hidden");
