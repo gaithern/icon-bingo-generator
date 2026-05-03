@@ -610,8 +610,31 @@ function updateProgress() {
 document.getElementById('icon-Checkbox').addEventListener('change', function () {
   iconsEnabled = this.checked;
 
-  // re-render whichever board is active
+  // re-render whichever board is active. do not re-render if rush mode
   if (explorationBoard?.length) renderExplorationBoard();
   if (bingoBoard?.length) renderTraditionalBoard();
-  if (currentRound?.length) renderRushBoard();
+  if (currentRound?.length) applyIconMode(iconsEnabled);
 });
+
+// Icon toggle for Rush Mode
+function applyIconMode(iconsEnabled) {
+  const squares = board.querySelectorAll('.objective');
+
+  squares.forEach((div, index) => {
+    const obj = currentRound?.[index];
+    if (!obj) return;
+
+    div.innerHTML = '';
+
+    if (iconsEnabled && obj.icon) {
+      const img = document.createElement('img');
+      img.src = obj.icon;
+      img.alt = obj.name;
+      img.style.width = '100px';
+      img.style.height = '100px';
+      div.appendChild(img);
+    } else {
+      div.textContent = obj.name;
+    }
+  });
+}
