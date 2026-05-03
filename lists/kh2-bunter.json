@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Armor Xemnas 1",
+    "icon": "icons/kh2-bunter/ArmorXemnas1.webp"
+  },
+  {
+    "name": "Armor Xemnas 2",
+    "icon": "icons/kh2-bunter/ArmorXemnas2.webp"
+  },
+  {
+    "name": "Axel 1",
+    "icon": "icons/kh2-bunter/Org_AxelStruggle.webp"
+  },
+  {
+    "name": "Axel 2",
+    "icon": "icons/kh2-bunter/Org_AxelData.webp"
+  },
+  {
+    "name": "Barbossa",
+    "icon": "icons/kh2-bunter/Barbossa.webp"
+  },
+  {
+    "name": "Blizzard Lord",
+    "icon": "icons/kh2-bunter/BlizzardLord.webp"
+  },
+  {
+    "name": "The Beast",
+    "icon": "icons/kh2-bunter/Beast.webp"
+  },
+  {
+    "name": "Cerberus",
+    "icon": "icons/kh2-bunter/Cerberus.webp"
+  },
+  {
+    "name": "Cloud",
+    "icon": "icons/kh2-bunter/Cloud.webp"
+  },
+  {
+    "name": "Dark Thorn",
+    "icon": "icons/kh2-bunter/DarkThorn.webp"
+  },
+  {
+    "name": "Demyx",
+    "icon": "icons/kh2-bunter/Org_Demyx.webp"
+  },
+  {
+    "name": "The Experiment",
+    "icon": "icons/kh2-bunter/Experiment.webp"
+  },
+  {
+    "name": "Final Xemnas",
+    "icon": "icons/kh2-bunter/Org_FinalXemnas.webp"
+  },
+  {
+    "name": "Grim Reaper 1",
+    "icon": "icons/kh2-bunter/GrimReaper1.webp"
+  },
+  {
+    "name": "Grim Reaper 2",
+    "icon": "icons/kh2-bunter/GrimReaper2.webp"
+  },
+  {
+    "name": "Groundshaker",
+    "icon": "icons/kh2-bunter/Groundshaker.webp"
+  },
+  {
+    "name": "Hades",
+    "icon": "icons/kh2-bunter/Hades.webp"
+  },
+  {
+    "name": "Hayner",
+    "icon": "icons/kh2-bunter/Hayner.webp"
+  },
+  {
+    "name": "Hercules",
+    "icon": "icons/kh2-bunter/Hercules.webp"
+  },
+  {
+    "name": "Hostile Program",
+    "icon": "icons/kh2-bunter/HostileProgram.webp"
+  },
+  {
+    "name": "Hydra",
+    "icon": "icons/kh2-bunter/Hydra.webp"
+  },
+  {
+    "name": "Jafar",
+    "icon": "icons/kh2-bunter/Jafar.webp"
+  },
+  {
+    "name": "Leon",
+    "icon": "icons/kh2-bunter/Leon.webp"
+  },
+  {
+    "name": "Luxord",
+    "icon": "icons/kh2-bunter/Org_Luxord.webp"
+  },
+  {
+    "name": "MCP",
+    "icon": "icons/kh2-bunter/MCP.webp"
+  },
+  {
+    "name": "Past Pete",
+    "icon": "icons/kh2-bunter/PastPete.webp"
+  },
+  {
+    "name": "Oogie Boogie",
+    "icon": "icons/kh2-bunter/OogieBoogie.webp"
+  },
+  {
+    "name": "Pete TR",
+    "icon": "icons/kh2-bunter/PeteOC.webp"
+  },
+  {
+    "name": "Prison Keeper",
+    "icon": "icons/kh2-bunter/PrisonKeeper.webp"
+  },
+  {
+    "name": "Riku",
+    "icon": "icons/kh2-bunter/Riku.webp"
+  },
+  {
+    "name": "Roxas",
+    "icon": "icons/kh2-bunter/Org_Roxas.webp"
+  },
+  {
+    "name": "Saix",
+    "icon": "icons/kh2-bunter/Org_Saix.webp"
+  },
+  {
+    "name": "Sark",
+    "icon": "icons/kh2-bunter/Sark.webp"
+  },
+  {
+    "name": "Scar",
+    "icon": "icons/kh2-bunter/Scar.webp"
+  },
+  {
+    "name": "Seifer",
+    "icon": "icons/kh2-bunter/Seifer.webp"
+  },
+  {
+    "name": "Setzer",
+    "icon": "icons/kh2-bunter/Setzer.webp"
+  },
+  {
+    "name": "Shadow Stalker",
+    "icon": "icons/kh2-bunter/ShadowStalker.webp"
+  },
+  {
+    "name": "Shan Yu",
+    "icon": "icons/kh2-bunter/ShanYu.webp"
+  },
+  {
+    "name": "Storm Rider",
+    "icon": "icons/kh2-bunter/StormRider.webp"
+  },
+  {
+    "name": "Thresholder",
+    "icon": "icons/kh2-bunter/Thresholder.webp"
+  },
+  {
+    "name": "Tifa",
+    "icon": "icons/kh2-bunter/Tifa.webp"
+  },
+  {
+    "name": "Twilight Thorn",
+    "icon": "icons/kh2-bunter/TwilightThorn.webp"
+  },
+  {
+    "name": "Vivi",
+    "icon": "icons/kh2-bunter/Vivi.webp"
+  },
+  {
+    "name": "Volcano Lord",
+    "icon": "icons/kh2-bunter/VolcanoLord.webp"
+  },
+  {
+    "name": "Xaldin",
+    "icon": "icons/kh2-bunter/Org_Xaldin.webp"
+  },
+  {
+    "name": "Xemnas",
+    "icon": "icons/kh2-bunter/Org_Xemnas.webp"
+  },
+  {
+    "name": "Xigbar",
+    "icon": "icons/kh2-bunter/Org_Xigbar.webp"
+  },
+  {
+    "name": "Yuffie",
+    "icon": "icons/kh2-bunter/Yuffie.webp"
+  },
+  {
+    "name": "Larxene",
+    "icon": "icons/kh2-bunter/Org_Larxene.webp"
+  },
+  {
+    "name": "Lexaeus",
+    "icon": "icons/kh2-bunter/Org_Lexaeus.webp"
+  },
+  {
+    "name": "Marluxia",
+    "icon": "icons/kh2-bunter/Org_Marluxia.webp"
+  },
+  {
+    "name": "Sephiroth",
+    "icon": "icons/kh2-bunter/Super_Sephiroth.webp"
+  },
+  {
+    "name": "Terra",
+    "icon": "icons/kh2-bunter/Super_Terra.webp"
+  },
+  {
+    "name": "Vexen",
+    "icon": "icons/kh2-bunter/Org_Vexen.webp"
+  },
+  {
+    "name": "Zexion",
+    "icon": "icons/kh2-bunter/Org_Zexion.webp"
+  }
+]

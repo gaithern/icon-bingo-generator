@@ -1,0 +1,721 @@
+[
+  { 
+    "name": "Defeat a boss", 
+    "icon": "icons/kh2-generic/boss-1.webp" 
+  },
+  { 
+    "name": "Defeat 2 Bosses", 
+    "icon": "icons/kh2-generic/boss-2.webp" 
+  },
+  { 
+    "name": "Defeat 3 Bosses", 
+    "icon": "icons/kh2-generic/boss-3.webp" 
+  },
+  { 
+    "name": "Defeat a boss with fire", 
+    "icon": "icons/kh2-generic/boss-fire.webp" 
+  },
+  { 
+    "name": "Defeat a boss with blizzard", 
+    "icon": "icons/kh2-generic/boss-blizzard.webp" 
+  },
+  { 
+    "name": "Defeat a boss with thunder", 
+    "icon": "icons/kh2-generic/boss-thunder.webp" 
+  },
+  { 
+    "name": "Defeat a boss with reflect", 
+    "icon": "icons/kh2-generic/boss-reflect.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a ground finisher", 
+    "icon": "icons/kh2-generic/boss-ground.webp" 
+  },
+  { 
+    "name": "Defeat a boss with an air finisher", 
+    "icon": "icons/kh2-generic/boss-air.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a Donald limit", 
+    "icon": "icons/kh2-generic/boss-donald.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a Goofy limit",
+    "icon": "icons/kh2-generic/boss-goofy.webp" 
+  },
+  { 
+    "name": "Defeat a boss while in a Drive Form", 
+    "icon": "icons/kh2-generic/boss-form.webp" 
+  },
+  { 
+    "name": "Defeat a boss while a summon is out", 
+    "icon": "icons/kh2-generic/boss-summon.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a mushroom weapon equipped on a party member", 
+    "icon": "icons/kh2-generic/boss-mushroom.webp" 
+  },
+  { 
+    "name": "Defeat a boss with an ultimate weapon equipped on a party member", 
+    "icon": "icons/kh2-generic/boss-ultimate.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a belt and ring equipped", 
+    "icon": "icons/kh2-generic/boss-accessories.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a reaction command", 
+    "icon": "icons/kh2-generic/boss-rc.webp" 
+  },
+  { 
+    "name": "Defeat 2 Org XIII bosses in order", 
+    "icon": "icons/kh2-generic/org-order-2.webp" 
+  },
+  { 
+    "name": "Defeat 3 Org XIII bosses in order", 
+    "icon": "icons/kh2-generic/org-order-3.webp" 
+  },
+  { 
+    "name": "Find 1 magic element", 
+    "icon": "icons/kh2-generic/magic-1.webp",
+    "tags": ["Missable Goals"] 
+  },
+  { 
+    "name": "Find 2 magic elements", 
+    "icon": "icons/kh2-generic/magic-2.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Find 3 magic elements", 
+    "icon": "icons/kh2-generic/magic-3.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Find a Keyblade", 
+    "icon": "icons/kh2-generic/Keyblade.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Grab 10 puzzle pieces", 
+    "icon": "icons/kh2-generic/puzzle-10.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Grab 15 puzzle pieces", 
+    "icon": "icons/kh2-generic/puzzle-15.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Grab 20 puzzle pieces", 
+    "icon": "icons/kh2-generic/puzzle-20.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Complete a 100AW Minigame", 
+    "icon": "icons/kh2-generic/hundred-acre-wood.webp" 
+  },
+  { 
+    "name": "Save Piglet", 
+    "icon": "icons/kh2-generic/piglet.webp" 
+  },
+  { 
+    "name": "Reach the bottom of Hunny Pot Hill", 
+    "icon": "icons/kh2-generic/rabbit.webp" 
+  },
+  { 
+    "name": "Bounce on 10 balloons with Tigger and Roo", 
+    "icon": "icons/kh2-generic/roo.webp" 
+  },
+  { 
+    "name": "Find Pooh in the Spooky Cave", 
+    "icon": "icons/kh2-generic/kanga.webp" 
+  },
+  { 
+    "name": "Get over 6900 in Yeet the Bear", 
+    "icon": "icons/kh2-generic/yeet.webp" 
+  },
+  { 
+    "name": "Level up a drive form", 
+    "icon": "icons/kh2-generic/drive-form-level.webp",
+    "tags": ["Missable Goals"] 
+  },
+  { 
+    "name": "Refill a bar of drive with Magnet Trinity", 
+    "icon": "icons/kh2-generic/magnet-trinity.webp" 
+  },
+  { 
+    "name": "Dual Wield Oathkeeper and Oblivion", 
+    "icon": "icons/kh2-generic/dual-wield.webp" 
+  },
+  { 
+    "name": "Parry an attack with Valor Form", 
+    "icon": "icons/kh2-generic/valor.webp" 
+  },
+  { 
+    "name": "Use every magic element in Wisdom Form once", 
+    "icon": "icons/kh2-generic/wisdom.webp" 
+  },
+  { 
+    "name": "Use every limit in Limit Form once", 
+    "icon": "icons/kh2-generic/limit.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Master Form's spinning finisher", 
+    "icon": "icons/kh2-generic/master.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Final Form glide", 
+    "icon": "icons/kh2-generic/final.webp" 
+  },
+  { 
+    "name": "Kill an enemy with an auto form", 
+    "icon": "icons/kh2-generic/auto-form.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Anti-Sora", 
+    "icon": "icons/kh2-generic/anti.webp" 
+  },
+  { 
+    "name": "Level up Sora", 
+    "icon": "icons/kh2-generic/sora-level.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Level up Roxas", 
+    "icon": "icons/kh2-generic/roxas-level.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Kill an enemy with Beast's limit", 
+    "icon": "icons/kh2-generic/beast.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Mulan's limit", 
+    "icon": "icons/kh2-generic/mulan.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Auron's limit", 
+    "icon": "icons/kh2-generic/auron.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Jack Sparrow's limit", 
+    "icon": "icons/kh2-generic/jack-sparrow.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Aladdin's limit", 
+    "icon": "icons/kh2-generic/aladdin.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Jack Skellington's limit", 
+    "icon": "icons/kh2-generic/jack-skellington.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Simba's limit", 
+    "icon": "icons/kh2-generic/simba.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Tron's limit", 
+    "icon": "icons/kh2-generic/tron.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Riku's limit", 
+    "icon": "icons/kh2-generic/riku.webp" 
+  },
+  { 
+    "name": "Use Chicken Little's limit", 
+    "icon": "icons/kh2-generic/chicken.webp" 
+  },
+  { 
+    "name": "Use all of Genie's limits", 
+    "icon": "icons/kh2-generic/genie.webp" 
+  },
+  { 
+    "name": "Use Stitch's limit", 
+    "icon": "icons/kh2-generic/stitch.webp" 
+  },
+  { 
+    "name": "Use Peter Pan's limit", 
+    "icon": "icons/kh2-generic/pan.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Flare Force", 
+    "icon": "icons/kh2-generic/donald-duck-flare.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Comet", 
+    "icon": "icons/kh2-generic/donald-comet.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Tornado Fusion", 
+    "icon": "icons/kh2-generic/goofy-tornado-fusion.webp" 
+  },
+  { 
+    "name": "Kill an enemy with Teamwork", 
+    "icon": "icons/kh2-generic/goofy-teamwork.webp" 
+  },
+  { 
+    "name": "Use all three Trinity Limit attacks", 
+    "icon": "icons/kh2-generic/trinity.webp" 
+  },
+  { 
+    "name": "Let Donald or Goofy kill an enemy", 
+    "icon": "icons/kh2-generic/dg-enemy.webp" 
+  },
+  { 
+    "name": "Get a reward from a Mushroom", 
+    "icon": "icons/kh2-generic/mushroom.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 1 (TWTNW)", 
+    "icon": "icons/kh2-generic/mushroom-1.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 2 (HT)", 
+    "icon": "icons/kh2-generic/mushroom-2.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 3 (BC)", 
+    "icon": "icons/kh2-generic/mushroom-3.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 4 (LOD)", 
+    "icon": "icons/kh2-generic/mushroom-4.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 5 (AG)", 
+    "icon": "icons/kh2-generic/mushroom-5.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 6 (OC)", 
+    "icon": "icons/kh2-generic/mushroom-6.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 7 (TT Tunnelway)", 
+    "icon": "icons/kh2-generic/mushroom-7.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 8 (Yen Sid's Tower)", 
+    "icon": "icons/kh2-generic/mushroom-8.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 9 (HB)", 
+    "icon": "icons/kh2-generic/mushroom-9.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 10 (PR)", 
+    "icon": "icons/kh2-generic/mushroom-10.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 11 (TR)", 
+    "icon": "icons/kh2-generic/mushroom-11.webp" 
+  },
+  { 
+    "name": "Get a reward from Mushroom 12 (TT Mansion)", 
+    "icon": "icons/kh2-generic/mushroom-12.webp" 
+  },
+  { 
+    "name": "Synth 3 unique items", 
+    "icon": "icons/kh2-generic/synth-3.webp" 
+  },
+  { 
+    "name": "Level up the Moogle", 
+    "icon": "icons/kh2-generic/moogle.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Collect 7 unique synth materials", 
+    "icon": "icons/kh2-generic/material-7.webp"
+  },
+  { 
+    "name": "Complete a Cup", 
+    "icon": "icons/kh2-generic/cups.webp" 
+  },
+  { 
+    "name": "Pain and Panic Cup", 
+    "icon": "icons/kh2-generic/pain-and-panic-cup.webp" 
+  },
+  { 
+    "name": "Cerberus Cup", 
+    "icon": "icons/kh2-generic/cerberus-cup.webp" 
+  },
+  { 
+    "name": "Titan Cup", 
+    "icon": "icons/kh2-generic/titan-cup.webp" 
+  },
+  { 
+    "name": "Goddess of Fate Cup", 
+    "icon": "icons/kh2-generic/goddess-cup.webp" 
+  },
+  { 
+    "name": "Buy 20 Potions", 
+    "icon": "icons/kh2-generic/potion-20.webp" 
+  },
+  { 
+    "name": "Buy 10 elixirs", 
+    "icon": "icons/kh2-generic/elixir-10.webp" 
+  },
+  { 
+    "name": "Buy 5 Megalixirs", 
+    "icon": "icons/kh2-generic/megalixir-5.webp" 
+  },
+  { 
+    "name": "Buy 7 unique items from a shop", 
+    "icon": "icons/kh2-generic/item-7.webp" 
+  },
+  { 
+    "name": "Complete a job as Roxas", 
+    "icon": "icons/kh2-generic/job-roxas.webp",
+    "tags": ["Missable Goals"]  
+  },
+  { 
+    "name": "Complete a job as Sora", 
+    "icon": "icons/kh2-generic/job-sora.webp" 
+  },
+  { 
+    "name": "Mail Delivery job", 
+    "icon": "icons/kh2-generic/letter.webp" 
+  },
+  { 
+    "name": "Poster Duty job", 
+    "icon": "icons/kh2-generic/poster.webp" 
+  },
+  { 
+    "name": "Cargo Climb job", 
+    "icon": "icons/kh2-generic/cargo.webp" 
+  },
+  { 
+    "name": "Grandstander job", 
+    "icon": "icons/kh2-generic/ball.webp" 
+  },
+  { 
+    "name": "Bumble Buster job", 
+    "icon": "icons/kh2-generic/spooky-cave.webp" 
+  },
+  { 
+    "name": "Junk Sweep job", 
+    "icon": "icons/kh2-generic/junk-sweep.webp" 
+  },
+  { 
+    "name": "Enter Namine's room as Roxas", 
+    "icon": "icons/kh2-generic/white-room-roxas.webp" 
+  },
+  { 
+    "name": "Enter Namine's room as Sora", 
+    "icon": "icons/kh2-generic/white-room-sora.webp" 
+  },
+  { 
+    "name": "Destroy all tents in Shang's Camp", 
+    "icon": "icons/kh2-generic/shang.webp" 
+  },
+  { 
+    "name": "Enter the Throne Room in Land of Dragons", 
+    "icon": "icons/kh2-generic/throne-room.webp" 
+  },
+  { 
+    "name": "Use the RC on a tram in Twilight Town", 
+    "icon": "icons/kh2-generic/tram.webp" 
+  },
+  { 
+    "name": "Win a struggle match", 
+    "icon": "icons/kh2-generic/struggle-win.webp" 
+  },
+  { 
+    "name": "Lose a struggle match", 
+    "icon": "icons/kh2-generic/struggle-lose.webp" 
+  },
+  { 
+    "name": "Phil's Urn Training", 
+    "icon": "icons/kh2-generic/Urns.webp" 
+  },
+  { 
+    "name": "Destroy the 8 armor statues in the West Hall of Beast's Castle", 
+    "icon": "icons/kh2-generic/armor-statue.webp" 
+  },
+  { 
+    "name": "Examine Beast's Rose", 
+    "icon": "icons/kh2-generic/rose.webp" 
+  },
+  { 
+    "name": "Defeat all enemies in Mickey's House", 
+    "icon": "icons/kh2-generic/mickey-tr.webp" 
+  },
+  { 
+    "name": "Beat an ambush on the boat in Port Royal", 
+    "icon": "icons/kh2-generic/ambush.webp" 
+  },
+  { 
+    "name": "Treasure Room Trial", 
+    "icon": "icons/kh2-generic/treasure-room.webp" 
+  },
+  { 
+    "name": "Spin the carousel in Xmas Town", 
+    "icon": "icons/kh2-generic/carousel.webp" 
+  },
+  { 
+    "name": "Present Wrapping", 
+    "icon": "icons/kh2-generic/presents.webp" 
+  },
+  { 
+    "name": "Light Cycle", 
+    "icon": "icons/kh2-generic/light-cycle.webp" 
+  },
+  { 
+    "name": "Complete a skateboard minigame", 
+    "icon": "icons/kh2-generic/skateboard.webp" 
+  },
+  { 
+    "name": "Kill an enemy using a skateboard", 
+    "icon": "icons/kh2-generic/skateboard-enemy.webp" 
+  },
+  { 
+    "name": "Defeat all enemies in the elevator in TWTNW", 
+    "icon": "icons/kh2-generic/elevator.webp" 
+  },
+  { 
+    "name": "Die to a Data Org boss", 
+    "icon": "icons/kh2-generic/data-org-death.webp" 
+  },
+  { 
+    "name": "Defeat a Superboss", 
+    "icon": "icons/kh2-generic/boss-super.webp" 
+  },
+  { 
+    "name": "Defeat an Org XIII member", 
+    "icon": "icons/kh2-generic/org-13-member.webp" 
+  },
+  { 
+    "name": "Destroy Vexen's shield", 
+    "icon": "icons/kh2-generic/Vexen.webp" 
+  },
+  { 
+    "name": "Let Lexaeus's power level reach 999999", 
+    "icon": "icons/kh2-generic/Lexaeus.webp" 
+  },
+  { 
+    "name": "Get into the blue circle in Zexion's book world", 
+    "icon": "icons/kh2-generic/Zexion.webp" 
+  },
+  { 
+    "name": "Use Merge on Larxene", 
+    "icon": "icons/kh2-generic/Larxene.webp" 
+  },
+  { 
+    "name": "Defeat Marluxia with Sora's counter 10 or below", 
+    "icon": "icons/kh2-generic/Marluxia.webp" 
+  },
+  { 
+    "name": "Clear the fire floor from under Axel", 
+    "icon": "icons/kh2-generic/Axel.webp" 
+  },
+  { 
+    "name": "Use Show Stealer on Demyx", 
+    "icon": "icons/kh2-generic/Demyx.webp" 
+  },
+  { 
+    "name": "Use 9 jumps on Xaldin", 
+    "icon": "icons/kh2-generic/Xaldin.webp" 
+  },
+  { 
+    "name": "Hit Xigbar with his blue laser", 
+    "icon": "icons/kh2-generic/Xigbar.webp" 
+  },
+  { 
+    "name": "Take Roxas's Keyblades", 
+    "icon": "icons/kh2-generic/Roxas.webp" 
+  },
+  { 
+    "name": "Win a game against Luxord", 
+    "icon": "icons/kh2-generic/Luxord.webp" 
+  },
+  { 
+    "name": "Witness Saix enter his berserk state", 
+    "icon": "icons/kh2-generic/Saix.webp" 
+  },
+  { 
+    "name": "Clash with Xemnas", 
+    "icon": "icons/kh2-generic/xemnas-clash.webp" 
+  },
+  { 
+    "name": "Survive Xemnas's Laser Dome", 
+    "icon": "icons/kh2-generic/Xemnas.webp" 
+  },
+  { 
+    "name": "Get Terra to 2nd Phase (deplete about 5 bars)", 
+    "icon": "icons/kh2-generic/terra-2.webp" 
+  },
+  { 
+    "name": "Get Terra to 3rd Phase (deplete about 10.33 bars)", 
+    "icon": "icons/kh2-generic/terra-3.webp" 
+  },
+  { 
+    "name": "Defeat Terra", 
+    "icon": "icons/kh2-generic/terra.webp" 
+  },
+  { 
+    "name": "Clip out of bounds" 
+  },
+  { 
+    "name": "Go through the Engine Chamber in CoR", 
+    "icon": "icons/kh2-generic/engine.webp" 
+  },
+  { 
+    "name": "Enter the Transport to Remembrance", 
+    "icon": "icons/kh2-generic/transport.webp" 
+  },
+  { 
+    "name": "Enter GoA through the Transport to Remembrance", 
+    "icon": "icons/kh2-generic/goa.webp" 
+  },
+  { 
+    "name": "Talk to a Final Fantasy character", 
+    "icon": "icons/kh2-generic/final-fantasy.webp" 
+  },
+  { 
+    "name": "Talk to King Mickey", 
+    "icon": "icons/kh2-generic/mickey-mouse.webp" 
+  },
+  { 
+    "name": "Heal a party member with Cure", 
+    "icon": "icons/kh2-generic/dg-cure.webp" 
+  },
+  { 
+    "name": "Use a potion, ether, elixir, and tent", 
+    "icon": "icons/kh2-generic/items-1.webp" 
+  },
+  { 
+    "name": "Use a mega-potion, mega-ether, and megalixir", 
+    "icon": "icons/kh2-generic/items-2.webp" 
+  },
+  { 
+    "name": "Equip Donald and Goofy with their Nobody Weapons", 
+    "icon": "icons/kh2-generic/nobody-weapons.webp" 
+  },
+  { 
+    "name": "Equip 2 earrings", 
+    "icon": "icons/kh2-generic/earring-2.webp" 
+  },
+  { 
+    "name": "Equip armor that gives +7 Defense", 
+    "icon": "icons/kh2-generic/armor-plus-7.webp" 
+  },
+  { 
+    "name": "Kill 15 types of heartless", 
+    "icon": "icons/kh2-generic/heartless-15.webp" 
+  },
+  { 
+    "name": "Kill 5 types of Nobodies", 
+    "icon": "icons/kh2-generic/nobody-5.webp" 
+  },
+  { 
+    "name": "Use Capsule Prize on a Bulky Vendor", 
+    "icon": "icons/kh2-generic/rc-bulky-vendor.webp" 
+  },
+  { 
+    "name": "Use Cyclone on a Soldier", 
+    "icon": "icons/kh2-generic/rc-soldier.webp" 
+  },
+  { 
+    "name": "Use Bolt Reversal on a Bolt Tower", 
+    "icon": "icons/kh2-generic/rc-bolt-tower.webp" 
+  },
+  { 
+    "name": "Use Root Ravenger on a Creeper Plant", 
+    "icon": "icons/kh2-generic/rc-creeper-plant.webp" 
+  },
+  { 
+    "name": "Use Release on a Gargoyle", 
+    "icon": "icons/kh2-generic/rc-gargoyle.webp" 
+  },
+  { 
+    "name": "Use Bat Cry on a Hook Bat", 
+    "icon": "icons/kh2-generic/rc-hook-bat.webp" 
+  },
+  { 
+    "name": "Use Tornado Ride on a Tornado Step", 
+    "icon": "icons/kh2-generic/rc-tornado-step.webp" 
+  },
+  { 
+    "name": "Use Wind Dance on a Neoshadow", 
+    "icon": "icons/kh2-generic/rc-neoshadow.webp" 
+  },
+  { 
+    "name": "Use Sparkle Ray on a Surveillance Robot", 
+    "icon": "icons/kh2-generic/rc-robot.webp" 
+  },
+  { 
+    "name": "Win a game against a Gambler", 
+    "icon": "icons/kh2-generic/rc-gambler.webp" 
+  },
+  { 
+    "name": "Use Warp Snipe on a Sniper", 
+    "icon": "icons/kh2-generic/rc-sniper.webp" 
+  },
+  { 
+    "name": "Use Jump on a Dragoon", 
+    "icon": "icons/kh2-generic/rc-dragoon.webp" 
+  },
+  { 
+    "name": "Hit a Berserker with a hammer", 
+    "icon": "icons/kh2-generic/rc-berserker.webp" 
+  },
+  { 
+    "name": "Use Duel Stance on a Samurai", 
+    "icon": "icons/kh2-generic/rc-samurai.webp" 
+  },
+  { 
+    "name": "Defeat Axel", 
+    "icon": "icons/kh2-generic/org-axel.webp" 
+  },
+  { 
+    "name": "Defeat Demyx", 
+    "icon": "icons/kh2-generic/org-demyx.webp" 
+  },
+  { 
+    "name": "Defeat Final Xemnas", 
+    "icon": "icons/kh2-generic/org-final-xemnas.webp" 
+  },
+  { 
+    "name": "Defeat Larxene", 
+    "icon": "icons/kh2-generic/org-larxene.webp" 
+  },
+  { 
+    "name": "Defeat Lexaeus", 
+    "icon": "icons/kh2-generic/org-lexaeus.webp" 
+  },
+  { 
+    "name": "Defeat Luxord", 
+    "icon": "icons/kh2-generic/org-luxord.webp" 
+  },
+  { 
+    "name": "Defeat Marluxia", 
+    "icon": "icons/kh2-generic/org-marluxia.webp" 
+  },
+  { 
+    "name": "Defeat Roxas", 
+    "icon": "icons/kh2-generic/org-roxas.webp" 
+  },
+  { 
+    "name": "Defeat Saix", 
+    "icon": "icons/kh2-generic/org-saix.webp" 
+  },
+  { 
+    "name": "Defeat Vexen", 
+    "icon": "icons/kh2-generic/org-vexen.webp" 
+  },
+  { 
+    "name": "Defeat Xaldin", 
+    "icon": "icons/kh2-generic/org-xaldin.webp" 
+  },
+  { 
+    "name": "Defeat Xemnas", 
+    "icon": "icons/kh2-generic/org-xemnas.webp" 
+  },
+  { 
+    "name": "Defeat Xigbar", 
+    "icon": "icons/kh2-generic/org-xigbar.webp" 
+  },
+  { 
+    "name": "Defeat Zexion", 
+    "icon": "icons/kh2-generic/org-zexion.webp" 
+  }
+]

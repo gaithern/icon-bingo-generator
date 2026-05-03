@@ -1,0 +1,67 @@
+[
+    {
+        "id": "ag",
+        "name": "Agrabah",
+        "icon": "icons/kh2-worlds/agrabah.webp"
+    },
+    {
+        "id": "bc",
+        "name": "Beast's Castle",
+        "icon": "icons/kh2-worlds/beast's_castle.webp"
+    },
+    {
+        "id": "dc",
+        "name": "Disney Castle",
+        "icon": "icons/kh2-worlds/disney_castle.webp"
+    },
+    {
+        "id": "ht",
+        "name": "Halloween Town",
+        "icon": "icons/kh2-worlds/halloween_town.webp"
+    },
+    {
+        "id": "hb",
+        "name": "Hollow Bastion",
+        "icon": "icons/kh2-worlds/hollow_bastion.webp"
+    },
+    {
+        "id": "lod",
+        "name": "Land of Dragons",
+        "icon": "icons/kh2-worlds/land_of_dragons.webp"
+    },
+    {
+        "id": "oc",
+        "name": "Olympus Coliseum",
+        "icon": "icons/kh2-worlds/olympus_coliseum.webp"
+    },
+    {
+        "id": "pr",
+        "name": "Port Royal",
+        "icon": "icons/kh2-worlds/port_royal.webp"
+    },
+    {
+        "id": "pl",
+        "name": "Pride Lands",
+        "icon": "icons/kh2-worlds/pride_land.webp"
+    },
+    {
+        "id": "stt",
+        "name": "Simulated Twilight Town",
+        "icon": "icons/kh2-worlds/simulated_twilight_town.webp"
+    },
+    {
+        "id": "sp",
+        "name": "Space Paranoids",
+        "icon": "icons/kh2-worlds/space_paranoids.webp"
+    },
+    {
+        "id": "twtnw",
+        "name": "The World That Never Was",
+        "icon": "icons/kh2-worlds/the_world_that_never_was.webp"
+    },
+    {
+        "id": "tt",
+        "name": "Twilight Town",
+        "icon": "icons/kh2-worlds/twilight_town.webp"
+    }
+]

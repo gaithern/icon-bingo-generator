@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Icon Bingo Generator</title>
+<link href="style.css" rel="stylesheet">
+</head>
+
+<body class="preload">
+
+<h1>Icon Bingo Generator</h1>
+<p>Multi-mode Bingo Generator with Icon support</p>
+<br>
+
+<div id="controls">
+  <button id="refresh" class="game-ui" onclick="resetUI()">
+    <img src="icons/info/refresh.png" alt="Reset Generator" style="width: 20px; height: 20px;">
+    <span>Reset</span>
+  </button>
+
+  <div class="control-row" id="gameOptions">
+    <div class="control-headers" id="gameOptionsHeader">Game Options</div>
+
+    <div>
+      <select class="dropdown" id="gameSelect">
+        <option value="" disabled selected hidden>Select a game</option>
+      </select>
+      <select class="dropdown" id="listSelect" disabled>
+        <option value="" disabled selected hidden>Select a list</option>
+      </select>
+    </div>
+
+    <input type="file" id="jsonUpload" accept=".json">
+    
+    <div>
+      <div id="tagFilters" class="tag-filters"></div>
+    </div>
+  </div>
+
+  <div class="control-row" id="modeOptions">
+    <div class="control-headers" id="modeOptionsHeader">Mode Options</div>
+
+    <select class="dropdown" id="modeSelect">
+      <option value="rush" selected>Rush</option>
+      <option value="exploration">Fog of War</option>
+      <option value="classic">Bingo</option>
+    </select>
+
+    <!-- Rush -->
+     <div id="rushOptions" class="mode-options">
+        <label>
+          Max Rounds:
+          <div class="control-hint">
+            Cap the number of rounds instead of exhausting the list
+          </div>
+          <input id="rushRoundLimit" type="number" min="1" placeholder="Auto">
+        </label>
+     </div>
+    
+    <!-- Traditional -->
+    <div id="traditionalOptions" class="mode-options">
+      <label class="custom-checkbox">
+        <span class="label-text">Bingo Logic:
+          <div class="control-hint">
+            Highlights completed lines and counts bingo score
+          </div>
+        </span>
+          <input type="checkbox" id="bingoLogicToggle">
+        <span class="slider"></span>
+      </label>
+      
+      <label>
+        Board Size:
+        <select class="dropdown" id="boardSize">
+          <option value="3">3 × 3</option>
+          <option value="4">4 × 4</option>
+          <option value="5" selected>5 × 5</option>
+          <option value="6">6 × 6</option>
+          <option value="7">7 × 7</option>
+          <option value="8">8 × 8</option>
+          <option value="9">9 × 9</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Fog of War -->
+    <div id="explorationOptions" class="mode-options">
+      <label>
+        Board Size:
+        <select class="dropdown" id="exploreSize">
+          <option value="3">3 × 3</option>
+          <option value="5" selected>5 × 5</option>
+          <option value="7">7 × 7</option>
+          <option value="9">9 × 9</option>
+        </select>
+      </label>
+
+      <label>
+        Starting Squares:
+        <select class="dropdown" id="exploreStart">
+          <option value="classic-2">Classic-2 (top-left & bottom-right of center)</option>
+          <option value="classic-4">Classic-4 (all 4 around center)</option>
+          <option value="center">Center</option>
+          <option value="corners">Corners</option>
+          <option value="ascend" selected>Ascend (bottom row)</option>
+          <option value="river">River (left column)</option>
+          <option value="random">Random</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <div class="control-row" id="modifiers">
+    <div class="control-headers" id="modifiersHeader">Modifiers</div>
+    
+    <label class="custom-checkbox">
+      <span class="label-text">Shiny Goals:
+        <div class="control-hint">
+          Adds a glowing rainbow border to random goals
+        </div>
+      </span>
+       <input type="checkbox" id="shinyCheckbox">
+      <span class="slider"></span>
+    </label>
+
+    <div id="shinyInput">
+      <label>
+        Shiny Count:
+        <input id="shinyCount" type="number" min="1" placeholder="Default">
+      </label>
+    </div>
+  </div>
+
+  <div class="control-row" id="output">
+    <input id="seedInput" placeholder="Seed (optional)">
+    <button id="copyPresetLink" onclick="copyShareLink()">Copy Preset Link</button>
+    <button id="mainButton">Generate Game</button>
+  </div>
+
+</div>
+
+<div class="control-row" id="inGameOptions">
+
+  <button id="backToOptions" class="hidden game-ui">
+    <img src="icons/info/left.png" alt="Back to Options" style="width: 20px; height: 20px;">
+    <span>Back</span>
+  </button>
+
+  <div id="shareButtons">
+    <button id="copyPresetLink2" onclick="copyShareLink()" class="hidden">Copy Preset Link</button>
+    <button id="copyShareLink2" onclick="copyGameLink()" class="hidden">Copy Board Link</button>
+  </div>
+
+  <div id="colorOptions">
+    <label>
+      Color:
+      <select id="colorPicker" class="dropdown">
+        <option value="green">Green</option>
+        <option value="teal">Teal</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="gold">Gold</option>
+        <option value="orange">Orange</option>
+      </select>
+    </label>
+  </div>
+
+  <div id="icon-toggle" class="hidden">
+    <label class="custom-checkbox tag-checkbox">
+        <span class="label-text">Icons:
+        </span>
+         <input type="checkbox" id="icon-Checkbox" checked>
+        <span class="slider"></span>
+    </label>
+  </div>
+
+</div>
+
+<div id="game-summary" class="hidden"></div>
+
+<div id="status"></div>
+<div id="listPreview" style="display:none;"></div>
+
+<details id="infoContainer">
+  <summary class="info-toggle"> Info</summary>
+
+  <div id="info">
+    <h4>Last updated:</h4>
+    May 3, 2026
+    <br><br>
+
+    <h4>Controls:</h4>
+    <b>Left click</b> - Mark square as Completed (fills with your color)
+    <br>
+    <b>Right Click</b> - Border-mark a square (outlines with your color)
+    <br>
+    <b>Scroll Wheel</b> - Cycle: Default > Border-marked > Completed
+    <br>
+    <b>Hotkeys: 1, 2, 3</b> - Mark square as Completed (Rush Mode Only)
+    <br>
+    <br>
+    <b>Icons Toggle</b> - Available on the board page. Toggles between displaying icons or text
+    <br><br>
+
+    <h4>Modifiers</h4>
+  
+    - <b>Shiny Goals:</b> If enabled, will set random squares to "Shiny", putting a special border around goals. 
+    <br><br>
+
+    <h4>Sharing</h4>
+
+    - <b>Copy Preset Link:</b> Saves all generator options into a URL (with seed if generated). Anyone who opens it sees the same settings.
+    <br>
+    - <b>Copy Board Link:</b> Available on the board page. Saves the exact board (including seed) for direct sharing.
+    <br><br>
+
+    <h4>Credits</h4>
+
+    Rush and Shiny Goals based on modes by DotoPotato:
+    <a href="https://beta.lockout.live" target="_blank">Lockout.Live</a>
+    <br><br>
+
+    <hr>
+    <br>
+    Full bingo lists: <a href="https://cj-2123.github.io/docs/bingo.html" target="_blank">Objective Lists</a>
+
+  </div>
+</details>
+
+<div class="board-wrapper">
+
+  <div id="boardOverlay" class="board-overlay hidden">
+    <div class="overlay-text">
+      Click to reveal board
+    </div>
+  </div>
+
+  <div id="board"></div>
+
+</div>
+
+<div id="score"></div>
+
+<div id="progressContainer">
+  <div id="progressBar"></div>
+</div>
+
+<details id="log">
+  <summary class="info-toggle"> Log</summary>
+  <br>
+  <ul id="completedList"></ul>
+</details>
+
+<div id="tooltip"></div>
+
+<script src="js/gameLists.js"></script>
+<script src="js/state.js"></script>
+<script src="js/rng.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/boardRender.js"></script>
+<script src="js/gameModes.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

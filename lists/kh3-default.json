@@ -1,0 +1,558 @@
+[
+    {
+        "name": "Fire",
+        "icon": "icons/kh1-ap/MagicFire1.webp"
+    },
+    {
+        "name": "Fira",
+        "icon": "icons/kh1-ap/MagicFire2.webp"
+    },
+    {
+        "name": "Firaga",
+        "icon": "icons/kh1-ap/MagicFire3.webp"
+    },
+    {
+        "name": "Blizzard",
+        "icon": "icons/kh1-ap/MagicBlizzard1.webp"
+    },
+    {
+        "name": "Blizzara",
+        "icon": "icons/kh1-ap/MagicBlizzard2.webp"
+    },
+    {
+        "name": "Blizzaga",
+        "icon": "icons/kh1-ap/MagicBlizzard3.webp"
+    },
+    {
+        "name": "Thunder",
+        "icon": "icons/kh1-ap/MagicThunder1.webp"
+    },
+    {
+        "name": "Thundara",
+        "icon": "icons/kh1-ap/MagicThunder2.webp"
+    },
+    {
+        "name": "Thundaga",
+        "icon": "icons/kh1-ap/MagicThunder3.webp"
+    },
+    {
+        "name": "Cure",
+        "icon": "icons/kh1-ap/MagicCure1.webp"
+    },
+    {
+        "name": "Cura",
+        "icon": "icons/kh1-ap/MagicCure2.webp"
+    },
+    {
+        "name": "Curaga",
+        "icon": "icons/kh1-ap/MagicCure3.webp"
+    },
+    {
+        "name": "Aero",
+        "icon": "icons/kh1-ap/MagicAero1.webp"
+    },
+    {
+        "name": "Aerora",
+        "icon": "icons/kh1-ap/MagicAero2.webp"
+    },
+    {
+        "name": "Aeroga",
+        "icon": "icons/kh1-ap/MagicAero3.webp"
+    },
+    {
+        "name": "Water",
+        "icon": "icons/kh3-default/MagicWater1.webp"
+    },
+    {
+        "name": "Watera",
+        "icon": "icons/kh3-default/MagicWater2.webp"
+    },
+    {
+        "name": "Waterga",
+        "icon": "icons/kh3-default/MagicWater3.webp"
+    },
+    {
+        "name": "Meow Wow",
+        "icon": "icons/kh3-default/summon-meow-wow.webp"
+    },
+    {
+        "name": "Wreck-It-Ralph",
+        "icon": "icons/kh3-default/summon-ralph.webp"
+    },
+    {
+        "name": "Simba",
+        "icon": "icons/kh3-default/summon-simba.webp"
+    },
+    {
+        "name": "Ariel",
+        "icon": "icons/kh3-default/summon-ariel.webp"
+    },
+    {
+        "name": "Stitch",
+        "icon": "icons/kh3-default/summon-stitch.webp"
+    },
+    {
+        "name": "Secret Report 1",
+        "icon": "icons/kh3-default/data-report-1.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 2",
+        "icon": "icons/kh3-default/data-report-2.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 3",
+        "icon": "icons/kh3-default/data-report-3.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 4",
+        "icon": "icons/kh3-default/data-report-4.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 5",
+        "icon": "icons/kh3-default/data-report-5.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 6",
+        "icon": "icons/kh3-default/data-report-6.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 7",
+        "icon": "icons/kh3-default/data-report-7.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 8",
+        "icon": "icons/kh3-default/data-report-8.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 9",
+        "icon": "icons/kh3-default/data-report-9.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 10",
+        "icon": "icons/kh3-default/data-report-10.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 11",
+        "icon": "icons/kh3-default/data-report-11.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 12",
+        "icon": "icons/kh3-default/data-report-12.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "Secret Report 13",
+        "icon": "icons/kh3-default/data-report-13.webp",
+        "tags": ["Secret Reports"]
+    },
+    {
+        "name": "10 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-10.webp"
+    },
+    {
+        "name": "20 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-20.webp"
+    },
+    {
+        "name": "30 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-30.webp"
+    },
+    {
+        "name": "40 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-40.webp"
+    },
+    {
+        "name": "50 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-50.webp"
+    },
+    {
+        "name": "60 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-60.webp",
+        "tags": [">50 Lucky Emblems"]
+    },
+    {
+        "name": "70 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-70.webp",
+        "tags": [">50 Lucky Emblems"]
+    },
+    {
+        "name": "80 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-80.webp",
+        "tags": [">50 Lucky Emblems"]
+    },
+    {
+        "name": "90 Lucky Emblems",
+        "icon": "icons/kh3-default/emblems-90.webp",
+        "tags": [">50 Lucky Emblems"]
+    },
+    {
+        "name": "Olympus Rock Troll",
+        "icon": "icons/kh3-default/rock-troll-olympus.webp"
+    },
+    {
+        "name": "Rock Titan",
+        "icon": "icons/kh3-default/rock-titan.webp"
+    },
+    {
+        "name": "Tornado Titan",
+        "icon": "icons/kh3-default/tornado-titan.webp"
+    },
+    {
+        "name": "Cherry Flan (Olympus)",
+        "icon": "icons/kh3-default/flan-cherry.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Demon Tide (Twilight Town)",
+        "icon": "icons/kh3-default/demon-tide-tt.webp"
+    },
+    {
+        "name": "Twilight Town Mansion Fight",
+        "icon": "icons/kh3-default/dusk.webp"
+    },
+    {
+        "name": "Galaxy Toys Fight",
+        "icon": "icons/kh3-default/gigas.webp"
+    },
+    {
+        "name": "Angelic Amber",
+        "icon": "icons/kh3-default/angelic-amber.webp"
+    },
+    {
+        "name": "Mini UFO",
+        "icon": "icons/kh3-default/alien.webp"
+    },
+    {
+        "name": "Verum Rex",
+        "icon": "icons/kh3-default/verum-rex.webp"
+    },
+    {
+        "name": "Build the Cactuar",
+        "icon": "icons/kh3-default/cactuar.webp"
+    },
+    {
+        "name": "King of Toys",
+        "icon": "icons/kh3-default/king-of-toys.webp"
+    },
+    {
+        "name": "Strawberry Flan (Toy Box)",
+        "icon": "icons/kh3-default/flan-strawberry.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Find Rapunzel's Tower",
+        "icon": "icons/kh3-default/rapunzel.webp"
+    },
+    {
+        "name": "Forest Reaper Fight",
+        "icon": "icons/kh3-default/reaper.webp"
+    },
+    {
+        "name": "Chaos Carriage",
+        "icon": "icons/kh3-default/chaos-carriage.webp"
+    },
+    {
+        "name": "Festival Dance",
+        "icon": "icons/kh3-default/festival-dance.webp"
+    },
+    {
+        "name": "Lantern Fight",
+        "icon": "icons/kh3-default/lantern.webp"
+    },
+    {
+        "name": "Grim Guardianess",
+        "icon": "icons/kh3-default/grim-guardianess.webp"
+    },
+    {
+        "name": "Orange Flan (KoC)",
+        "icon": "icons/kh3-default/flan-orange.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Laugh Floor Fight",
+        "icon": "icons/kh3-default/flood.webp"
+    },
+    {
+        "name": "Use Scream Strike",
+        "icon": "icons/kh3-default/mike-wazowski.webp"
+    },
+    {
+        "name": "Monstropolis Silo Fight",
+        "icon": "icons/kh3-default/spiked-turtletoad.webp"
+    },
+    {
+        "name": "Lump of Horror",
+        "icon": "icons/kh3-default/lump-of-horror.webp"
+    },
+    {
+        "name": "Banana Flan (Monstropolis)",
+        "icon": "icons/kh3-default/flan-banana.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Arendelle Rock Troll",
+        "icon": "icons/kh3-default/rock-troll-ar.webp"
+    },
+    {
+        "name": "Escape the Ice Labyrinth",
+        "icon": "icons/kh3-default/ninja.webp"
+    },
+    {
+        "name": "Put Olaf back together",
+        "icon": "icons/kh3-default/olaf.webp"
+    },
+    {
+        "name": "Marshmallow",
+        "icon": "icons/kh3-default/marshmallow.webp"
+    },
+    {
+        "name": "Skoll",
+        "icon": "icons/kh3-default/skoll.webp"
+    },
+    {
+        "name": "Grape Flan (Arendelle)",
+        "icon": "icons/kh3-default/flan-grape.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Slide down the mountain in Arendelle",
+        "icon": "icons/kh3-default/frozen-slider.webp"
+    },
+    {
+        "name": "Raging Vulture",
+        "icon": "icons/kh3-default/raging-vulture.webp"
+    },
+    {
+        "name": "Lightning Angler",
+        "icon": "icons/kh3-default/lightning-angler.webp"
+    },
+    {
+        "name": "Visit Port Royal",
+        "icon": "icons/kh3-default/sora-pirate.webp"
+    },
+    {
+        "name": "Davy Jones",
+        "icon": "icons/kh3-default/davy-jones.webp"
+    },
+    {
+        "name": "Watermelon Flan (Caribbean)",
+        "icon": "icons/kh3-default/flan-watermelon.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Complete a Flash Tracer circuit",
+        "icon": "icons/kh3-default/flash-tracer.webp"
+    },
+    {
+        "name": "Catastrochorus",
+        "icon": "icons/kh3-default/catastrochorus.webp"
+    },
+    {
+        "name": "Save Big Hero 6",
+        "icon": "icons/kh3-default/big-hero-6.webp"
+    },
+    {
+        "name": "Darkubes",
+        "icon": "icons/kh3-default/darkubes.webp"
+    },
+    {
+        "name": "Dark Baymax",
+        "icon": "icons/kh3-default/dark-baymax.webp"
+    },
+    {
+        "name": "Honeydew Flan (San Fran)",
+        "icon": "icons/kh3-default/flan-honeydew.webp",
+        "tags": ["Flans"]
+    },
+    {
+        "name": "Anti-Aqua",
+        "icon": "icons/kh3-default/anti-aqua.webp"
+    },
+    {
+        "name": "10K Heartless",
+        "icon": "icons/kh3-default/shadow.webp"
+    },
+    {
+        "name": "Restore Sora's Body",
+        "icon": "icons/kh3-default/nameless-star.webp"
+    },
+    {
+        "name": "Lich",
+        "icon": "icons/kh3-default/lich.webp"
+    },
+    {
+        "name": "Demon Tide (Keyblade Graveyard)",
+        "icon": "icons/kh3-default/demon-tide-kg.webp"
+    },
+    {
+        "name": "Dark Inferno X",
+        "icon": "icons/kh3-default/dark-inferno.webp"
+    },
+    {
+        "name": "Terra-Xehanort (Remind)",
+        "icon": "icons/kh3-default/terra-xehanort.webp"
+    },
+    {
+        "name": "Dark Riku and Xigbar",
+        "icon": "icons/kh3-default/kg-1.webp"
+    },
+    {
+        "name": "Luxord, Marluxia, and Larxene",
+        "icon": "icons/kh3-default/kg-2.webp"
+    },
+    {
+        "name": "Vanitas and Terra-Xehanort",
+        "icon": "icons/kh3-default/kg-3.webp"
+    },
+    {
+        "name": "Saix",
+        "icon": "icons/kh3-default/saix.webp"
+    },
+    {
+        "name": "Ansem, Xemnas, and Young Xehanort",
+        "icon": "icons/kh3-default/kg-4.webp"
+    },
+    {
+        "name": "Enter Scala ad Caelum",
+        "icon": "icons/kh3-default/scala-ad-caelum.webp"
+    },
+    {
+        "name": "1 Star Bistro",
+        "icon": "icons/kh3-default/bistro-1.webp"
+    },
+    {
+        "name": "2 Star Bistro",
+        "icon": "icons/kh3-default/bistro-2.webp"
+    },
+    {
+        "name": "3 Star Bistro",
+        "icon": "icons/kh3-default/bistro-3.webp"
+    },
+    {
+        "name": "Play a 100AW Minigame",
+        "icon": "icons/kh3-default/pooh.webp"
+    },
+    {
+        "name": "3 Classic Kingdom Games",
+        "icon": "icons/kh3-default/classic-kingdom-3.webp"
+    },
+    {
+        "name": "5 Classic Kingdom Games",
+        "icon": "icons/kh3-default/classic-kingdom-5.webp"
+    },
+    {
+        "name": "7 Classic Kingdom Games",
+        "icon": "icons/kh3-default/classic-kingdom-7.webp"
+    },
+    {
+        "name": "3 Photo Missions",
+        "icon": "icons/kh3-default/photo-3.webp"
+    },
+    {
+        "name": "5 Photo Missions",
+        "icon": "icons/kh3-default/photo-5.webp"
+    },
+    {
+        "name": "7 Photo Missions",
+        "icon": "icons/kh3-default/photo-7.webp"
+    },
+    {
+        "name": "Receive a rare item from mailing a postcard",
+        "icon": "icons/kh3-default/prize-postcard.webp"
+    },
+    {
+        "name": "Upgrade a Keyblade",
+        "icon": "icons/kh3-default/keyblade-increase.webp"
+    },
+    {
+        "name": "Classic Tone",
+        "icon": "icons/kh3-default/classic-tone.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Crystal Snow",
+        "icon": "icons/kh3-default/crystal-snow.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Ever After",
+        "icon": "icons/kh3-default/ever-after.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Favorite Deputy",
+        "icon": "icons/kh3-default/favorite-deputy.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Grand Chef",
+        "icon": "icons/kh3-default/grand-chef.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Happy Gear",
+        "icon": "icons/kh3-default/happy-gear.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Hero's Origin",
+        "icon": "icons/kh3-default/heros-origin.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Hunny Spout",
+        "icon": "icons/kh3-default/hunny-spout.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Kingdom Key",
+        "icon": "icons/kh3-default/kingdom-key.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Nano Gear",
+        "icon": "icons/kh3-default/nano-gear.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Oathkeeper",
+        "icon": "icons/kh3-default/oathkeeper.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Oblivion",
+        "icon": "icons/kh3-default/oblivion.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Shooting Star",
+        "icon": "icons/kh3-default/shooting-star.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Starlight",
+        "icon": "icons/kh3-default/starlight.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Ultima Weapon",
+        "icon": "icons/kh3-default/ultima-weapon.webp",
+        "tags": ["Keyblades"]
+    },
+    {
+        "name": "Wheel of Fate",
+        "icon": "icons/kh3-default/wheel-of-fate.webp",
+        "tags": ["Keyblades"]
+    }
+]

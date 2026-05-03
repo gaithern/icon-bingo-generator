@@ -1,0 +1,400 @@
+[
+  { 
+    "name": "Defeat a boss", 
+    "icon": "icons/kh2-generic/boss-1.webp" 
+  },
+  { 
+    "name": "Defeat 2 Bosses", 
+    "icon": "icons/kh2-generic/boss-2.webp" 
+  },
+  { 
+    "name": "Defeat 3 Bosses", 
+    "icon": "icons/kh2-generic/boss-3.webp" 
+  },
+  { 
+    "name": "Defeat a boss with fire", 
+    "icon": "icons/kh2-generic/boss-fire.webp" 
+  },
+  { 
+    "name": "Defeat a boss with blizzard", 
+    "icon": "icons/kh2-generic/boss-blizzard.webp" 
+  },
+  { 
+    "name": "Defeat a boss with thunder", 
+    "icon": "icons/kh2-generic/boss-thunder.webp" 
+  },
+  { 
+    "name": "Defeat a boss with a ground finisher", 
+    "icon": "icons/kh2-generic/boss-ground.webp" 
+  },
+  { 
+    "name": "Defeat a boss with an air finisher", 
+    "icon": "icons/kh2-generic/boss-air.webp" 
+  },
+  { 
+    "name": "Defeat a boss while a summon is out", 
+    "icon": "icons/kh2-generic/boss-summon.webp" 
+  },
+  { 
+    "name": "Defeat a boss with an ultimate weapon equipped on a party member", 
+    "icon": "" 
+  },
+  {
+    "name": "Defeat a boss with the wooden sword",
+    "icon": "icons/kh1-generic/boss-wooden.webp"
+  },
+  { 
+    "name": "Defeat a boss with a belt and ring equipped", 
+    "icon": "icons/kh2-generic/boss-accessories.webp" 
+  },
+  { 
+    "name": "Find 1 magic element", 
+    "icon": "icons/kh2-generic/magic-1.webp"
+  },
+  { 
+    "name": "Find 2 magic elements", 
+    "icon": "icons/kh2-generic/magic-2.webp"
+  },
+  { 
+    "name": "Find 3 magic elements", 
+    "icon": "icons/kh2-generic/magic-3.webp"
+  },
+  { 
+    "name": "Find a Keyblade", 
+    "icon": "icons/kh2-generic/Keyblade.webp"
+  },
+  { 
+    "name": "Activate 3 Trinities", 
+    "icon": "icons/kh2-generic/trinity-3.webp"
+  },
+  { 
+    "name": "Activate 5 Trinities", 
+    "icon": "icons/kh2-generic/trinity-5.webp"
+  },
+  { 
+    "name": "Activate 7 Trinities", 
+    "icon": "icons/kh2-generic/trinity-7.webp"
+  },
+  { 
+    "name": "Complete a 100AW Minigame", 
+    "icon": "icons/kh2-generic/hundred-acre-wood.webp" 
+  },
+  {
+    "name": "Don't let bees pop Pooh's Balloon",
+    "icon": "icons/kh1-ap/Piglet.webp"
+  },
+  {
+    "name": "Don't let Tigger stomp any carrots",
+    "icon": "icons/kh1-ap/Rabbit.webp"
+  },
+  {
+    "name": "Send Pooh at least 30m off the swing",
+    "icon": "icons/kh1-ap/Pooh.webp"
+  },
+  {
+    "name": "Tigger's Giant Pot",
+    "icon": "icons/kh1-ap/Tigger.webp"
+  },
+  {
+    "name": "Pooh's Muddy Path",
+    "icon": "icons/kh1-ap/Eeyore.webp"
+  },
+  { 
+    "name": "Level up Sora", 
+    "icon": ""
+  },
+  {
+    "name": "Fill Bambi's bar",
+    "icon": "icons/kh1-ap/Bambi.webp"
+  },
+  {
+    "name": "Use Dumbo to reach a ledge",
+    "icon": "icons/kh1-ap/Dumbo.webp"
+  },
+  {
+    "name": "Use Genie's Showtime on an enemy",
+    "icon": "icons/kh1-ap/Genie.webp"
+  },
+  {
+    "name": "Use Mushu's Fire Breath on an enemy",
+    "icon": "icons/kh1-ap/Mushu.webp"
+  },
+  {
+    "name": "Use Simba's Proud Roar on an enemy",
+    "icon": "icons/kh1-ap/Simba.webp"
+  },
+  {
+    "name": "Use Tinker Bell's Auto-Life ability",
+    "icon": "icons/kh1-ap/TinkerBell.webp"
+  },
+  { 
+    "name": "Use Trinity Limit on a group of enemies", 
+    "icon": "" 
+  },
+  { 
+    "name": "Let Donald or Goofy kill an enemy", 
+    "icon": "icons/kh2-generic/dg-enemy.webp" 
+  },
+  { 
+    "name": "Synth 3 unique items", 
+    "icon": "icons/kh2-generic/synth-3.webp" 
+  },
+  { 
+    "name": "Collect 7 unique synth materials", 
+    "icon": "icons/kh2-generic/material-7.webp"
+  },
+  { 
+    "name": "Complete a Cup", 
+    "icon": "icons/kh1-generic/cups.webp" 
+  },
+  { 
+    "name": "Complete a timed cup", 
+    "icon": "" 
+  },
+  { 
+    "name": "Complete a solo cup", 
+    "icon": "" 
+  },
+  {
+    "name": "Beat Phil Cup",
+    "icon": ""
+  },
+  {
+    "name": "Beat Pegasus Cup",
+    "icon": ""
+  },
+  {
+    "name": "Beat Hercules Cup",
+    "icon": ""
+  },
+  {
+    "name": "Hades Cup 10th Seed",
+    "icon": "icons/kh1-ap/HadesCup10.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 20th Seed",
+    "icon": "icons/kh1-ap/HadesCup20.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 30th Seed",
+    "icon": "icons/kh1-ap/HadesCup30.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 40th Seed",
+    "icon": "icons/kh1-ap/HadesCupSeed40.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 44th Seed",
+    "icon": "icons/kh1-ap/HadesCup44.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 1st Seed",
+    "icon": "icons/kh1-ap/HadesCupSeed1.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Jungle Slider 10 Fruits",
+    "icon": "icons/kh1-ap/Fruit10.webp"
+  },
+  {
+    "name": "Jungle Slider 20 Fruits",
+    "icon": "icons/kh1-ap/Fruit20.webp"
+  },
+  {
+    "name": "Jungle Slider 30 Fruits",
+    "icon": "icons/kh1-ap/Fruit30.webp"
+  },
+  {
+    "name": "Jungle Slider 40 Fruits",
+    "icon": "icons/kh1-ap/Fruit40.webp"
+  },
+  {
+    "name": "Jungle Slider 50 Fruits",
+    "icon": "icons/kh1-ap/Fruit50.webp"
+  },
+  { 
+    "name": "Buy 20 Potions", 
+    "icon": "icons/kh2-generic/potion-20.webp" 
+  },
+  { 
+    "name": "Buy 7 unique items from a shop", 
+    "icon": "icons/kh2-generic/item-7.webp" 
+  },
+  { 
+    "name": "Die to Sephiroth", 
+    "icon": "" 
+  },
+  { 
+    "name": "Heal a party member with Cure", 
+    "icon": "icons/kh2-generic/dg-cure.webp" 
+  },
+  { 
+    "name": "Use a potion, ether, elixir, and tent", 
+    "icon": "icons/kh2-generic/items-1.webp" 
+  },
+  { 
+    "name": "Use any Mega item", 
+    "icon": "icons/kh2-generic/items-2.webp" 
+  },
+  { 
+    "name": "Equip Donald and Goofy with their Dream Weapons", 
+    "icon": "" 
+  },
+  { 
+    "name": "Equip an EXP accessory", 
+    "icon": "" 
+  },
+  { 
+    "name": "Kill 15 types of heartless", 
+    "icon": "icons/kh2-generic/heartless-15.webp" 
+  },
+  { 
+    "name": "Kill a Pureblood Heartless", 
+    "icon": "" 
+  },
+  { 
+    "name": "Kill 2 unique Pureblood Heartless", 
+    "icon": "" 
+  },
+  { 
+    "name": "Kill 3 unique Pureblood Heartless", 
+    "icon": "" 
+  },
+  { 
+    "name": "Seal a Keyhole", 
+    "icon": "" 
+  },
+  { 
+    "name": "Possess 7 Unique Keyblades Simultaneously", 
+    "icon": "" 
+  },
+  { 
+    "name": "Possess 13 Unique Keyblades Simultaneously", 
+    "icon": "" 
+  },
+  { 
+    "name": "Return puppies to their parents", 
+    "icon": "icons/kh1-ap/Puppies.webp" 
+  },
+  { 
+    "name": "Reach 40 STR with Sora", 
+    "icon": "" 
+  },
+  { 
+    "name": "Reach 10 MP with Sora", 
+    "icon": "" 
+  },
+  { 
+    "name": "Beat Riku in a race", 
+    "icon": "" 
+  },
+  {
+    "name": "Beat Riku on Destiny Islands",
+    "icon": "icons/kh1-ap/RikuDI.webp"
+  },
+  {
+    "name": "Beat Tidus",
+    "icon": "icons/kh1-ap/Tidus.webp"
+  },
+  {
+    "name": "Beat Selphie",
+    "icon": "icons/kh1-ap/Selphie.webp"
+  },
+  {
+    "name": "Beat Wakka",
+    "icon": "icons/kh1-ap/Wakka.webp"
+  },
+  {
+    "name": "Beat Destiny Islands 3v1",
+    "icon": "icons/kh1-ap/BeachFight.webp"
+  },
+  { 
+    "name": "Open 7 Clams in Atlantica", 
+    "icon": "" 
+  },
+  { 
+    "name": "Ride in Lock, Shock, and Barrel's Bathtub", 
+    "icon": "" 
+  },
+  { 
+    "name": "50 Hits on a Rare Truffle", 
+    "icon": "" 
+  },
+  { 
+    "name": "3 Unique Mushroom Arts", 
+    "icon": "" 
+  },
+  { 
+    "name": "5 Unique Mushroom Arts", 
+    "icon": "" 
+  },
+  { 
+    "name": "7 Unique Mushroom Arts", 
+    "icon": "" 
+  },
+  { 
+    "name": "Show Merlin 7 Unique Spells", 
+    "icon": "" 
+  },
+  { 
+    "name": "Defeat 2 Behemoths", 
+    "icon": "" 
+  },
+  { 
+    "name": "Open a Magic-Locked Chest", 
+    "icon": "" 
+  },
+  { 
+    "name": "Talk to a Princess of Heart", 
+    "icon": "" 
+  },
+  { 
+    "name": "Fly around the Clock Tower", 
+    "icon": "" 
+  },
+  { 
+    "name": "At least 50 hits on Pink Agaricus", 
+    "icon": "" 
+  },
+  { 
+    "name": "Visit Gepetto's House", 
+    "icon": "" 
+  },
+  { 
+    "name": "Win the Black Ballade Game", 
+    "icon": "" 
+  },
+  { 
+    "name": "Break every pot without waking the Pot Scorpion", 
+    "icon": "" 
+  },
+  { 
+    "name": "Defeat all enemies at the Mad Tea Party", 
+    "icon": "" 
+  },
+  { 
+    "name": "Have Tarzan join your party", 
+    "icon": "" 
+  },
+  { 
+    "name": "Have Aladdin join your party", 
+    "icon": "" 
+  },
+  { 
+    "name": "Have Ariel join your party", 
+    "icon": "" 
+  },
+  { 
+    "name": "Have Jack join your party", 
+    "icon": "" 
+  },
+  { 
+    "name": "Have Peter Pan join your party", 
+    "icon": "" 
+  }
+]

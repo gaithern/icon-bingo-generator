@@ -1,0 +1,729 @@
+[
+  {
+    "name": "Leon",
+    "icon": "icons/kh1-ap/Leon.webp"
+  },
+  {
+    "name": "Guard Armor",
+    "icon": "icons/kh1-ap/GuardArmor.webp"
+  },
+  {
+    "name": "Opposite Armor",
+    "icon": "icons/kh1-ap/OppositeArmor.webp"
+  },
+  {
+    "name": "Trickmaster",
+    "icon": "icons/kh1-ap/Trickmaster.webp"
+  },
+  {
+    "name": "Cloud",
+    "icon": "icons/kh1-ap/Cloud.webp"
+  },
+  {
+    "name": "Cerberus",
+    "icon": "icons/kh1-ap/Cerberus.webp"
+  },
+  {
+    "name": "Sabor",
+    "icon": "icons/kh1-ap/Sabor.webp"
+  },
+  {
+    "name": "Clayton",
+    "icon": "icons/kh1-ap/Clayton.webp"
+  },
+  {
+    "name": "Pot Centipede",
+    "icon": "icons/kh1-ap/PotCentipede.webp"
+  },
+  {
+    "name": "Cave of Wonders Guardian",
+    "icon": "icons/kh1-ap/TigerHead.webp"
+  },
+  {
+    "name": "Jafar",
+    "icon": "icons/kh1-ap/Jafar.webp"
+  },
+  {
+    "name": "Parasite Cage 1",
+    "icon": "icons/kh1-ap/ParasiteCage1.webp"
+  },
+  {
+    "name": "Parasite Cage 2",
+    "icon": "icons/kh1-ap/ParasiteCage2.webp"
+  },
+  {
+    "name": "Lock, Shock, and Barrel",
+    "icon": "icons/kh1-ap/LSB.webp"
+  },
+  {
+    "name": "Oogie",
+    "icon": "icons/kh1-ap/Oogie.webp"
+  },
+  {
+    "name": "Glut",
+    "icon": "icons/kh1-ap/Shark.webp",
+    "tags": ["Atlantica"]
+  },
+  {
+    "name": "Ursula",
+    "icon": "icons/kh1-ap/Ursula.webp",
+    "tags": ["Atlantica"]
+  },
+  {
+    "name": "Giant Ursula",
+    "icon": "icons/kh1-ap/BigUrsula.webp",
+    "tags": ["Atlantica"]
+  },
+  {
+    "name": "Anti-Sora",
+    "icon": "icons/kh1-ap/AntiSora-v2.webp"
+  },
+  {
+    "name": "Captain Hook",
+    "icon": "icons/kh1-ap/CaptainHook.webp"
+  },
+  {
+    "name": "Riku 1",
+    "icon": "icons/kh1-ap/Riku1.webp"
+  },
+  {
+    "name": "Maleficent",
+    "icon": "icons/kh1-ap/Maleficent.webp"
+  },
+  {
+    "name": "Dragon Maleficent",
+    "icon": "icons/kh1-ap/DragonMal.webp"
+  },
+  {
+    "name": "Riku 2",
+    "icon": "icons/kh1-ap/Riku2.webp"
+  },
+  {
+    "name": "Behemoth (Hollow Bastion)",
+    "icon": "icons/kh1-ap/Behemoth.webp"
+  },
+  {
+    "name": "Chernabog",
+    "icon": "icons/kh1-ap/Chernabog.webp"
+  },
+  {
+    "name": "Fire",
+    "icon": "icons/kh1-ap/MagicFire1.webp"
+  },
+  {
+    "name": "Fira",
+    "icon": "icons/kh1-ap/MagicFire2.webp"
+  },
+  {
+    "name": "Firaga",
+    "icon": "icons/kh1-ap/MagicFire3.webp"
+  },
+  {
+    "name": "Blizzard",
+    "icon": "icons/kh1-ap/MagicBlizzard1.webp"
+  },
+  {
+    "name": "Blizzara",
+    "icon": "icons/kh1-ap/MagicBlizzard2.webp"
+  },
+  {
+    "name": "Blizzaga",
+    "icon": "icons/kh1-ap/MagicBlizzard3.webp"
+  },
+  {
+    "name": "Thunder",
+    "icon": "icons/kh1-ap/MagicThunder1.webp"
+  },
+  {
+    "name": "Thundara",
+    "icon": "icons/kh1-ap/MagicThunder2.webp"
+  },
+  {
+    "name": "Thundaga",
+    "icon": "icons/kh1-ap/MagicThunder3.webp"
+  },
+  {
+    "name": "Cure",
+    "icon": "icons/kh1-ap/MagicCure1.webp"
+  },
+  {
+    "name": "Cura",
+    "icon": "icons/kh1-ap/MagicCure2.webp"
+  },
+  {
+    "name": "Curaga",
+    "icon": "icons/kh1-ap/MagicCure3.webp"
+  },
+  {
+    "name": "Stop",
+    "icon": "icons/kh1-ap/MagicStop1.webp"
+  },
+  {
+    "name": "Stopra",
+    "icon": "icons/kh1-ap/MagicStop2.webp"
+  },
+  {
+    "name": "Stopga",
+    "icon": "icons/kh1-ap/MagicStop3.webp"
+  },
+  {
+    "name": "Gravity",
+    "icon": "icons/kh1-ap/MagicGravity1.webp"
+  },
+  {
+    "name": "Gravira",
+    "icon": "icons/kh1-ap/MagicGravity2.webp"
+  },
+  {
+    "name": "Graviga",
+    "icon": "icons/kh1-ap/MagicGravity3.webp"
+  },
+  {
+    "name": "Aero",
+    "icon": "icons/kh1-ap/MagicAero1.webp"
+  },
+  {
+    "name": "Aerora",
+    "icon": "icons/kh1-ap/MagicAero2.webp"
+  },
+  {
+    "name": "Aeroga",
+    "icon": "icons/kh1-ap/MagicAero3.webp"
+  },
+  {
+    "name": "Bambi",
+    "icon": "icons/kh1-ap/Bambi.webp"
+  },
+  {
+    "name": "Dumbo",
+    "icon": "icons/kh1-ap/Dumbo.webp"
+  },
+  {
+    "name": "Genie",
+    "icon": "icons/kh1-ap/Genie.webp"
+  },
+  {
+    "name": "Mushu",
+    "icon": "icons/kh1-ap/Mushu.webp"
+  },
+  {
+    "name": "Simba",
+    "icon": "icons/kh1-ap/Simba.webp"
+  },
+  {
+    "name": "Tinker Bell",
+    "icon": "icons/kh1-ap/TinkerBell.webp"
+  },
+  {
+    "name": "1 Torn Page",
+    "icon": "icons/kh1-ap/TornPages1.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "2 Torn Pages",
+    "icon": "icons/kh1-ap/TornPages2.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "3 Torn Pages",
+    "icon": "icons/kh1-ap/TornPages3.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "4 Torn Pages",
+    "icon": "icons/kh1-ap/TornPages4.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "5 Torn Pages",
+    "icon": "icons/kh1-ap/TornPages5.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Blue Trinity",
+    "icon": "icons/kh1-ap/BlueTrinity.webp"
+  },
+  {
+    "name": "Green Trinity",
+    "icon": "icons/kh1-ap/GreenTrinity.webp"
+  },
+  {
+    "name": "Red Trinity",
+    "icon": "icons/kh1-ap/RedTrinity.webp"
+  },
+  {
+    "name": "White Trinity",
+    "icon": "icons/kh1-ap/WhiteTrinity.webp"
+  },
+  {
+    "name": "Yellow Trinity",
+    "icon": "icons/kh1-ap/YellowTrinity.webp"
+  },
+  {
+    "name": "Agrabah Item",
+    "icon": "icons/kh1-ap/Agrabah.webp"
+  },
+  {
+    "name": "Atlantica Item",
+    "icon": "icons/kh1-ap/Atlantica.webp",
+    "tags": ["Atlantica"]
+  },
+  {
+    "name": "Hollow Bastion Item",
+    "icon": "icons/kh1-ap/HollowBastion.webp"
+  },
+  {
+    "name": "Olympus Coliseum Item",
+    "icon": "icons/kh1-ap/Olympus.webp"
+  },
+  {
+    "name": "End of the World Item",
+    "icon": "icons/kh1-ap/EOTW.webp"
+  },
+  {
+    "name": "Halloween Town Item",
+    "icon": "icons/kh1-ap/HalloweenTown.webp"
+  },
+  {
+    "name": "Destiny Islands Item",
+    "icon": "icons/kh1-ap/DestinyIslands.webp"
+  },
+  {
+    "name": "Deep Jungle Item",
+    "icon": "icons/kh1-ap/DeepJungle.webp"
+  },
+  {
+    "name": "Monstro Item",
+    "icon": "icons/kh1-ap/Monstro.webp"
+  },
+  {
+    "name": "Neverland Item",
+    "icon": "icons/kh1-ap/Neverland.webp"
+  },
+  {
+    "name": "Wonderland Item",
+    "icon": "icons/kh1-ap/Wonderland.webp"
+  },
+  {
+    "name": "Theon Vol. 6",
+    "icon": "icons/kh1-ap/Theon.webp"
+  },
+  {
+    "name": "Evidence",
+    "icon": "icons/kh1-ap/Evidence.webp"
+  },
+  {
+    "name": "Jack in the Box",
+    "icon": "icons/kh1-ap/JackintheBox.webp"
+  },
+  {
+    "name": "Slides",
+    "icon": "icons/kh1-ap/Slides.webp"
+  },
+  {
+    "name": "Crystal Trident",
+    "icon": "icons/kh1-ap/CrystalTrident.webp",
+    "tags": ["Atlantica"]
+  },
+  {
+    "name": "Forget-Me-Not",
+    "icon": "icons/kh1-ap/Forget.webp"
+  },
+  {
+    "name": "Entry Pass",
+    "icon": "icons/kh1-ap/EntryPass.webp"
+  },
+  {
+    "name": "Second Chance",
+    "icon": "icons/kh1-ap/SecondChance.webp"
+  },
+  {
+    "name": "Combo Master",
+    "icon": "icons/kh1-ap/ComboMaster.webp"
+  },
+  {
+    "name": "Glide",
+    "icon": "icons/kh1-ap/Glide.webp"
+  },
+  {
+    "name": "High Jump",
+    "icon": "icons/kh1-ap/HighJump.webp"
+  },
+  {
+    "name": "Mermaid Kick",
+    "icon": "icons/kh1-ap/MermaidKick.webp"
+  },
+  {
+    "name": "Dodge Roll",
+    "icon": "icons/kh1-ap/DodgeRoll.webp"
+  },
+  {
+    "name": "Flame Emblem Piece",
+    "icon": "icons/kh1-ap/EmblemBlue.webp"
+  },
+  {
+    "name": "Statue Emblem Piece",
+    "icon": "icons/kh1-ap/EmblemGreen.webp"
+  },
+  {
+    "name": "Chest Emblem Piece",
+    "icon": "icons/kh1-ap/EmblemPink.webp"
+  },
+  {
+    "name": "Fountain Emblem Piece",
+    "icon": "icons/kh1-ap/EmblemRed.webp"
+  },
+  {
+    "name": "Lionheart",
+    "icon": "icons/kh1-ap/Lionheart.webp"
+  },
+  {
+    "name": "Spellbinder",
+    "icon": "icons/kh1-ap/Spellbinder.webp"
+  },
+  {
+    "name": "Oathkeeper",
+    "icon": "icons/kh1-ap/Oathkeeper.webp"
+  },
+  {
+    "name": "Lady Luck",
+    "icon": "icons/kh1-ap/LadyLuck.webp"
+  },
+  {
+    "name": "Olympia",
+    "icon": "icons/kh1-ap/Olympia.webp"
+  },
+  {
+    "name": "Jungle King",
+    "icon": "icons/kh1-ap/JungleKing.webp"
+  },
+  {
+    "name": "Three Wishes",
+    "icon": "icons/kh1-ap/ThreeWishes.webp"
+  },
+  {
+    "name": "Wishing Star",
+    "icon": "icons/kh1-ap/WishingStar.webp"
+  },
+  {
+    "name": "Pumpkinhead",
+    "icon": "icons/kh1-ap/Pumpkinhead.webp"
+  },
+  {
+    "name": "Crabclaw",
+    "icon": "icons/kh1-ap/Crabclaw.webp"
+  },
+  {
+    "name": "Fairy Harp",
+    "icon": "icons/kh1-ap/FairyHarp.webp"
+  },
+  {
+    "name": "Divine Rose",
+    "icon": "icons/kh1-ap/DivineRose.webp"
+  },
+  {
+    "name": "Oblivion",
+    "icon": "icons/kh1-ap/Oblivion.webp"
+  },
+  {
+    "name": "1 Postcard",
+    "icon": "icons/kh1-ap/Postcards1.webp"
+  },
+  {
+    "name": "2 Postcards",
+    "icon": "icons/kh1-ap/Postcards2.webp"
+  },
+  {
+    "name": "3 Postcards",
+    "icon": "icons/kh1-ap/Postcards3.webp"
+  },
+  {
+    "name": "4 Postcards",
+    "icon": "icons/kh1-ap/Postcards4.webp"
+  },
+  {
+    "name": "5 Postcards",
+    "icon": "icons/kh1-ap/Postcards5.webp"
+  },
+  {
+    "name": "6 Postcards",
+    "icon": "icons/kh1-ap/Postcards6.webp"
+  },
+  {
+    "name": "7 Postcards",
+    "icon": "icons/kh1-ap/Postcards7.webp"
+  },
+  {
+    "name": "8 Postcards",
+    "icon": "icons/kh1-ap/Postcards8.webp"
+  },
+  {
+    "name": "9 Postcards",
+    "icon": "icons/kh1-ap/Postcards9.webp"
+  },
+  {
+    "name": "10 Postcards",
+    "icon": "icons/kh1-ap/Postcards10.webp"
+  },
+  {
+    "name": "10 Puppies",
+    "icon": "icons/kh1-ap/Puppies10.webp"
+  },
+  {
+    "name": "20 Puppies",
+    "icon": "icons/kh1-ap/Puppies20.webp"
+  },
+  {
+    "name": "30 Puppies",
+    "icon": "icons/kh1-ap/Puppies30.webp"
+  },
+  {
+    "name": "40 Puppies",
+    "icon": "icons/kh1-ap/Puppies40.webp"
+  },
+  {
+    "name": "50 Puppies",
+    "icon": "icons/kh1-ap/Puppies50.webp"
+  },
+  {
+    "name": "60 Puppies",
+    "icon": "icons/kh1-ap/Puppies60.webp",
+    "tags": [">50 Puppies"]
+  },
+  {
+    "name": "70 Puppies",
+    "icon": "icons/kh1-ap/Puppies70.webp",
+    "tags": [">50 Puppies"]
+  },
+  {
+    "name": "80 Puppies",
+    "icon": "icons/kh1-ap/Puppies80.webp",
+    "tags": [">50 Puppies"]
+  },
+  {
+    "name": "90 Puppies",
+    "icon": "icons/kh1-ap/Puppies90.webp",
+    "tags": [">50 Puppies"]
+  },
+  {
+    "name": "99 Puppies",
+    "icon": "icons/kh1-ap/Puppies99.webp",
+    "tags": [">50 Puppies"]
+  },
+  {
+    "name": "Hades Cup 10th Seed",
+    "icon": "icons/kh1-ap/HadesCup10.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 20th Seed",
+    "icon": "icons/kh1-ap/HadesCup20.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 30th Seed",
+    "icon": "icons/kh1-ap/HadesCup30.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 40th Seed",
+    "icon": "icons/kh1-ap/HadesCupSeed40.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hades Cup 44th Seed",
+    "icon": "icons/kh1-ap/HadesCup44.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Hercules",
+    "icon": "icons/kh1-ap/Hercules.webp"
+  },
+  {
+    "name": "Riku (Destiny Islands)",
+    "icon": "icons/kh1-ap/RikuDI.webp"
+  },
+  {
+    "name": "Tidus",
+    "icon": "icons/kh1-ap/Tidus.webp"
+  },
+  {
+    "name": "Selphie",
+    "icon": "icons/kh1-ap/Selphie.webp"
+  },
+  {
+    "name": "Wakka",
+    "icon": "icons/kh1-ap/Wakka.webp"
+  },
+  {
+    "name": "Destiny Islands 3v1",
+    "icon": "icons/kh1-ap/BeachFight.webp"
+  },
+  {
+    "name": "Pooh's Hunny Hunt",
+    "icon": "icons/kh1-ap/Piglet.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Block Tigger",
+    "icon": "icons/kh1-ap/Rabbit.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Pooh's Swing",
+    "icon": "icons/kh1-ap/Pooh.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Tigger's Giant Pot",
+    "icon": "icons/kh1-ap/Tigger.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Pooh's Muddy Path",
+    "icon": "icons/kh1-ap/Eeyore.webp",
+    "tags": ["100 Acre Wood"]
+  },
+  {
+    "name": "Phil's Training (Barrels)",
+    "icon": "icons/kh1-ap/Phil.webp"
+  },
+  {
+    "name": "Final Rest",
+    "icon": "icons/kh1-ap/FinalRest.webp"
+  },
+  {
+    "name": "Arch Behemoth (EOTW)",
+    "icon": "icons/kh1-ap/ArchBehemoth.webp"
+  },
+  {
+    "name": "Hades Cup 1st Seed",
+    "icon": "icons/kh1-ap/HadesCupSeed1.webp",
+    "tags": ["Hades Cup"]
+  },
+  {
+    "name": "Jungle Slider 10 Fruits",
+    "icon": "icons/kh1-ap/Fruit10.webp"
+  },
+  {
+    "name": "Jungle Slider 20 Fruits",
+    "icon": "icons/kh1-ap/Fruit20.webp"
+  },
+  {
+    "name": "Jungle Slider 30 Fruits",
+    "icon": "icons/kh1-ap/Fruit30.webp"
+  },
+  {
+    "name": "Jungle Slider 40 Fruits",
+    "icon": "icons/kh1-ap/Fruit40.webp"
+  },
+  {
+    "name": "Jungle Slider 50 Fruits",
+    "icon": "icons/kh1-ap/Fruit50.webp"
+  },
+  {
+    "name": "4 Blue Trinities",
+    "icon": "icons/kh1-ap/Blue4.webp"
+  },
+  {
+    "name": "8 Blue Trinities",
+    "icon": "icons/kh1-ap/Blue8.webp"
+  },
+  {
+    "name": "12 Blue Trinities",
+    "icon": "icons/kh1-ap/Blue12.webp"
+  },
+  {
+    "name": "16 Blue Trinities",
+    "icon": "icons/kh1-ap/Blue16.webp"
+  },
+  {
+    "name": "2 Red Trinities",
+    "icon": "icons/kh1-ap/Red2.webp"
+  },
+  {
+    "name": "3 Red Trinities",
+    "icon": "icons/kh1-ap/Red3.webp"
+  },
+  {
+    "name": "4 Red Trinities",
+    "icon": "icons/kh1-ap/Red4.webp"
+  },
+  {
+    "name": "5 Red Trinities",
+    "icon": "icons/kh1-ap/Red5.webp"
+  },
+  {
+    "name": "2 Green Trinities",
+    "icon": "icons/kh1-ap/Green2.webp"
+  },
+  {
+    "name": "4 Green Trinities",
+    "icon": "icons/kh1-ap/Green4.webp"
+  },
+  {
+    "name": "6 Green Trinities",
+    "icon": "icons/kh1-ap/Green6.webp"
+  },
+  {
+    "name": "8 Green Trinities",
+    "icon": "icons/kh1-ap/Green8.webp"
+  },
+  {
+    "name": "1 Yellow Trinity",
+    "icon": "icons/kh1-ap/Yellow1.webp"
+  },
+  {
+    "name": "2 Yellow Trinities",
+    "icon": "icons/kh1-ap/Yellow2.webp"
+  },
+  {
+    "name": "3 Yellow Trinities",
+    "icon": "icons/kh1-ap/Yellow3.webp"
+  },
+  {
+    "name": "4 Yellow Trinities",
+    "icon": "icons/kh1-ap/Yellow4.webp"
+  },
+  {
+    "name": "2 White Trinities",
+    "icon": "icons/kh1-ap/White2.webp"
+  },
+  {
+    "name": "4 White Trinities",
+    "icon": "icons/kh1-ap/White4.webp"
+  },
+  {
+    "name": "6 White Trinities",
+    "icon": "icons/kh1-ap/White6.webp"
+  },
+  {
+    "name": "8 White Trinities",
+    "icon": "icons/kh1-ap/White8.webp"
+  },
+  {
+    "name": "Ice Titan",
+    "icon": "icons/kh1-ap/IceTitan.webp",
+    "tags": ["Superboss"]
+  },
+  {
+    "name": "Kurt Zisa",
+    "icon": "icons/kh1-ap/KurtZisa.webp",
+    "tags": ["Superboss"]
+  },
+  {
+    "name": "Phantom",
+    "icon": "icons/kh1-ap/Phantom.webp",
+    "tags": ["Superboss"]
+  },
+  {
+    "name": "Unknown",
+    "icon": "icons/kh1-ap/Unknown.webp",
+    "tags": ["Superboss"]
+  },
+  {
+    "name": "Sephiroth",
+    "icon": "icons/kh1-ap/Sephiroth.webp",
+    "tags": ["Superboss"]
+  }
+]
