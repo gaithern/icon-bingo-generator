@@ -393,14 +393,7 @@ function renderExplorationBoard() {
           }
         });
       } else {
-
-        if (iconsEnabled) {
-          div.textContent = '';
-        } else {
-          div.textContent = ''; 
-        }
-
-        div.style.fontSize = "50px";
+        div.classList.add("rogue-hidden");
       }
 
       board.appendChild(div);
