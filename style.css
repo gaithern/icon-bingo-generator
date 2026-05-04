@@ -1,13 +1,3 @@
-/* @font-face {
-  font-family: 'KHMenu';
-  src: local('KHMenu'), url('fonts/KHMenu.otf') format('truetype');
-}
-
-@font-face {
-  font-family: 'ComicHearts';
-  src: local('ComicHearts'), url('fonts/ComicHearts.otf') format('truetype');
-} */
-
 body.preload #controls,
 body.preload #infoContainer, 
 body.preload #status, 
@@ -15,10 +5,6 @@ body.preload #listPreview,
 body.preload h1 {
   display: none;
 }
-
-/* body, button, input, select, textarea {
-  font-family: 'KHMenu';
-} */
 
 body {
   font-family: Arial, sans-serif;
@@ -828,4 +814,46 @@ input {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+
+/* Roguelike board cells */
+.rogue-cell {
+  transition: background 0.2s;
+}
+
+.rogue-hidden {
+  background: #1a1a2e;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Red / forced layer tint */
+.rogue-red {
+  background: rgba(180, 30, 30, 0.35) !important;
+  border-color: #c0392b;
+}
+
+/* Gold / goal layer tint */
+.rogue-goal {
+  background: rgba(220, 200, 60, 0.25) !important;
+  border-color: #f1c40f;
+}
+
+/* Invisible grid spacers */
+.rogue-spacer {
+  pointer-events: none;
+}
+
+.rogue-red,
+.rogue-goal {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.rogue-passed {
+  opacity: 0.35;
+  filter: grayscale(60%);
+  cursor: default;
+  pointer-events: none;
 }

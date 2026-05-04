@@ -415,6 +415,12 @@ function applySettingsFromURL() {
     }
   }
 
+  if (mode === "roguelike") {
+    if (params.has("bs")) {
+      document.getElementById("rogueSize").value = params.get("bs");
+    }
+  }
+
   // bingo logic
   if (params.has("bl")) {
     bingoLogic = params.get("bl") === "1";

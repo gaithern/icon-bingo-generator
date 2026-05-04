@@ -606,6 +606,276 @@ function updateProgress() {
   }
 }
 
+// ================= Roguelike Mode ====================
+// majority by AI
+
+function startRoguelikeBingo() {
+  const sizeKey = document.getElementById("rogueSize").value;
+  const cfg = ROGUELIKE_CONFIGS[sizeKey];
+  if (!cfg) return;
+
+  rogueConfig       = { ...cfg, key: sizeKey };
+  rogueBoard        = [];
+  rogueVisibleMap   = [];
+  rogueLastCol      = null;
+  rogueCurrentLayer = 0;
+
+  const widths = _computeLayerWidths(cfg);
+
+  // objectives needed: every active cell except the START square
+  const totalNeeded = widths.reduce((s, w) => s + w, 0) - 1;
+  if (allObjectives.length < totalNeeded) {
+    status.textContent = "Not enough objectives for this board size!";
+    return;
+  }
+
+  const pool = shuffle([...allObjectives]);
+  let poolIdx = 0;
+
+  for (let r = 0; r < cfg.rows; r++) {
+    rogueBoard[r]      = [];
+    rogueVisibleMap[r] = [];
+    const rowNum = r + 1;
+
+    for (let c = 0; c < cfg.maxWidth; c++) {
+      if (_isActiveCell(rowNum, c, cfg, widths)) {
+        // Row 1 center = START
+        const obj = (rowNum === 1) ? null : pool[poolIdx++];
+        rogueBoard[r][c]      = { obj, type: "active" };
+        rogueVisibleMap[r][c] = false;
+      } else if (_isPhantomCell(rowNum, c, cfg)) {
+        rogueBoard[r][c]      = { obj: null, type: "phantom" };
+        rogueVisibleMap[r][c] = false;
+      } else {
+        rogueBoard[r][c]      = { obj: null, type: "hidden" };
+        rogueVisibleMap[r][c] = false;
+      }
+    }
+  }
+
+  // eeveal only the START square
+  rogueVisibleMap[0][cfg.centerCol] = true;
+
+  renderRoguelikeBoard();
+}
+
+// display board
+function renderRoguelikeBoard() {
+  board.innerHTML = "";
+  const cfg    = rogueConfig;
+  const widths = _computeLayerWidths(cfg);
+
+  board.style.display             = "grid";
+  board.style.gridTemplateColumns = `repeat(${cfg.maxWidth}, 1fr)`;
+
+  // fill rows
+  for (let r = 0; r < cfg.rows; r++) {
+    const rowNum = r + 1;
+    const isRed  = cfg.redLayers.includes(rowNum);
+    const isGoal = rowNum === cfg.goalLayer;
+    const isInteractable = (r === rogueCurrentLayer);
+
+    // special rows
+    if (isRed || isGoal) {
+      // have single cell span all columns
+      const c   = cfg.centerCol;
+      const id  = `rogue-${r}-${c}`;
+      const div = document.createElement("div");
+      div.className = "objective rogue-cell";
+      div.dataset.row = r;
+      div.dataset.col = c;
+      div.style.gridColumn = `1 / -1`;
+
+      if (isRed)  div.classList.add("rogue-red");
+      if (isGoal) div.classList.add("rogue-goal");
+
+      const visible = rogueVisibleMap[r][c];
+      const state   = squareStates[id] || 0;
+
+      if (!visible) {
+        div.classList.add("rogue-hidden");
+      } else {
+        _applyObjectiveContent(div, rogueBoard[r][c].obj);
+        div.classList.remove("border-mark", "completed", "rogue-passed");
+        if (state === 1) div.classList.add("border-mark");
+        if (state === 2) div.classList.add("completed");
+        if (state === 3) div.classList.add("rogue-passed");
+        if (isInteractable && state !== 2) {
+          _attachRogueListeners(div, r, c, id);
+        }
+      }
+
+      board.appendChild(div);
+      continue;
+    }
+
+    // normal rows
+    for (let c = 0; c < cfg.maxWidth; c++) {
+      const cell = rogueBoard[r][c];
+
+      if (cell.type === "hidden") {
+        const spacer = document.createElement("div");
+        spacer.className = "rogue-spacer";
+        board.appendChild(spacer);
+        continue;
+      }
+
+      const id  = `rogue-${r}-${c}`;
+      const div = document.createElement("div");
+      div.className = "objective rogue-cell";
+      div.dataset.row = r;
+      div.dataset.col = c;
+
+      const visible = rogueVisibleMap[r][c];
+      const state   = squareStates[id] || 0;
+
+      if (!visible) {
+        div.classList.add("rogue-hidden");
+      } else {
+        const overrideLabel = (rowNum === 1) ? "START" : null;
+        _applyObjectiveContent(div, cell.obj, overrideLabel);
+        div.classList.remove("border-mark", "completed", "rogue-passed");
+        if (state === 1) div.classList.add("border-mark");
+        if (state === 2) div.classList.add("completed");
+        if (state === 3) div.classList.add("rogue-passed");
+        if (isInteractable && state !== 2) {
+          _attachRogueListeners(div, r, c, id);
+        }
+      }
+
+      board.appendChild(div);
+    }
+}  
+}
+
+// fill square with objective
+function _applyObjectiveContent(div, obj, overrideLabel = null) {
+  div.innerHTML = "";
+
+  if (overrideLabel) {
+    div.textContent = overrideLabel;
+    return;
+  }
+
+  if (!obj) return;
+
+  // icon toggle
+  if (iconsEnabled && obj.icon) {
+    const img = document.createElement("img");
+    img.src   = obj.icon;
+    img.alt   = obj.name;
+    div.appendChild(img);
+  } else {
+    div.textContent = obj.name;
+  }
+}
+
+// marking behavior
+function _attachRogueListeners(div, r, c, id) {
+  // left click
+  div.addEventListener("click", () => {
+    if ((squareStates[id] || 0) >= 2) return;
+    setSquareState(div, id, 2);
+    _progressRogue(r, c, id);
+  });
+
+  // right click
+  div.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+    if ((squareStates[id] || 0) >= 2) return;
+    const newState = (squareStates[id] === 1) ? 0 : 1;
+    setSquareState(div, id, newState);
+  });
+
+  // scroll wheel
+  div.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    if ((squareStates[id] || 0) >= 2) return;
+    const dir = e.deltaY < 0 ? 1 : -1;
+    cycleSquare(div, id, dir);
+    // if state 2, treat it as a completion
+    if ((squareStates[id] || 0) === 2) {
+      _progressRogue(r, c, id);
+    }
+  });
+}
+
+// keep track of current layer
+function _progressRogue(r, c, id) {
+  const cfg    = rogueConfig;
+  const rowNum = r + 1;
+  const isRed  = cfg.redLayers.includes(rowNum);
+  const isGoal = rowNum === cfg.goalLayer;
+
+  if (isGoal) {
+    renderRoguelikeBoard();
+    return;
+  }
+
+  if (isRed) {
+    // red layer uses the saved column from before this row
+    _revealChildren(r, rogueLastCol ?? cfg.centerCol, cfg);
+  } else {
+    rogueLastCol = c;
+    _revealChildren(r, c, cfg);
+  }
+
+  // reveal the rest of this row so the player sees what they passed on
+  _revealRow(r, cfg);
+
+  // mark all active cells in this row that weren't chosen as "passed"
+  for (let col = 0; col < cfg.maxWidth; col++) {
+    if (rogueBoard[r][col]?.type === "active") {
+      const cellId = `rogue-${r}-${col}`;
+      if ((squareStates[cellId] || 0) !== 2) {
+        squareStates[cellId] = 3; // 3 = passed/dimmed
+      }
+    }
+  }
+
+  // advance the current layer to the next row
+  rogueCurrentLayer = r + 1;
+
+  renderRoguelikeBoard();
+}
+
+// Reveal "adjacent" squares on next layer
+function _revealChildren(r, c, cfg) {
+  const nextR    = r + 1;
+  if (nextR >= cfg.rows) return;
+
+  const widths     = _computeLayerWidths(cfg);
+  const nextRowNum = nextR + 1;
+  const isNextSpecial = cfg.redLayers.includes(nextRowNum) || nextRowNum === cfg.goalLayer;
+
+  if (isNextSpecial) {
+    // red/goal rows have exactly one cell — always the center col
+    rogueVisibleMap[nextR][cfg.centerCol] = true;
+    return;
+  }
+
+  // normal row: reveal up to 3 children clamped to the active range
+  const w    = widths[nextR];
+  const half = Math.floor(w / 2);
+  const minC = cfg.centerCol - half;
+  const maxC = cfg.centerCol + half;
+
+  [c - 1, c, c + 1].forEach((nc) => {
+    if (nc < minC || nc > maxC) return;
+    if (rogueBoard[nextR][nc]?.type === "active") {
+      rogueVisibleMap[nextR][nc] = true;
+    }
+  });
+}
+
+function _revealRow(r, cfg) {
+  for (let c = 0; c < cfg.maxWidth; c++) {
+    if (rogueBoard[r][c]?.type === "active") {
+      rogueVisibleMap[r][c] = true;
+    }
+  }
+}
+
 // Icon toggle listener
 document.getElementById('icon-Checkbox').addEventListener('change', function () {
   iconsEnabled = this.checked;
@@ -614,6 +884,7 @@ document.getElementById('icon-Checkbox').addEventListener('change', function () 
   if (explorationBoard?.length) renderExplorationBoard();
   if (bingoBoard?.length) renderTraditionalBoard();
   if (currentRound?.length) applyIconMode(iconsEnabled);
+  if (rogueConfig) renderRoguelikeBoard();
 });
 
 // Icon toggle for Rush Mode

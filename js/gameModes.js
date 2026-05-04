@@ -7,6 +7,7 @@ function updateModeUI() {
   rushLimit.style.display = "none";
   traditionalOptions.style.display = "none";
   explorationOptions.style.display = "none";
+  roguelikeOptions.style.display = "none";
 
   if (selectedMode === "rush") {
     rushLimit.style.display = "inline-flex";
@@ -18,6 +19,10 @@ function updateModeUI() {
 
   if (selectedMode === "exploration") {
     explorationOptions.style.display = "inline-flex";
+  }
+
+  if (selectedMode === "roguelike") {
+    roguelikeOptions.style.display = "inline-flex";
   }
 }
 
@@ -61,6 +66,26 @@ function validateGameSetup() {
     }
   }
 
+  if (selectedMode === "roguelike") {
+    const sizeKey = document.getElementById("rogueSize").value;
+    const cfg = ROGUELIKE_CONFIGS[sizeKey];
+    if (!cfg) return;
+
+    rogueConfig       = { ...cfg, key: sizeKey };
+    rogueBoard        = [];
+    rogueVisibleMap   = [];
+    rogueLastCol      = null;
+    rogueCurrentLayer = 0;
+
+    const widths = _computeLayerWidths(cfg);
+
+    // objectives needed: every active cell except the START square
+    const totalNeeded = widths.reduce((s, w) => s + w, 0) - 1;
+    if (allObjectives.length < totalNeeded) {
+      return 'Not enough objectives for this board size!';
+    }
+  }
+
   return null;
 }
 
@@ -86,6 +111,12 @@ function updateModeUIVisibility() {
     progress.style.display = "none";
     log.style.display = "none";
     score.style.display = "block";
+  }
+
+  if (selectedMode === "roguelike") {
+    progress.style.display = "none";
+    log.style.display = "none";
+    score.style.display = "none";
   }
 }
 
@@ -196,6 +227,10 @@ function generateGame() {
 
   if (selectedMode === "exploration") {
     startExplorationBingo();
+  }
+
+  if (selectedMode === "roguelike") {
+    startRoguelikeBingo();
   }
 
   const gameURL = buildShareURL(true);

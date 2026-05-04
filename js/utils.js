@@ -90,6 +90,10 @@ function buildShareURL(isGameLink = false) {
     params.set("start", document.getElementById("exploreStart").value);
   }
 
+  if (selectedMode === "roguelike") {
+    params.set("bs", document.getElementById("rogueSize").value);
+  }
+
   const disabled = availableTags.filter((t) => !enabledTags.has(t));
   if (disabled.length) params.set("dt", disabled.join(","));
 
@@ -180,6 +184,7 @@ function renderScore() {
   }
 }
 
+// Handle displaying of tags for objective lists
 function resetTagUI() {
   const container = document.getElementById("tagFilters");
 
@@ -192,4 +197,35 @@ function resetTagUI() {
     container.innerHTML = "";
     container.style.display = "none";
   }
+}
+
+// Helper for Roguelike mode
+function _computeLayerWidths(cfg) {
+  const widths = [];
+  let normalCount = 0; // non-red, non-goal layers
+
+  for (let r = 0; r < cfg.rows; r++) {
+    const rowNum = r + 1;
+    if (cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer) {
+      widths.push(1);
+    } else {
+      widths.push(Math.min(1 + normalCount * 2, cfg.maxWidth));
+      normalCount++;
+    }
+  }
+  return widths;
+}
+
+// Helper for Roguelike mode
+function _isActiveCell(rowNum, col, cfg, widths) {
+  const r    = rowNum - 1;
+  const w    = widths[r];
+  const half = Math.floor(w / 2);
+  return col >= cfg.centerCol - half && col <= cfg.centerCol + half;
+}
+
+// Helper for Roguelike mode
+function _isPhantomCell(rowNum, col, cfg) {
+  const isSpecial = cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer;
+  return isSpecial && col !== cfg.centerCol;
 }
