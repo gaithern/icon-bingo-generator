@@ -63,6 +63,9 @@ function shouldHideBoard() {
   else if (params.get("view") === "game") {
     return true;
   }
+  else {
+    return false;
+  }
 }
 
 // Set UI options on page load for saved links
