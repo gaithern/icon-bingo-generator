@@ -270,13 +270,13 @@ async function loadObjectives() {
 function updateListPreview(objectives) {
   if (!objectives || !objectives.length) return;
 
-  const hasIcons = objectives.some((obj) => obj.icon);
+  const iconCount = objectives.filter((obj) => obj.icon).length;
   const preview = document.getElementById("listPreview");
 
   preview.innerHTML = `
     <b>List Preview:</b><br>
     • ${objectives.length} objectives<br>
-    • Icons: ${hasIcons ? "Yes" : "No"}
+    • ${iconCount} with icons
   `;
 
   preview.style.display = "block";
