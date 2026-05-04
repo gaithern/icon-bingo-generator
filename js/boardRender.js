@@ -692,6 +692,9 @@ function renderRoguelikeBoard() {
       const visible = rogueVisibleMap[r][c];
       const state   = squareStates[id] || 0;
 
+      // shiny goals
+      if (shinyMode && shinySquares.has(id)) div.classList.add("shiny");
+
       if (!visible) {
         div.classList.add("rogue-hidden");
       } else {
@@ -728,6 +731,9 @@ function renderRoguelikeBoard() {
 
       const visible = rogueVisibleMap[r][c];
       const state   = squareStates[id] || 0;
+
+      // shiny goals
+      if (shinyMode && shinySquares.has(id)) div.classList.add("shiny");
 
       if (!visible) {
         div.classList.add("rogue-hidden");

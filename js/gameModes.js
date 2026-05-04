@@ -168,6 +168,32 @@ function generateGame() {
     });
   }
 
+  if (selectedMode === "roguelike" && shinyMode) {
+    const sizeKey = document.getElementById("rogueSize").value;
+    const cfg = ROGUELIKE_CONFIGS[sizeKey];
+    if (cfg) {
+      const widths = _computeLayerWidths(cfg);
+      const shinyCount = Math.floor(cfg.rows / 3);
+
+      const eligibleIds = [];
+
+      for (let r = 0; r < cfg.rows; r++) {
+        const rowNum = r + 1;
+        if (cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer) continue;
+
+        for (let c = 0; c < cfg.maxWidth; c++) {
+          if (r === 0 && c === cfg.centerCol) continue; // START square
+          if (_isActiveCell(rowNum, c, cfg, widths)) {
+            eligibleIds.push(`rogue-${r}-${c}`);
+          }
+        }
+      }
+
+      const indices = pickShinyIndices(eligibleIds.length, shinyCount, rng);
+      indices.forEach((i) => shinySquares.add(eligibleIds[i]));
+    }
+  }
+
   if (selectedMode === "rush" && shinyMode) {
     let totalRounds;
     const limitInput = document.getElementById("rushRoundLimit").value;
