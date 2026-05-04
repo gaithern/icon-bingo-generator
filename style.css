@@ -560,9 +560,11 @@ details[open] .info-toggle::before {
 
 #listPreview {
   margin-top: 6px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   font-size: 14px;
   color: #bbb;
+  width: 100%;
+  text-align: center;
 }
 
 #score {
