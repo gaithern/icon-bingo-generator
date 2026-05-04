@@ -57,7 +57,12 @@ window.addEventListener("DOMContentLoaded", handleInitialLoad);
 // Hide board
 function shouldHideBoard() {
   const params = new URLSearchParams(window.location.search);
-  return params.get("view") === "game";
+  if (params.get("view") === "game" && params.get("m") === "roguelike") {
+    return false
+  }
+  else if (params.get("view") === "game") {
+    return true;
+  }
 }
 
 // Set UI options on page load for saved links
