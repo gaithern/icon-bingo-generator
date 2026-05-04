@@ -102,6 +102,12 @@ A pyramid-like board where the player starts at the top and must make their way 
 - Red layers and the gold layer are single forced goals. The next layer will be resumed from the previous layer's position.
 - Complete the gold layer to win.
 
+Board size requirements:
+
+- B9: 33 objectives
+- B15: 82 objectives
+- B20: 165 objectives
+
 ![Roguelike](icons/readme/roguelike.png)
 
 ### Modifiers
