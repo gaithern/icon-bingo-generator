@@ -218,8 +218,8 @@ function _computeLayerWidths(cfg) {
 
 // Helper for Roguelike mode
 function _isActiveCell(rowNum, col, cfg, widths) {
-  const r    = rowNum - 1;
-  const w    = widths[r];
+  const r = rowNum - 1;
+  const w = widths[r];
   const half = Math.floor(w / 2);
   return col >= cfg.centerCol - half && col <= cfg.centerCol + half;
 }
@@ -229,3 +229,26 @@ function _isPhantomCell(rowNum, col, cfg) {
   const isSpecial = cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer;
   return isSpecial && col !== cfg.centerCol;
 }
+
+// Scroll wheel toggles in-game sliders
+let wheelCooldown = false;
+
+document.querySelectorAll(".in-game-sliders").forEach(function (toggle) {
+  let wheelCooldown = false;
+
+  toggle.addEventListener(
+    "wheel",
+    function (e) {
+      e.preventDefault();
+      if (wheelCooldown) return;
+
+      const checkbox = toggle.querySelector('input[type="checkbox"]');
+      checkbox.checked = !checkbox.checked;
+      checkbox.dispatchEvent(new Event("change"));
+
+      wheelCooldown = true;
+      setTimeout(() => (wheelCooldown = false), 300);
+    },
+    { passive: false },
+  );
+});
