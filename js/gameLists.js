@@ -7,6 +7,11 @@ const GAME_LISTS = {
         name: "AP Randomizer",
         file: "kh1-ap.json",
       },
+      {
+        id: "kh1-generic",
+        name: "Generic",
+        file: "kh1-generic.json",
+      }
     ],
   },
 
