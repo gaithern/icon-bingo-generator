@@ -721,6 +721,7 @@ input {
 .objective.completed {
   background: var(--mark-fill);
   box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), var(--mark-fill);
 }
 
 /* Border mark = SRL style inset border */
