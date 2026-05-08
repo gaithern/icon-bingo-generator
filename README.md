@@ -30,6 +30,7 @@ Multi-mode bingo generator with icon support
 
 - Color dropdown selects your marking color. It will automatically update if changed mid-game.
 - The "Icons" toggle switches between showing icons and text for objectives.
+- The "Wheel Mode" toggle switches the function of the Scroll Wheel between marking squares and incrementing/decrementing a counter on squares.
 - The "Reset" button in the top left corner of the generator page will reset the page to default.
 - The "Back" button in the top left corner of the game board page will send you back to the generator page.
 
