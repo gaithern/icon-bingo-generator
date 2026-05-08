@@ -8,6 +8,48 @@ let currentRoundIsShiny = false;
 
 const squareStates = {};
 
+// Count mode for Wheel Toggle
+const squareCounts = {};
+
+function getCountBadge(div) {
+  return div.querySelector(".square-count");
+}
+
+function updateCountBadge(div, id) {
+  let badge = getCountBadge(div);
+  const count = squareCounts[id] || 0;
+
+  if (count <= 0) {
+    if (badge) badge.remove();
+    return;
+  }
+
+  if (!badge) {
+    badge = document.createElement("span");
+    badge.className = "square-count";
+    div.appendChild(badge);
+  }
+
+  badge.textContent = count;
+}
+
+function handleCountScroll(e, div, id) {
+  const state = squareStates[id] || 0;
+
+  const dir = e.deltaY < 0 ? 1 : -1;
+  const current = squareCounts[id] || 0;
+
+  if (dir === 1) {
+    // scroll up
+    squareCounts[id] = Math.min(99, current === 0 ? 1 : current + 1);
+  } else {
+    // scroll down
+    squareCounts[id] = Math.max(0, current - 1);
+  }
+
+  updateCountBadge(div, id);
+}
+
 // Cycle objective through default, marked, and completed with scroll wheel
 function cycleSquare(element, id, direction = 1) {
   if (!(id in squareStates)) {
@@ -64,7 +106,7 @@ function renderTraditionalBoard() {
 
     // icons or text
     if (iconsEnabled && obj.icon) {
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = obj.icon;
       img.alt = obj.name;
       div.appendChild(img);
@@ -107,14 +149,17 @@ function renderTraditionalBoard() {
 
     div.addEventListener("wheel", (e) => {
       e.preventDefault();
-      // scroll wheel cycles through states
-      const dir = e.deltaY < 0 ? 1 : -1; // up = forward, down = backward
-      cycleSquare(div, div.dataset.id, dir);
-      checkForBingo((r, c) => {
-        const index = r * bingoSize + c;
-        const id = `bingo-${index}`;
-        return squareStates[id] === 2;
-      });
+      if (wheelCheckbox.checked) {
+        const dir = e.deltaY < 0 ? 1 : -1;
+        cycleSquare(div, div.dataset.id, dir);
+        checkForBingo((r, c) => {
+          const index = r * bingoSize + c;
+          const id = `bingo-${index}`;
+          return squareStates[id] === 2;
+        });
+      } else {
+        handleCountScroll(e, div, div.dataset.id);
+      }
     });
 
     board.appendChild(div);
@@ -293,15 +338,15 @@ function startExplorationBingo() {
       while (initialReveal.length < revealCount) {
         const index = Math.floor(rng() * total);
         if (used.has(index)) continue;
-      
+
         used.add(index);
-      
+
         initialReveal.push({
           r: Math.floor(index / boardSize),
           c: index % boardSize,
         });
       }
-    
+
       break;
     }
 
@@ -345,14 +390,14 @@ function renderExplorationBoard() {
 
         // icons or text
         if (iconsEnabled && obj.icon) {
-          const img = document.createElement('img');
+          const img = document.createElement("img");
           img.src = obj.icon;
           img.alt = obj.name;
           div.appendChild(img);
         } else {
           div.textContent = obj.name;
         }
-        
+
         if (markedMap[r][c]) {
           div.classList.add("marked");
         } else {
@@ -365,6 +410,8 @@ function renderExplorationBoard() {
 
         if (state === 1) div.classList.add("border-mark");
         if (state === 2) div.classList.add("completed");
+
+        updateCountBadge(div, id);
 
         // marking squares
         div.addEventListener("click", () => {
@@ -384,12 +431,13 @@ function renderExplorationBoard() {
 
         div.addEventListener("wheel", (e) => {
           e.preventDefault();
-          // scroll wheel cycles through states
-          const dir = e.deltaY < 0 ? 1 : -1; // scroll up/down
-          cycleSquare(div, id, dir);
-          updateFogScore();
-          if (squareStates[id] === 2) {
-            revealNeighbors(r, c);
+          if (wheelCheckbox.checked) {
+            const dir = e.deltaY < 0 ? 1 : -1;
+            cycleSquare(div, id, dir);
+            updateFogScore();
+            if (squareStates[id] === 2) revealNeighbors(r, c);
+          } else {
+            handleCountScroll(e, div, id);
           }
         });
       } else {
@@ -479,7 +527,7 @@ function renderRushBoard() {
 
     // icons or text
     if (iconsEnabled && obj.icon) {
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = obj.icon;
       img.alt = obj.name;
       div.appendChild(img);
@@ -517,12 +565,12 @@ function renderRushBoard() {
 
     div.addEventListener("wheel", (e) => {
       e.preventDefault();
-      // scroll wheel cycles through states
-      const dir = e.deltaY < 0 ? 1 : -1;
-      cycleSquare(div, id, dir);
-
-      if (squareStates[id] === 2) {
-        completeRound(obj, div);
+      if (wheelCheckbox.checked) {
+        const dir = e.deltaY < 0 ? 1 : -1;
+        cycleSquare(div, id, dir);
+        if (squareStates[id] === 2) completeRound(obj, div);
+      } else {
+        handleCountScroll(e, div, id);
       }
     });
 
@@ -577,7 +625,7 @@ function completeRound(chosenObjective, element) {
   // next round
   setTimeout(() => {
     remainingObjectives = remainingObjectives.filter(
-      (obj) => !currentRound.includes(obj)
+      (obj) => !currentRound.includes(obj),
     );
     renderRushBoard();
   }, 300);
@@ -607,10 +655,10 @@ function startRoguelikeBingo() {
   const cfg = ROGUELIKE_CONFIGS[sizeKey];
   if (!cfg) return;
 
-  rogueConfig       = { ...cfg, key: sizeKey };
-  rogueBoard        = [];
-  rogueVisibleMap   = [];
-  rogueLastCol      = null;
+  rogueConfig = { ...cfg, key: sizeKey };
+  rogueBoard = [];
+  rogueVisibleMap = [];
+  rogueLastCol = null;
   rogueCurrentLayer = 0;
 
   const widths = _computeLayerWidths(cfg);
@@ -626,27 +674,27 @@ function startRoguelikeBingo() {
   let poolIdx = 0;
 
   for (let r = 0; r < cfg.rows; r++) {
-    rogueBoard[r]      = [];
+    rogueBoard[r] = [];
     rogueVisibleMap[r] = [];
     const rowNum = r + 1;
 
     for (let c = 0; c < cfg.maxWidth; c++) {
       if (_isActiveCell(rowNum, c, cfg, widths)) {
         // Row 1 center = START
-        const obj = (rowNum === 1) ? null : pool[poolIdx++];
-        rogueBoard[r][c]      = { obj, type: "active" };
+        const obj = rowNum === 1 ? null : pool[poolIdx++];
+        rogueBoard[r][c] = { obj, type: "active" };
         rogueVisibleMap[r][c] = false;
       } else if (_isPhantomCell(rowNum, c, cfg)) {
-        rogueBoard[r][c]      = { obj: null, type: "phantom" };
+        rogueBoard[r][c] = { obj: null, type: "phantom" };
         rogueVisibleMap[r][c] = false;
       } else {
-        rogueBoard[r][c]      = { obj: null, type: "hidden" };
+        rogueBoard[r][c] = { obj: null, type: "hidden" };
         rogueVisibleMap[r][c] = false;
       }
     }
   }
 
-  // eeveal only the START square
+  // reveal only the START square
   rogueVisibleMap[0][cfg.centerCol] = true;
 
   renderRoguelikeBoard();
@@ -655,35 +703,35 @@ function startRoguelikeBingo() {
 // display board
 function renderRoguelikeBoard() {
   board.innerHTML = "";
-  const cfg    = rogueConfig;
+  const cfg = rogueConfig;
   const widths = _computeLayerWidths(cfg);
 
-  board.style.display             = "grid";
+  board.style.display = "grid";
   board.style.gridTemplateColumns = `repeat(${cfg.maxWidth}, 1fr)`;
 
   // fill rows
   for (let r = 0; r < cfg.rows; r++) {
     const rowNum = r + 1;
-    const isRed  = cfg.redLayers.includes(rowNum);
+    const isRed = cfg.redLayers.includes(rowNum);
     const isGoal = rowNum === cfg.goalLayer;
-    const isInteractable = (r === rogueCurrentLayer);
+    const isInteractable = r === rogueCurrentLayer;
 
     // special rows
     if (isRed || isGoal) {
       // have single cell span all columns
-      const c   = cfg.centerCol;
-      const id  = `rogue-${r}-${c}`;
+      const c = cfg.centerCol;
+      const id = `rogue-${r}-${c}`;
       const div = document.createElement("div");
       div.className = "objective rogue-cell";
       div.dataset.row = r;
       div.dataset.col = c;
       div.style.gridColumn = `1 / -1`;
 
-      if (isRed)  div.classList.add("rogue-red");
+      if (isRed) div.classList.add("rogue-red");
       if (isGoal) div.classList.add("rogue-goal");
 
       const visible = rogueVisibleMap[r][c];
-      const state   = squareStates[id] || 0;
+      const state = squareStates[id] || 0;
 
       // shiny goals
       if (shinyMode && shinySquares.has(id)) div.classList.add("shiny");
@@ -699,6 +747,8 @@ function renderRoguelikeBoard() {
         if (isInteractable && state !== 2) {
           _attachRogueListeners(div, r, c, id);
         }
+
+        updateCountBadge(div, id);
       }
 
       board.appendChild(div);
@@ -716,14 +766,14 @@ function renderRoguelikeBoard() {
         continue;
       }
 
-      const id  = `rogue-${r}-${c}`;
+      const id = `rogue-${r}-${c}`;
       const div = document.createElement("div");
       div.className = "objective rogue-cell";
       div.dataset.row = r;
       div.dataset.col = c;
 
       const visible = rogueVisibleMap[r][c];
-      const state   = squareStates[id] || 0;
+      const state = squareStates[id] || 0;
 
       // shiny goals
       if (shinyMode && shinySquares.has(id)) div.classList.add("shiny");
@@ -731,7 +781,7 @@ function renderRoguelikeBoard() {
       if (!visible) {
         div.classList.add("rogue-hidden");
       } else {
-        const overrideLabel = (rowNum === 1) ? "START" : null;
+        const overrideLabel = rowNum === 1 ? "START" : null;
         _applyObjectiveContent(div, cell.obj, overrideLabel);
         div.classList.remove("border-mark", "completed", "rogue-passed");
         if (state === 1) div.classList.add("border-mark");
@@ -740,11 +790,13 @@ function renderRoguelikeBoard() {
         if (isInteractable && state !== 2) {
           _attachRogueListeners(div, r, c, id);
         }
+
+        updateCountBadge(div, id);
       }
 
       board.appendChild(div);
     }
-}  
+  }
 }
 
 // fill square with objective
@@ -761,8 +813,8 @@ function _applyObjectiveContent(div, obj, overrideLabel = null) {
   // icon toggle
   if (iconsEnabled && obj.icon) {
     const img = document.createElement("img");
-    img.src   = obj.icon;
-    img.alt   = obj.name;
+    img.src = obj.icon;
+    img.alt = obj.name;
     div.appendChild(img);
   } else {
     div.textContent = obj.name;
@@ -782,28 +834,29 @@ function _attachRogueListeners(div, r, c, id) {
   div.addEventListener("contextmenu", (e) => {
     e.preventDefault();
     if ((squareStates[id] || 0) >= 2) return;
-    const newState = (squareStates[id] === 1) ? 0 : 1;
+    const newState = squareStates[id] === 1 ? 0 : 1;
     setSquareState(div, id, newState);
   });
 
   // scroll wheel
   div.addEventListener("wheel", (e) => {
     e.preventDefault();
-    if ((squareStates[id] || 0) >= 2) return;
-    const dir = e.deltaY < 0 ? 1 : -1;
-    cycleSquare(div, id, dir);
-    // if state 2, treat it as a completion
-    if ((squareStates[id] || 0) === 2) {
-      _progressRogue(r, c, id);
+    if (wheelCheckbox.checked) {
+      if ((squareStates[id] || 0) >= 2) return;
+      const dir = e.deltaY < 0 ? 1 : -1;
+      cycleSquare(div, id, dir);
+      if ((squareStates[id] || 0) === 2) _progressRogue(r, c, id);
+    } else {
+      handleCountScroll(e, div, id);
     }
   });
 }
 
 // keep track of current layer
 function _progressRogue(r, c, id) {
-  const cfg    = rogueConfig;
+  const cfg = rogueConfig;
   const rowNum = r + 1;
-  const isRed  = cfg.redLayers.includes(rowNum);
+  const isRed = cfg.redLayers.includes(rowNum);
   const isGoal = rowNum === cfg.goalLayer;
 
   if (isGoal) {
@@ -840,12 +893,13 @@ function _progressRogue(r, c, id) {
 
 // Reveal "adjacent" squares on next layer
 function _revealChildren(r, c, cfg) {
-  const nextR    = r + 1;
+  const nextR = r + 1;
   if (nextR >= cfg.rows) return;
 
-  const widths     = _computeLayerWidths(cfg);
+  const widths = _computeLayerWidths(cfg);
   const nextRowNum = nextR + 1;
-  const isNextSpecial = cfg.redLayers.includes(nextRowNum) || nextRowNum === cfg.goalLayer;
+  const isNextSpecial =
+    cfg.redLayers.includes(nextRowNum) || nextRowNum === cfg.goalLayer;
 
   if (isNextSpecial) {
     // red/goal rows have exactly one cell — always the center col
@@ -854,7 +908,7 @@ function _revealChildren(r, c, cfg) {
   }
 
   // normal row: reveal up to 3 children clamped to the active range
-  const w    = widths[nextR];
+  const w = widths[nextR];
   const half = Math.floor(w / 2);
   const minC = cfg.centerCol - half;
   const maxC = cfg.centerCol + half;
@@ -876,32 +930,34 @@ function _revealRow(r, cfg) {
 }
 
 // Icon toggle listener
-document.getElementById('icon-Checkbox').addEventListener('change', function () {
-  iconsEnabled = this.checked;
+document
+  .getElementById("icon-Checkbox")
+  .addEventListener("change", function () {
+    iconsEnabled = this.checked;
 
-  // re-render whichever board is active. do not re-render if rush mode
-  if (explorationBoard?.length) renderExplorationBoard();
-  if (bingoBoard?.length) renderTraditionalBoard();
-  if (currentRound?.length) applyIconMode(iconsEnabled);
-  if (rogueConfig) renderRoguelikeBoard();
-});
+    // re-render whichever board is active. do not re-render if rush mode
+    if (explorationBoard?.length) renderExplorationBoard();
+    if (bingoBoard?.length) renderTraditionalBoard();
+    if (currentRound?.length) applyIconMode(iconsEnabled);
+    if (rogueConfig) renderRoguelikeBoard();
+  });
 
 // Icon toggle for Rush Mode
 function applyIconMode(iconsEnabled) {
-  const squares = board.querySelectorAll('.objective');
+  const squares = board.querySelectorAll(".objective");
 
   squares.forEach((div, index) => {
     const obj = currentRound?.[index];
     if (!obj) return;
 
-    div.innerHTML = '';
+    div.innerHTML = "";
 
     if (iconsEnabled && obj.icon) {
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = obj.icon;
       img.alt = obj.name;
-      img.style.width = '100px';
-      img.style.height = '100px';
+      img.style.width = "100px";
+      img.style.height = "100px";
       div.appendChild(img);
     } else {
       div.textContent = obj.name;

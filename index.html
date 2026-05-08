@@ -168,7 +168,7 @@
   </div>
 
   <div id="colorOptions">
-    <label>
+    <label style="font-weight: bold;">
       Color:
       <select id="colorPicker" class="dropdown">
         <option value="green">Green</option>
@@ -181,13 +181,25 @@
     </label>
   </div>
 
-  <div id="icon-toggle" class="hidden in-game-sliders">
-    <label class="custom-checkbox tag-checkbox">
-        <span class="label-text">Icons:
-        </span>
-         <input type="checkbox" id="icon-Checkbox" checked>
-        <span class="slider"></span>
-    </label>
+  <div id="board-controls" class="hidden">
+    <div id="icon-toggle" class="in-game-sliders">
+      <label class="custom-checkbox tag-checkbox" style="font-weight: bold;">
+          <span class="label-text">Icons:
+          </span>
+           <input type="checkbox" id="icon-Checkbox" checked>
+          <span class="slider"></span>
+      </label>
+    </div>
+
+    <div id="wheel-toggle" class="in-game-sliders">
+      <label class="custom-checkbox tag-checkbox" style="font-weight: bold;">
+          <span class="label-text">Wheel Mode: 
+          </span>
+           <input type="checkbox" id="wheel-Checkbox" checked>
+          <span class="slider"></span>
+          <span id="wheel-mode-label">Mark</span>
+      </label>
+    </div>
   </div>
 
 </div>

@@ -298,6 +298,7 @@ button:hover {
   justify-content: center;
   box-sizing: border-box;
   font-size: 20px;
+  position: relative;
 }
 
 .objective img {
@@ -859,4 +860,20 @@ input {
   filter: grayscale(60%);
   cursor: default;
   pointer-events: none;
+}
+
+#wheel-mode-label {
+  font-weight: lighter;
+}
+
+.square-count {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
 }

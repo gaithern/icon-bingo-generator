@@ -230,19 +230,28 @@ function _isPhantomCell(rowNum, col, cfg) {
   return isSpecial && col !== cfg.centerCol;
 }
 
-// Scroll wheel toggles in-game sliders
-let wheelCooldown = false;
+// Board page scroll wheel toggles
+const scrollToggles = [
+  {
+    toggle: document.getElementById("icon-toggle"),
+    checkbox: document.getElementById("icon-Checkbox"),
+  },
+  {
+    toggle: document.getElementById("wheel-toggle"),
+    checkbox: document.getElementById("wheel-Checkbox"),
+  },
+];
 
-document.querySelectorAll(".in-game-sliders").forEach(function (toggle) {
+scrollToggles.forEach(function ({ toggle, checkbox }) {
   let wheelCooldown = false;
 
   toggle.addEventListener(
     "wheel",
     function (e) {
       e.preventDefault();
+      e.stopPropagation(); // stops the event from reaching #board-controls or other parents
       if (wheelCooldown) return;
 
-      const checkbox = toggle.querySelector('input[type="checkbox"]');
       checkbox.checked = !checkbox.checked;
       checkbox.dispatchEvent(new Event("change"));
 
@@ -251,4 +260,11 @@ document.querySelectorAll(".in-game-sliders").forEach(function (toggle) {
     },
     { passive: false },
   );
+});
+
+const wheelCheckbox = document.getElementById("wheel-Checkbox");
+const wheelModeLabel = document.getElementById("wheel-mode-label");
+
+wheelCheckbox.addEventListener("change", function () {
+  wheelModeLabel.textContent = this.checked ? "Mark" : "Count";
 });

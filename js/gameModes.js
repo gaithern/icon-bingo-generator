@@ -71,10 +71,10 @@ function validateGameSetup() {
     const cfg = ROGUELIKE_CONFIGS[sizeKey];
     if (!cfg) return;
 
-    rogueConfig       = { ...cfg, key: sizeKey };
-    rogueBoard        = [];
-    rogueVisibleMap   = [];
-    rogueLastCol      = null;
+    rogueConfig = { ...cfg, key: sizeKey };
+    rogueBoard = [];
+    rogueVisibleMap = [];
+    rogueLastCol = null;
     rogueCurrentLayer = 0;
 
     const widths = _computeLayerWidths(cfg);
@@ -82,7 +82,7 @@ function validateGameSetup() {
     // objectives needed: every active cell except the START square
     const totalNeeded = widths.reduce((s, w) => s + w, 0) - 1;
     if (allObjectives.length < totalNeeded) {
-      return 'Not enough objectives for this board size!';
+      return "Not enough objectives for this board size!";
     }
   }
 
@@ -179,7 +179,8 @@ function generateGame() {
 
       for (let r = 0; r < cfg.rows; r++) {
         const rowNum = r + 1;
-        if (cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer) continue;
+        if (cfg.redLayers.includes(rowNum) || rowNum === cfg.goalLayer)
+          continue;
 
         for (let c = 0; c < cfg.maxWidth; c++) {
           if (r === 0 && c === cfg.centerCol) continue; // START square
@@ -209,7 +210,7 @@ function generateGame() {
     shinyRounds.clear();
 
     pickShinyRounds(totalRounds, shinyCount, rng).forEach((r) =>
-      shinyRounds.add(r)
+      shinyRounds.add(r),
     );
   }
 
@@ -236,7 +237,7 @@ function generateGame() {
   document.getElementById("copyShareLink2").classList.remove("hidden");
   document.getElementById("copyPresetLink2").classList.remove("hidden");
   document.getElementById("backToOptions").classList.remove("hidden");
-  document.getElementById("icon-toggle").classList.remove("hidden");
+  document.getElementById("board-controls").classList.remove("hidden");
 
   board.style.display = "grid";
   updateModeUIVisibility();
