@@ -24,11 +24,11 @@
     "icon": "icons/kh2-generic/boss-thunder.webp" 
   },
   { 
-    "name": "Defeat a boss with a ground finisher", 
+    "name": "Defeat a boss with a ground attack", 
     "icon": "icons/kh2-generic/boss-ground.webp" 
   },
   { 
-    "name": "Defeat a boss with an air finisher", 
+    "name": "Defeat a boss with an air attack", 
     "icon": "icons/kh2-generic/boss-air.webp" 
   },
   { 
@@ -159,25 +159,13 @@
     "name": "Let Donald or Goofy kill an enemy", 
     "icon": "icons/kh2-generic/dg-enemy.webp" 
   },
+  {
+    "name": "Let a party member kill an enemy (Not Donald or Goofy)",
+    "icon": "icons/kh1-generic/party-enemy.webp"
+  },
   { 
     "name": "Synth 3 unique items", 
     "icon": "icons/kh2-generic/synth-3.webp" 
-  },
-  { 
-    "name": "Collect 7 unique synth materials", 
-    "icon": "icons/kh2-generic/material-7.webp"
-  },
-  {
-    "name": "Obtain 3 unique synth materials",
-    "icon": "icons/kh1-generic/material-3.webp"
-  },
-  {
-    "name": "Obtain 5 unique synth materials",
-    "icon": "icons/kh1-generic/material-5.webp"
-  },
-  {
-    "name": "Obtain 7 unique synth materials",
-    "icon": "icons/kh1-generic/material-7.webp"
   },
   { 
     "name": "Complete a Cup", 
