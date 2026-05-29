@@ -193,7 +193,12 @@ The list must have a "name" property for each objective. "icon" is optional. Cus
 
 ## Credits
 
-Icons from https://www.khwiki.com and https://televo.github.io/kingdom-hearts-recollection/
+Icons from:
+
+- https://www.khwiki.com
+- https://televo.github.io/kingdom-hearts-recollection/
+- https://zelda.fandom.com/wiki/Zelda_Wiki
+- https://www.zeldadungeon.net/wiki/Main_Page
 
 Based on:
 
