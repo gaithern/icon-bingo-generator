@@ -1,0 +1,589 @@
+[
+  {
+    "name": "Beat the Deku Tree",
+    "icon": "icons/oot/dungeon-deku.webp"
+  },
+  {
+    "name": "Beat Dodongo's Cavern",
+    "icon": "icons/oot/dungeon-dodongo.webp"
+  },
+  {
+    "name": "Beat Jabu-Jabu's Belly",
+    "icon": "icons/oot/dungeon-jabu.webp"
+  },
+  {
+    "name": "Beat the Forest Temple",
+    "icon": "icons/oot/dungeon-forest.webp"
+  },
+  {
+    "name": "Beat the Fire Temple",
+    "icon": "icons/oot/dungeon-fire.webp"
+  },
+  {
+    "name": "Beat the Water Temple",
+    "icon": "icons/oot/dungeon-water.webp"
+  },
+  {
+    "name": "Beat the Shadow Temple",
+    "icon": "icons/oot/dungeon-shadow.webp"
+  },
+  {
+    "name": "Beat the Spirit Temple",
+    "icon": "icons/oot/dungeon-spirit.webp"
+  },
+  {
+    "name": "Kokiri's Emerald",
+    "icon": "icons/oot/stone-forest.webp"
+  },
+  {
+    "name": "Goron's Ruby",
+    "icon": "icons/oot/stone-fire.webp"
+  },
+  {
+    "name": "Zora's Sapphire",
+    "icon": "icons/oot/stone-water.webp"
+  },
+  {
+    "name": "Forest Medallion",
+    "icon": "icons/oot/medallion-forest.webp"
+  },
+  {
+    "name": "Fire Medallion",
+    "icon": "icons/oot/medallion-fire.webp"
+  },
+  {
+    "name": "Water Medallion",
+    "icon": "icons/oot/medallion-water.webp"
+  },
+  {
+    "name": "Spirit Medallion",
+    "icon": "icons/oot/medallion-spirit.webp"
+  },
+  {
+    "name": "Shadow Medallion",
+    "icon": "icons/oot/medallion-shadow.webp"
+  },
+  {
+    "name": "Light Medallion",
+    "icon": "icons/oot/medallion-light.webp"
+  },
+  {
+    "name": "Defeat Queen Gohma",
+    "icon": "icons/oot/gohma.webp"
+  },
+  {
+    "name": "Defeat King Dodongo",
+    "icon": "icons/oot/king-dodongo.webp"
+  },
+  {
+    "name": "Defeat Barinade",
+    "icon": "icons/oot/barinade.webp"
+  },
+  {
+    "name": "Defeat Phantom Ganon",
+    "icon": "icons/oot/phantom-ganon.webp"
+  },
+  {
+    "name": "Defeat Volvagia",
+    "icon": "icons/oot/volvagia.webp"
+  },
+  {
+    "name": "Defeat Morpha",
+    "icon": "icons/oot/morpha.webp"
+  },
+  {
+    "name": "Defeat Bongo-Bongo",
+    "icon": "icons/oot/bongo-bongo.webp"
+  },
+  {
+    "name": "Defeat Twinrova",
+    "icon": "icons/oot/twinrova.webp"
+  },
+  {
+    "name": "Defeat Dark Link",
+    "icon": "icons/oot/dark-link.webp"
+  },
+  {
+    "name": "Defeat all Lizalfos in Dodongo's Cavern",
+    "icon": "icons/oot/lizalfos.webp"
+  },
+  {
+    "name": "Defeat both Flare Dancers",
+    "icon": "icons/oot/flare-dancer.webp"
+  },
+  {
+    "name": "Free all 9 Gorons in Fire Temple",
+    "icon": "icons/oot/goron.webp"
+  },
+  {
+    "name": "Defeat Big Octo",
+    "icon": "icons/oot/big-octo.webp"
+  },
+  {
+    "name": "Defeat a Skull Kid",
+    "icon": "icons/oot/skull-kid.webp"
+  },
+  {
+    "name": "Defeat a White Wolfos",
+    "icon": "icons/oot/wolfos.webp"
+  },
+  {
+    "name": "Defeat Amy (Green Poe)",
+    "icon": "icons/oot/poe-green.webp"
+  },
+  {
+    "name": "Defeat Meg (Purple Poe)",
+    "icon": "icons/oot/poe-purple.webp"
+  },
+  {
+    "name": "Zelda's Lullaby",
+    "icon": "icons/oot/lullaby.webp"
+  },
+  {
+    "name": "Epona's Song",
+    "icon": "icons/oot/eponas.webp"
+  },
+  {
+    "name": "Saria's Song",
+    "icon": "icons/oot/sarias.webp"
+  },
+  {
+    "name": "Sun's Song",
+    "icon": "icons/oot/suns.webp"
+  },
+  {
+    "name": "Song of Time",
+    "icon": "icons/oot/time.webp"
+  },
+  {
+    "name": "Song of Storms",
+    "icon": "icons/oot/storms.webp"
+  },
+  {
+    "name": "Minuet of Forest",
+    "icon": "icons/oot/minuet.webp"
+  },
+  {
+    "name": "Bolero of Fire",
+    "icon": "icons/oot/bolero.webp"
+  },
+  {
+    "name": "Serenade of Water",
+    "icon": "icons/oot/serenade.webp"
+  },
+  {
+    "name": "Requiem of Spirit",
+    "icon": "icons/oot/requiem.webp"
+  },
+  {
+    "name": "Nocturne of Shadow",
+    "icon": "icons/oot/nocturne.webp"
+  },
+  {
+    "name": "Prelude of Light",
+    "icon": "icons/oot/prelude.webp"
+  },
+  {
+    "name": "3 Songs",
+    "icon": "icons/oot/songs-3.webp"
+  },
+  {
+    "name": "4 Songs",
+    "icon": "icons/oot/songs-4.webp"
+  },
+  {
+    "name": "5 Songs",
+    "icon": "icons/oot/songs-5.webp"
+  },
+  {
+    "name": "6 Songs",
+    "icon": "icons/oot/songs-6.webp"
+  },
+  {
+    "name": "5 Hearts",
+    "icon": "icons/oot/hearts-5.webp"
+  },
+  {
+    "name": "6 Hearts",
+    "icon": "icons/oot/hearts-6.webp"
+  },
+  {
+    "name": "7 Hearts",
+    "icon": "icons/oot/hearts-7.webp"
+  },
+  {
+    "name": "Lost Dog HP",
+    "icon": "icons/oot/richard.webp"
+  },
+  {
+    "name": "Goron Tunic",
+    "icon": "icons/oot/tunic-goron.webp"
+  },
+  {
+    "name": "Zora Tunic",
+    "icon": "icons/oot/tunic-zora.webp"
+  },
+  {
+    "name": "3 Tunics",
+    "icon": "icons/oot/tunic-3.webp"
+  },
+  {
+    "name": "Iron Boots",
+    "icon": "icons/oot/iron-boots.webp"
+  },
+  {
+    "name": "Hover Boots",
+    "icon": "icons/oot/hover-boots.webp"
+  },
+  {
+    "name": "2 Boots",
+    "icon": "icons/oot/boots-2.webp"
+  },
+  {
+    "name": "2 Shields",
+    "icon": "icons/oot/shields-2.webp"
+  },
+  {
+    "name": "Mirror Shield",
+    "icon": "icons/oot/mirror-shield.webp"
+  },
+  {
+    "name": "3 Swords",
+    "icon": "icons/oot/swords-3.webp"
+  },
+  {
+    "name": "Giant's Knife",
+    "icon": "icons/oot/giants-knife.webp"
+  },
+  {
+    "name": "Biggoron's Sword",
+    "icon": "icons/oot/biggoron-sword.webp"
+  },
+  {
+    "name": "Bottled Fairy",
+    "icon": "icons/oot/bottle-fairy.webp"
+  },
+  {
+    "name": "Milk",
+    "icon": "icons/oot/milk.webp"
+  },
+  {
+    "name": "4 Bottles of Milk",
+    "icon": "icons/oot/milk-4.webp"
+  },
+  {
+    "name": "Blue Fire",
+    "icon": "icons/oot/blue-fire.webp"
+  },
+  {
+    "name": "Bottled Poe",
+    "icon": "icons/oot/bottle-poe.webp"
+  },
+  {
+    "name": "Ruto's Letter",
+    "icon": "icons/oot/rutos-letter.webp"
+  },
+  {
+    "name": "4 Different Bottled Contents",
+    "icon": "icons/oot/bottle-contents-4.webp"
+  },
+  {
+    "name": "4 Bottles",
+    "icon": "icons/oot/bottle-4.webp"
+  },
+  {
+    "name": "Blue Potion",
+    "icon": "icons/oot/potion-blue.webp"
+  },
+  {
+    "name": "Red Potion",
+    "icon": "icons/oot/potion-red.webp"
+  },
+  {
+    "name": "Green Potion",
+    "icon": "icons/oot/potion-green.webp"
+  },
+  {
+    "name": "Plant 3 Magic Beans",
+    "icon": "icons/oot/beans-3.webp"
+  },
+  {
+    "name": "Plant 4 Magic Beans",
+    "icon": "icons/oot/beans-4.webp"
+  },
+  {
+    "name": "Plant 5 Magic Beans",
+    "icon": "icons/oot/beans-5.webp"
+  },
+  {
+    "name": "Plant bean in Death Mountain Crater",
+    "icon": "icons/oot/beans-crater.webp"
+  },
+  {
+    "name": "Forest Temple Boss Key",
+    "icon": "icons/oot/bosskey-forest.webp"
+  },
+  {
+    "name": "Fire Temple Boss Key",
+    "icon": "icons/oot/bosskey-fire.webp"
+  },
+  {
+    "name": "Water Temple Boss Key",
+    "icon": "icons/oot/bosskey-water.webp"
+  },
+  {
+    "name": "Shadow Temple Boss Key",
+    "icon": "icons/oot/bosskey-shadow.webp"
+  },
+  {
+    "name": "Spirit Temple Boss Key",
+    "icon": "icons/oot/bosskey-spirit.webp"
+  },
+  {
+    "name": "2 Boss Keys",
+    "icon": "icons/oot/boss-keys-2.webp"
+  },
+  {
+    "name": "3 Boss Keys",
+    "icon": "icons/oot/boss-keys-3.webp"
+  },
+  {
+    "name": "Open 2 Boss Key Doors",
+    "icon": "icons/oot/boss-door-2.webp"
+  },
+  {
+    "name": "Open 3 Boss Key Doors",
+    "icon": "icons/oot/boss-door-3.webp"
+  },
+  {
+    "name": "15 Different Skulltulas",
+    "icon": "icons/oot/skulltulas-15.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "20 Different Skulltulas",
+    "icon": "icons/oot/skulltulas-20.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "25 Different Skulltulas",
+    "icon": "icons/oot/skulltulas-25.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "30 Different Skulltulas",
+    "icon": "icons/oot/skulltulas-30.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "1 Skulltula from each Child Dungeon",
+    "icon": "icons/oot/skulltulas-child.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "1 Skulltula from each Adult Dungeon",
+    "icon": "icons/oot/skulltulas-adult.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 4 Skulltulas in Deku Tree",
+    "icon": "icons/oot/skulltulas-deku.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Dodongo's Cavern",
+    "icon": "icons/oot/skulltulas-dodongo.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 4 Skulltulas in Jabu-Jabu",
+    "icon": "icons/oot/skulltulas-jabu.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Forest Temple",
+    "icon": "icons/oot/skulltulas-forest.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Fire Temple",
+    "icon": "icons/oot/skulltulas-fire.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Water Temple",
+    "icon": "icons/oot/skulltulas-water.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Shadow Temple",
+    "icon": "icons/oot/skulltulas-shadow.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 5 Skulltulas in Spirit Temple",
+    "icon": "icons/oot/skulltulas-spirit.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 3 Skulltulas in Bottom of the Well",
+    "icon": "icons/oot/skulltulas-botw.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 3 Skulltulas in Ice Cavern",
+    "icon": "icons/oot/skulltulas-ice.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 8 Kakariko area Skulltulas",
+    "icon": "icons/oot/skulltulas-kak.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "All 4 Market area Skulltulas",
+    "icon": "icons/oot/skulltulas-market.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "2 Skulltulas in Lon Lon Ranch",
+    "icon": "icons/oot/skulltulas-ranch.webp",
+    "tags": ["Skulltulas"]
+  },
+  {
+    "name": "Exactly 20 Deku Sticks",
+    "icon": "icons/oot/deku-sticks-20.webp"
+  },
+  {
+    "name": "Exactly 30 Deku Sticks",
+    "icon": "icons/oot/deku-sticks-30.webp"
+  },
+  {
+    "name": "30 Deku Nuts",
+    "icon": "icons/oot/deku-nuts-30.webp"
+  },
+  {
+    "name": "Bomb Bag (30)",
+    "icon": "icons/oot/bomb-bag-30.webp"
+  },
+  {
+    "name": "Bullet Bag (40)",
+    "icon": "icons/oot/bullet-bag-40.webp"
+  },
+  {
+    "name": "Bullet Bag (50)",
+    "icon": "icons/oot/bullet-bag-50.webp"
+  },
+  {
+    "name": "Quiver (40)",
+    "icon": "icons/oot/quiver-40.webp"
+  },
+  {
+    "name": "Quiver (50)",
+    "icon": "icons/oot/quiver-50.webp"
+  },
+  {
+    "name": "Fairy Slingshot",
+    "icon": "icons/oot/slingshot.webp"
+  },
+  {
+    "name": "Boomerang",
+    "icon": "icons/oot/boomerang.webp"
+  },
+  {
+    "name": "Fairy Bow",
+    "icon": "icons/oot/fairy-bow.webp"
+  },
+  {
+    "name": "Fire Arrows",
+    "icon": "icons/oot/fire-arrows.webp"
+  },
+  {
+    "name": "Ice Arrows",
+    "icon": "icons/oot/ice-arrows.webp"
+  },
+  {
+    "name": "All 3 Elemental Arrows",
+    "icon": "icons/oot/arrows.webp"
+  },
+  {
+    "name": "Hookshot",
+    "icon": "icons/oot/hookshot.webp"
+  },
+  {
+    "name": "Longshot",
+    "icon": "icons/oot/longshot.webp"
+  },
+  {
+    "name": "Megaton Hammer",
+    "icon": "icons/oot/megaton-hammer.webp"
+  },
+  {
+    "name": "Lens of Truth",
+    "icon": "icons/oot/lens-of-truth.webp"
+  },
+  {
+    "name": "Din's Fire",
+    "icon": "icons/oot/dins-fire.webp"
+  },
+  {
+    "name": "Farore's Wind",
+    "icon": "icons/oot/farores-wind.webp"
+  },
+  {
+    "name": "Nayru's Love",
+    "icon": "icons/oot/nayrus-love.webp"
+  },
+  {
+    "name": "Goron Bracelet",
+    "icon": "icons/oot/goron-bracelet.webp"
+  },
+  {
+    "name": "Silver Gauntlets",
+    "icon": "icons/oot/silver-gauntlets.webp"
+  },
+  {
+    "name": "Golden Gauntlets",
+    "icon": "icons/oot/golden-gauntlets.webp"
+  },
+  {
+    "name": "Silver Scale",
+    "icon": "icons/oot/silver-scale.webp"
+  },
+  {
+    "name": "Golden Scale",
+    "icon": "icons/oot/golden-scale.webp"
+  },
+  {
+    "name": "Magic Bar",
+    "icon": "icons/oot/magic-1.webp"
+  },
+  {
+    "name": "Double Magic",
+    "icon": "icons/oot/magic-2.webp"
+  },
+  {
+    "name": "Fairy Ocarina",
+    "icon": "icons/oot/fairy-ocarina.webp"
+  },
+  {
+    "name": "Keaton Mask",
+    "icon": "icons/oot/keaton-mask.webp"
+  },
+  {
+    "name": "Skull Mask",
+    "icon": "icons/oot/skull-mask.webp"
+  },
+  {
+    "name": "99 Rupees",
+    "icon": "icons/oot/rupee-99.webp"
+  },
+  {
+    "name": "Win Bombchu Bowling Prize",
+    "icon": "icons/oot/bombchu-game.webp"
+  },
+  {
+    "name": "Cow in House",
+    "icon": "icons/oot/cow.webp"
+  }
+]

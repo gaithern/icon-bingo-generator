@@ -11,7 +11,7 @@ const GAME_LISTS = {
         id: "kh1-generic",
         name: "Generic",
         file: "kh1-generic.json",
-      }
+      },
     ],
   },
 
@@ -47,14 +47,26 @@ const GAME_LISTS = {
       {
         id: "kh3-default",
         name: "Default",
-        file: "kh3-default.json"
-      }
-    ]
-  }
+        file: "kh3-default.json",
+      },
+    ],
+  },
+
+  oot: {
+    name: "Zelda: Ocarina of Time",
+    lists: [
+      {
+        id: "oot-default",
+        name: "Default",
+        file: "zelda-oot.json",
+      },
+    ],
+  },
 };
 
 const DEFAULT_LIST_BY_GAME = {
   kh1: "kh1-ap.json",
   kh2: "kh2-generic.json",
   kh3: "kh3-default.json",
+  oot: "zelda-oot.json",
 };
