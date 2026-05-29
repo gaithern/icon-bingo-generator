@@ -205,4 +205,5 @@ Based on:
 - [Lockout.Live](https://beta.lockout.live/) by DotoPotato
 - [Hollow Knight Exploration Bingo](https://butchie1331.github.io/hk-exploration-bingo) by butchie1331 and the Hollow Knight speedrun community
 - [Breath of the Wild Bingo](https://lepelog.github.io/botw-bingo) by lepelog
+- [Ocarina of Time Bingo](https://ootbingo.github.io/bingo/bingo.html) by various OoT Bingo community members
 - https://cj-2123.github.io/kh2-exploration-bingo/ - old KH bingo generator
