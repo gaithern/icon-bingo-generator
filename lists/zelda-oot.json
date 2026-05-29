@@ -451,20 +451,43 @@
     "tags": ["Skulltulas"]
   },
   {
+    "name": "Exactly 10 Deku Sticks",
+    "icon": "icons/oot/deku-sticks-10.webp"
+  },
+  {
     "name": "Exactly 20 Deku Sticks",
     "icon": "icons/oot/deku-sticks-20.webp"
   },
   {
     "name": "Exactly 30 Deku Sticks",
-    "icon": "icons/oot/deku-sticks-30.webp"
+    "icon": "icons/oot/deku-sticks-30.webp",
+    "tags": ["Max Upgrades"]
+  },
+  {
+    "name": "10 Deku Nuts",
+    "icon": "icons/oot/deku-nuts-10.webp"
+  },
+  {
+    "name": "20 Deku Nuts",
+    "icon": "icons/oot/deku-nuts-20.webp"
   },
   {
     "name": "30 Deku Nuts",
-    "icon": "icons/oot/deku-nuts-30.webp"
+    "icon": "icons/oot/deku-nuts-30.webp",
+    "tags": ["Max Upgrades"]
+  },
+  {
+    "name": "Bomb Bag (20)",
+    "icon": "icons/oot/bomb-bag-20.webp"
   },
   {
     "name": "Bomb Bag (30)",
     "icon": "icons/oot/bomb-bag-30.webp"
+  },
+  {
+    "name": "Bomb Bag (40)",
+    "icon": "icons/oot/bomb-bag-40.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Bullet Bag (40)",
@@ -472,7 +495,8 @@
   },
   {
     "name": "Bullet Bag (50)",
-    "icon": "icons/oot/bullet-bag-50.webp"
+    "icon": "icons/oot/bullet-bag-50.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Quiver (40)",
@@ -480,7 +504,8 @@
   },
   {
     "name": "Quiver (50)",
-    "icon": "icons/oot/quiver-50.webp"
+    "icon": "icons/oot/quiver-50.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Fairy Slingshot",
@@ -544,7 +569,8 @@
   },
   {
     "name": "Golden Gauntlets",
-    "icon": "icons/oot/golden-gauntlets.webp"
+    "icon": "icons/oot/golden-gauntlets.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Silver Scale",
@@ -552,7 +578,8 @@
   },
   {
     "name": "Golden Scale",
-    "icon": "icons/oot/golden-scale.webp"
+    "icon": "icons/oot/golden-scale.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Magic Bar",
@@ -560,7 +587,8 @@
   },
   {
     "name": "Double Magic",
-    "icon": "icons/oot/magic-2.webp"
+    "icon": "icons/oot/magic-2.webp",
+    "tags": ["Max Upgrades"]
   },
   {
     "name": "Fairy Ocarina",
@@ -575,8 +603,16 @@
     "icon": "icons/oot/skull-mask.webp"
   },
   {
+    "name": "Gerudo Card",
+    "icon": "icons/oot/gerudo-card.webp"
+  },
+  {
     "name": "99 Rupees",
     "icon": "icons/oot/rupee-99.webp"
+  },
+  {
+    "name": "200 Rupees",
+    "icon": "icons/oot/rupee-200.webp"
   },
   {
     "name": "Win Bombchu Bowling Prize",
