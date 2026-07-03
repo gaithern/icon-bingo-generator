@@ -104,14 +104,14 @@ function buildShareURL(isGameLink = false) {
 function copyShareLink() {
   const url = buildShareURL();
   navigator.clipboard.writeText(url);
-  alert("Share link copied!");
+  alert("Preset link copied!");
 }
 
 // Share game/board link button
 function copyGameLink() {
   const url = window.location.href;
   navigator.clipboard.writeText(url);
-  alert("Game link copied!");
+  alert("Board link copied!");
 }
 
 // User input shiny count or default
