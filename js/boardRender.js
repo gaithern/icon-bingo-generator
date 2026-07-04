@@ -164,6 +164,19 @@ function renderTraditionalBoard() {
 
     board.appendChild(div);
   });
+
+  // Re-apply square states after re-render
+  bingoBoard.forEach((obj, index) => {
+    const id = `bingo-${index}`;
+    const div = board.children[index];
+    const state = squareStates[id] || 0;
+
+    div.classList.remove("border-mark", "completed");
+    if (state === 1) div.classList.add("border-mark");
+    if (state === 2) div.classList.add("completed");
+  });
+
+  updateBingoHighlights();
 }
 
 // Bingo checking
