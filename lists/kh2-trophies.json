@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Obtain all trophies",
+    "icon": "icons/kh2-trophies/kh2-master.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear game on Critical",
+    "icon": "icons/kh2-trophies/critical-competitor.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear game on Proud Mode or a higher difficulty",
+    "icon": "icons/kh2-trophies/proud-player.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear the game and watch the ending sequence",
+    "icon": "icons/kh2-trophies/ambitious-adventurer.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Get Sora to Level 99",
+    "icon": "icons/kh2-trophies/level-master.webp"
+  },
+  {
+    "name": "Get rescued by the King",
+    "icon": "icons/kh2-trophies/my-hero.webp"
+  },
+  {
+    "name": "Defeat the Lingering Will",
+    "icon": "icons/kh2-trophies/lingering-will.webp"
+  },
+  {
+    "name": "Defeat Sephiroth",
+    "icon": "icons/kh2-trophies/one-winged-angel.webp"
+  },
+  {
+    "name": "Defeat all Organization XIII Replica Data",
+    "icon": "icons/kh2-trophies/to-rule-them-all.webp"
+  },
+  {
+    "name": "Satisfy every member of Mushroom XIII",
+    "icon": "icons/kh2-trophies/mushroom-master.webp"
+  },
+  {
+    "name": "Win the Pain and Panic Cup",
+    "icon": "icons/kh2-trophies/rookie.webp"
+  },
+  {
+    "name": "Win the Cerberus Cup",
+    "icon": "icons/kh2-trophies/novice-hero.webp"
+  },
+  {
+    "name": "Win the Titan Cup",
+    "icon": "icons/kh2-trophies/artisan-hero.webp"
+  },
+  {
+    "name": "Win the Goddess of Fate Cup",
+    "icon": "icons/kh2-trophies/true-hero.webp"
+  },
+  {
+    "name": "Win the Pain and Panic Paradox Cup",
+    "icon": "icons/kh2-trophies/coliseum-competitor.webp"
+  },
+  {
+    "name": "Win the Cerberus Paradox Cup",
+    "icon": "icons/kh2-trophies/coliseum-star.webp"
+  },
+  {
+    "name": "Win the Titan Paradox Cup",
+    "icon": "icons/kh2-trophies/hero-of-the-coliseum.webp"
+  },
+  {
+    "name": "Win the Hades Paradox Cup",
+    "icon": "icons/kh2-trophies/coliseum-champion.webp"
+  },
+  {
+    "name": "Complete Roxas's episode",
+    "icon": "icons/kh2-trophies/summers-end.webp"
+  },
+  {
+    "name": "Complete the Timeless River episode",
+    "icon": "icons/kh2-trophies/a-timeless-world.webp"
+  },
+  {
+    "name": "Complete the Land of Dragons episodes",
+    "icon": "icons/kh2-trophies/above-honor.webp"
+  },
+  {
+    "name": "Complete the Beast's Castle episodes",
+    "icon": "icons/kh2-trophies/a-budding-romance.webp"
+  },
+  {
+    "name": "Complete the Olympus Coliseum episodes",
+    "icon": "icons/kh2-trophies/hail-the-hero.webp"
+  },
+  {
+    "name": "Complete the Port Royal episodes",
+    "icon": "icons/kh2-trophies/lifting-the-curse.webp"
+  },
+  {
+    "name": "Complete the Agrabah episodes",
+    "icon": "icons/kh2-trophies/what-friends-are-for.webp"
+  },
+  {
+    "name": "Complete the Halloween Town episodes",
+    "icon": "icons/kh2-trophies/the-gift-of-love.webp"
+  },
+  {
+    "name": "Complete the Pride Lands episodes",
+    "icon": "icons/kh2-trophies/return-of-the-king.webp"
+  },
+  {
+    "name": "Complete the Space Paranoids episodes",
+    "icon": "icons/kh2-trophies/electric-spark.webp"
+  },
+  {
+    "name": "Complete the 100 Acre Wood episode",
+    "icon": "icons/kh2-trophies/always-together.webp"
+  },
+  {
+    "name": "Complete the Atlantica episodes",
+    "icon": "icons/kh2-trophies/kindred-spirits.webp"
+  },
+  {
+    "name": "Complete the Twilight Town episodes",
+    "icon": "icons/kh2-trophies/a-taste-of-the-past.webp"
+  },
+  {
+    "name": "Reunite with Riku and Kairi",
+    "icon": "icons/kh2-trophies/reunion.webp"
+  },
+  {
+    "name": "Collect all Ansem Reports in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/searcher.webp"
+  },
+  {
+    "name": "Collect all Character entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/professor.webp"
+  },
+  {
+    "name": "Complete all Heartless entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/heartless-highbrow.webp"
+  },
+  {
+    "name": "Complete all Nobody entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/nobody-know-it-all.webp"
+  },
+  {
+    "name": "Collect all Treasures in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/treasure-hunter.webp"
+  },
+  {
+    "name": "Collect all Puzzles in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/puzzler.webp"
+  },
+  {
+    "name": "Collect all Maps in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/navigator.webp"
+  },
+  {
+    "name": "Collect all Mission entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/conqueror.webp"
+  },
+  {
+    "name": "Collect all Minigame entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/minigame-maniac.webp"
+  },
+  {
+    "name": "Collect all Limit entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/limit-master.webp"
+  },
+  {
+    "name": "Collect all Synthesis Note entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/craftsman.webp"
+  },
+  {
+    "name": "Collect all Character Link entries in Jiminy's Journal",
+    "icon": "icons/kh2-trophies/seeker.webp"
+  },
+  {
+    "name": "Obtain 5,000 points with skateboard tricks",
+    "icon": "icons/kh2-trophies/pro-skater.webp"
+  },
+  {
+    "name": "Win by obtaining all of the opponent's orbs",
+    "icon": "icons/kh2-trophies/struggle-champion.webp"
+  },
+  {
+    "name": "Activate Antiform 13 times",
+    "icon": "icons/kh2-trophies/corroded-by-darkness.webp"
+  },
+  {
+    "name": "Obtain an S Rank on a gummi ship mission",
+    "icon": "icons/kh2-trophies/veteran-pilot.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Obtain an S Rank on a gummi ship mission for all routes",
+    "icon": "icons/kh2-trophies/ace-pilot.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Obtain an S Rank on a gummi ship EX mission for all routes",
+    "icon": "icons/kh2-trophies/top-gun.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Obtain all blueprints",
+    "icon": "icons/kh2-trophies/gummi-ship-collector.webp",
+    "tags": ["Gummi"]
+  }
+]

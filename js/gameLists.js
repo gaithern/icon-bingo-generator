@@ -38,6 +38,11 @@ const GAME_LISTS = {
         name: "Boss Hunter",
         file: "kh2-bunter.json",
       },
+      {
+        id: "kh2-trophies",
+        name: "Achievements",
+        file: "kh2-trophies.json",
+      },
     ],
   },
 
