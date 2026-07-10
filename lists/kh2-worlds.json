@@ -1,67 +1,133 @@
 [
-    {
-        "id": "ag",
-        "name": "Agrabah",
-        "icon": "icons/kh2-worlds/agrabah.webp"
-    },
-    {
-        "id": "bc",
-        "name": "Beast's Castle",
-        "icon": "icons/kh2-worlds/beast's_castle.webp"
-    },
-    {
-        "id": "dc",
-        "name": "Disney Castle",
-        "icon": "icons/kh2-worlds/disney_castle.webp"
-    },
-    {
-        "id": "ht",
-        "name": "Halloween Town",
-        "icon": "icons/kh2-worlds/halloween_town.webp"
-    },
-    {
-        "id": "hb",
-        "name": "Hollow Bastion",
-        "icon": "icons/kh2-worlds/hollow_bastion.webp"
-    },
-    {
-        "id": "lod",
-        "name": "Land of Dragons",
-        "icon": "icons/kh2-worlds/land_of_dragons.webp"
-    },
-    {
-        "id": "oc",
-        "name": "Olympus Coliseum",
-        "icon": "icons/kh2-worlds/olympus_coliseum.webp"
-    },
-    {
-        "id": "pr",
-        "name": "Port Royal",
-        "icon": "icons/kh2-worlds/port_royal.webp"
-    },
-    {
-        "id": "pl",
-        "name": "Pride Lands",
-        "icon": "icons/kh2-worlds/pride_land.webp"
-    },
-    {
-        "id": "stt",
-        "name": "Simulated Twilight Town",
-        "icon": "icons/kh2-worlds/simulated_twilight_town.webp"
-    },
-    {
-        "id": "sp",
-        "name": "Space Paranoids",
-        "icon": "icons/kh2-worlds/space_paranoids.webp"
-    },
-    {
-        "id": "twtnw",
-        "name": "The World That Never Was",
-        "icon": "icons/kh2-worlds/the_world_that_never_was.webp"
-    },
-    {
-        "id": "tt",
-        "name": "Twilight Town",
-        "icon": "icons/kh2-worlds/twilight_town.webp"
-    }
+  {
+    "id": "ag1",
+    "name": "Agrabah",
+    "icon": "icons/kh2-worlds/agrabah.webp"
+  },
+  {
+    "id": "ag2",
+    "name": "Agrabah",
+    "icon": "icons/kh2-worlds/agrabah.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "bc1",
+    "name": "Beast's Castle",
+    "icon": "icons/kh2-worlds/beast's_castle.webp"
+  },
+  {
+    "id": "bc2",
+    "name": "Beast's Castle",
+    "icon": "icons/kh2-worlds/beast's_castle.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "dc",
+    "name": "Disney Castle",
+    "icon": "icons/kh2-worlds/disney_castle.webp"
+  },
+  {
+    "id": "ht1",
+    "name": "Halloween Town",
+    "icon": "icons/kh2-worlds/halloween_town.webp"
+  },
+  {
+    "id": "ht2",
+    "name": "Halloween Town",
+    "icon": "icons/kh2-worlds/halloween_town.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "hb1",
+    "name": "Hollow Bastion",
+    "icon": "icons/kh2-worlds/hollow_bastion.webp"
+  },
+  {
+    "id": "hb1",
+    "name": "Hollow Bastion",
+    "icon": "icons/kh2-worlds/hollow_bastion.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "lod1",
+    "name": "Land of Dragons",
+    "icon": "icons/kh2-worlds/land_of_dragons.webp"
+  },
+  {
+    "id": "lod2",
+    "name": "Land of Dragons",
+    "icon": "icons/kh2-worlds/land_of_dragons.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "oc1",
+    "name": "Olympus Coliseum",
+    "icon": "icons/kh2-worlds/olympus_coliseum.webp"
+  },
+  {
+    "id": "oc2",
+    "name": "Olympus Coliseum",
+    "icon": "icons/kh2-worlds/olympus_coliseum.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "pr1",
+    "name": "Port Royal",
+    "icon": "icons/kh2-worlds/port_royal.webp"
+  },
+  {
+    "id": "pr2",
+    "name": "Port Royal",
+    "icon": "icons/kh2-worlds/port_royal.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "pl1",
+    "name": "Pride Lands",
+    "icon": "icons/kh2-worlds/pride_land.webp"
+  },
+  {
+    "id": "pl2",
+    "name": "Pride Lands",
+    "icon": "icons/kh2-worlds/pride_land.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "stt",
+    "name": "Simulated Twilight Town",
+    "icon": "icons/kh2-worlds/simulated_twilight_town.webp"
+  },
+  {
+    "id": "sp1",
+    "name": "Space Paranoids",
+    "icon": "icons/kh2-worlds/space_paranoids.webp"
+  },
+  {
+    "id": "sp2",
+    "name": "Space Paranoids",
+    "icon": "icons/kh2-worlds/space_paranoids.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "twtnw",
+    "name": "The World That Never Was",
+    "icon": "icons/kh2-worlds/the_world_that_never_was.webp"
+  },
+  {
+    "id": "tt1",
+    "name": "Twilight Town",
+    "icon": "icons/kh2-worlds/twilight_town.webp"
+  },
+  {
+    "id": "tt2",
+    "name": "Twilight Town",
+    "icon": "icons/kh2-worlds/twilight_town.webp",
+    "tags": ["Visits"]
+  },
+  {
+    "id": "tt3",
+    "name": "Twilight Town",
+    "icon": "icons/kh2-worlds/twilight_town.webp",
+    "tags": ["Visits"]
+  }
 ]

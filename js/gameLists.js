@@ -34,11 +34,6 @@ const GAME_LISTS = {
         file: "kh2-worlds.json",
       },
       {
-        id: "kh2-visits",
-        name: "Visits",
-        file: "kh2-visits.json",
-      },
-      {
         id: "kh2-bunter",
         name: "Boss Hunter",
         file: "kh2-bunter.json",
