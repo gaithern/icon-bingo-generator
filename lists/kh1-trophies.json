@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Obtain all trophies",
+    "icon": "icons/kh1-trophies/kh-master.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear Final Mix on Proud",
+    "icon": "icons/kh1-trophies/proud-player.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear game on Final Mix or a higher difficulty level",
+    "icon": "icons/kh1-trophies/final-mix-master.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear game on Final Mix: Beginner or a higher difficulty level",
+    "icon": "icons/kh1-trophies/novice-player.webp",
+    "tags": ["Clear Game"]
+  },
+  {
+    "name": "Clear the game without changing equpiment",
+    "icon": "icons/kh1-trophies/unchanging-armor.webp",
+    "tags": ["Challenge"]
+  },
+  {
+    "name": "Clear the game without using a continue",
+    "icon": "icons/kh1-trophies/undefeated.webp",
+    "tags": ["Challenge"]
+  },
+  {
+    "name": "Defeat the World of Chaos in the End of the World within 15 hours",
+    "icon": "icons/kh1-trophies/speedster.webp",
+    "tags": ["Challenge"]
+  },
+  {
+    "name": "Defeat the Mysterious Man in Hollow Bastion",
+    "icon": "icons/kh1-trophies/he-who-doesnt-exist.webp"
+  },
+  {
+    "name": "Defeat the Phantom at the Clock Tower",
+    "icon": "icons/kh1-trophies/the-cloaked-shadow.webp"
+  },
+  {
+    "name": "Defeat Kurt Zisa in Agrabah",
+    "icon": "icons/kh1-trophies/the-sandy-blade.webp"
+  },
+  {
+    "name": "Win the Phil Cup",
+    "icon": "icons/kh1-trophies/novice-hero.webp"
+  },
+  {
+    "name": "Win the Pegasus Cup",
+    "icon": "icons/kh1-trophies/artisan-hero.webp"
+  },
+  {
+    "name": "Win the Hercules Cup",
+    "icon": "icons/kh1-trophies/hero-of-the-coliseum.webp"
+  },
+  {
+    "name": "Win the Hades Cup",
+    "icon": "icons/kh1-trophies/coliseum-champion.webp"
+  },
+  {
+    "name": "Defeat the Ice Titan in the Gold Match at Olympus Coliseum",
+    "icon": "icons/kh1-trophies/the-frosty-giant.webp"
+  },
+  {
+    "name": "Defeat Sephiroth in the Platinum Match at Olympus Coliseum",
+    "icon": "icons/kh1-trophies/one-winged-angel.webp"
+  },
+  {
+    "name": "Complete any solo challenge",
+    "icon": "icons/kh1-trophies/supreme-soloist.webp"
+  },
+  {
+    "name": "Complete any time trial challenge",
+    "icon": "icons/kh1-trophies/time-attacker.webp"
+  },
+  {
+    "name": "Get Sora to Level 100",
+    "icon": "icons/kh1-trophies/level-master.webp"
+  },
+  {
+    "name": "Open 100 Treasure Chests",
+    "icon": "icons/kh1-trophies/treasure-hunter.webp"
+  },
+  {
+    "name": "Hold over 10 thousand munny",
+    "icon": "icons/kh1-trophies/from-rags-to-riches.webp"
+  },
+  {
+    "name": "Defeat over 2,000 Heartless",
+    "icon": "icons/kh1-trophies/heartless-hunter.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Traverse Town",
+    "icon": "icons/kh1-trophies/where-the-bells-toll.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Wonderland",
+    "icon": "icons/kh1-trophies/the-rabbit-hole.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Olympus Coliseum",
+    "icon": "icons/kh1-trophies/junior-hero.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Deep Jungle",
+    "icon": "icons/kh1-trophies/member-of-the-tribe.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Agrabah",
+    "icon": "icons/kh1-trophies/magic-lamp.webp"
+  },
+  {
+    "name": "Escape from Monstro",
+    "icon": "icons/kh1-trophies/honest-soul.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Atlantica",
+    "icon": "icons/kh1-trophies/master-of-the-seas.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Halloween Town",
+    "icon": "icons/kh1-trophies/pumpkin-prince.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Never Land",
+    "icon": "icons/kh1-trophies/pixie-dust.webp"
+  },
+  {
+    "name": "Seal the Keyhole in Hollow Bastion",
+    "icon": "icons/kh1-trophies/end-of-the-world.webp"
+  },
+  {
+    "name": "Seal the Keyhole in 100 Acre Wood",
+    "icon": "icons/kh1-trophies/poohs-friend.webp"
+  },
+  {
+    "name": "Collect all Jiminy's Journal entries",
+    "icon": "icons/kh1-trophies/record-keeper.webp"
+  },
+  {
+    "name": "Collect all Story entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/storyteller.webp"
+  },
+  {
+    "name": "Collect all Ansem Reports entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/searcher.webp"
+  },
+  {
+    "name": "Collect all Character entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/professor.webp"
+  },
+  {
+    "name": "Collect all 101 Dalmatian entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/top-dog.webp"
+  },
+  {
+    "name": "Collect all Trinity List entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/best-friend.webp"
+  },
+  {
+    "name": "Collect all Mini-game entries in Jiminy's Journal",
+    "icon": "icons/kh1-trophies/minigame-maniac.webp"
+  },
+  {
+    "name": "Synthesize all items",
+    "icon": "icons/kh1-trophies/synthesis-master.webp"
+  },
+  {
+    "name": "Synthesize an item for the first time",
+    "icon": "icons/kh1-trophies/first-synthesis.webp"
+  },
+  {
+    "name": "Synthesize 3 types of items",
+    "icon": "icons/kh1-trophies/synthesis-novice.webp"
+  },
+  {
+    "name": "Synthesize 15 types of items",
+    "icon": "icons/kh1-trophies/synthesis-amateur.webp"
+  },
+  {
+    "name": "Synthesize 30 types of items",
+    "icon": "icons/kh1-trophies/synthesis-vet.webp"
+  },
+  {
+    "name": "Obtain 30 or more gummi ship blueprints",
+    "icon": "icons/kh1-trophies/gummi-ship-collector.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Shoot down over 2,500 enemies with your gummi ship",
+    "icon": "icons/kh1-trophies/flying-ace.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Modify a gummi ship and update the data",
+    "icon": "icons/kh1-trophies/customizer.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Clear all gummi ship routes",
+    "icon": "icons/kh1-trophies/top-gun.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Clear gummi ship mission 1",
+    "icon": "icons/kh1-trophies/test-pilot.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Clear gummi ship mission 2",
+    "icon": "icons/kh1-trophies/veteran-pilot.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Clear gummi ship mission 3",
+    "icon": "icons/kh1-trophies/ace-pilot.webp",
+    "tags": ["Gummi"]
+  },
+  {
+    "name": "Obtain the Oathkeeper Keyblade",
+    "icon": "icons/kh1-trophies/oathkeeper.webp"
+  },
+  {
+    "name": "Obtain all Keyblades",
+    "icon": "icons/kh1-trophies/blade-master.webp"
+  },
+  {
+    "name": "Obtain all staves",
+    "icon": "icons/kh1-trophies/master-magician.webp"
+  },
+  {
+    "name": "Obtain all shields",
+    "icon": "icons/kh1-trophies/master-defender.webp"
+  }
+]

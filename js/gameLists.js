@@ -12,6 +12,11 @@ const GAME_LISTS = {
         name: "Generic",
         file: "kh1-generic.json",
       },
+      {
+        id: "kh1-trophies",
+        name: "Achievements",
+        file: "kh1-trophies.json",
+      },
     ],
   },
 
