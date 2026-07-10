@@ -22,17 +22,17 @@
   {
     "name": "Clear the game without changing equpiment",
     "icon": "icons/kh1-trophies/unchanging-armor.webp",
-    "tags": ["Challenge"]
+    "tags": ["Challenges"]
   },
   {
     "name": "Clear the game without using a continue",
     "icon": "icons/kh1-trophies/undefeated.webp",
-    "tags": ["Challenge"]
+    "tags": ["Challenges"]
   },
   {
     "name": "Defeat the World of Chaos in the End of the World within 15 hours",
     "icon": "icons/kh1-trophies/speedster.webp",
-    "tags": ["Challenge"]
+    "tags": ["Challenges"]
   },
   {
     "name": "Defeat the Mysterious Man in Hollow Bastion",
