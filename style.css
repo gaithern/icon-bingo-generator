@@ -769,7 +769,8 @@ input {
 }
 
 #apTrackerStatus.ap-error,
-#apTrackerLiveStatus.ap-error {
+#apTrackerLiveStatus.ap-error,
+#sphereStatus.ap-error {
   color: #e74c3c;
 }
 

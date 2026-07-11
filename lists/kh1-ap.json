@@ -522,91 +522,52 @@
   {
     "name": "Blue Trinity",
     "icon": "icons/kh1-ap/BlueTrinity.webp",
-    "apLocationThreshold": {
-      "count": 1,
-      "locations": [
-        "Traverse Town 1st District Blue Trinity Balcony Chest",
-        "Deep Jungle Climbing Trees Blue Trinity Chest",
-        "Deep Jungle Camp Blue Trinity Chest",
-        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
-        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
-        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
-        "Traverse Town Defeat Guard Armor Blue Trinity Event",
-        "Traverse Town 1st District Blue Trinity by Exit Door",
-        "Traverse Town 3rd District Blue Trinity",
-        "Traverse Town Magician's Study Blue Trinity",
-        "Wonderland Lotus Forest Blue Trinity in Alcove",
-        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
-        "Agrabah Bazaar Blue Trinity",
-        "Monstro Mouth Blue Trinity",
-        "Monstro Chamber 5 Blue Trinity",
-        "Hollow Bastion Great Crest Blue Trinity",
-        "Hollow Bastion Dungeon Blue Trinity",
-        "Monstro Throat Blue Trinity"
-      ]
-    }
+    "apItems": [
+      {
+        "name": "Blue Trinity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Green Trinity",
     "icon": "icons/kh1-ap/GreenTrinity.webp",
-    "apLocationThreshold": {
-      "count": 1,
-      "locations": [
-        "Wonderland Rabbit Hole Green Trinity Chest",
-        "Wonderland Bizarre Room Green Trinity Chest",
-        "Agrabah Storage Green Trinity Chest",
-        "Monstro Mouth Green Trinity Top of Boat Chest",
-        "Agrabah Seal Keyhole Green Trinity Event",
-        "Olympus Coliseum Coliseum Gates Green Trinity",
-        "Deep Jungle Treetop Green Trinity"
-      ]
-    }
+    "apItems": [
+      {
+        "name": "Green Trinity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Red Trinity",
     "icon": "icons/kh1-ap/RedTrinity.webp",
-    "apLocationThreshold": {
-      "count": 1,
-      "locations": [
-        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
-        "Deep Jungle Seal Keyhole Red Trinity Event",
-        "Agrabah Cave of Wonders Treasure Room Red Trinity"
-      ]
-    }
+    "apItems": [
+      {
+        "name": "Red Trinity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "White Trinity",
     "icon": "icons/kh1-ap/WhiteTrinity.webp",
-    "apLocationThreshold": {
-      "count": 1,
-      "locations": [
-        "Traverse Town Secret Waterway White Trinity Chest",
-        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
-        "Deep Jungle Cavern of Hearts White Trinity Chest",
-        "Agrabah Cave of Wonders Entrance White Trinity Chest",
-        "Atlantica Triton's Palace White Trinity Chest",
-        "Halloween Town Moonlight Hill White Trinity Chest",
-        "Olympus Coliseum Coliseum Gates White Trinity Chest",
-        "Neverland Pirate Ship Deck White Trinity Chest",
-        "Hollow Bastion Rising Falls White Trinity Chest",
-        "Monstro Chamber 6 White Trinity Chest",
-        "Hollow Bastion Defeat Riku I White Trinity Event"
-      ]
-    }
+    "apItems": [
+      {
+        "name": "White Trinity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Yellow Trinity",
     "icon": "icons/kh1-ap/YellowTrinity.webp",
-    "apLocationThreshold": {
-      "count": 1,
-      "locations": [
-        "Traverse Town Mystical House Yellow Trinity Chest",
-        "Neverland Hold Yellow Trinity Right Blue Chest",
-        "Neverland Hold Yellow Trinity Left Blue Chest",
-        "Neverland Hold Yellow Trinity Green Chest",
-        "Hercules Cup Yellow Trinity Event"
-      ]
-    }
+    "apItems": [
+      {
+        "name": "Yellow Trinity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Agrabah Item",

@@ -136,6 +136,19 @@
         </select>
       </label>
     </div>
+
+    <!-- Shown for both Roguelike and Fog of War — lives outside the -->
+    <!-- per-mode boxes above so it isn't hidden when they're toggled. -->
+    <div id="spherePanel" class="ap-tracker-panel" style="display:none;">
+      <div class="control-headers" style="font-size:14px;">Sphere-based Placement</div>
+      <div class="control-hint">
+        KH1 AP Randomizer only — upload your patch .zip for this seed (the same one you use to
+        patch your game) to lay out objectives by logical playthrough depth instead of pure random.
+      </div>
+      <input id="sphereFileInput" type="file" accept="application/zip,.zip">
+      <button id="sphereClearBtn" type="button">Clear</button>
+      <div id="sphereStatus" class="control-hint"></div>
+    </div>
   </div>
 
   <div class="control-row" id="modifiers">
@@ -310,9 +323,11 @@
 <script src="js/state.js"></script>
 <script src="js/rng.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/miniZip.js"></script>
 <script src="js/boardRender.js"></script>
 <script src="js/gameModes.js"></script>
 <script src="js/ui.js"></script>
+<script src="js/sphereData.js"></script>
 <script src="js/apTracker.js"></script>
 </body>
 </html>

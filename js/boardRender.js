@@ -264,24 +264,6 @@ function startExplorationBingo() {
     return;
   }
 
-  const shuffled = shuffle(allObjectives).slice(0, boardSize * boardSize);
-
-  explorationBoard = [];
-  visibleMap = [];
-  markedMap = [];
-
-  // hide squares
-  for (let r = 0; r < boardSize; r++) {
-    explorationBoard[r] = [];
-    visibleMap[r] = [];
-    markedMap[r] = [];
-    for (let c = 0; c < boardSize; c++) {
-      explorationBoard[r][c] = shuffled[r * boardSize + c];
-      visibleMap[r][c] = false;
-      markedMap[r][c] = false;
-    }
-  }
-
   startingSquares = document.getElementById("exploreStart").value;
 
   // starting squares options
@@ -370,6 +352,31 @@ function startExplorationBingo() {
       ];
     }
   }
+
+  // fill squares — nearest to the initial reveal squares (in grid steps)
+  // gets the shallowest-sphere objective, falling back to a plain shuffle
+  // when no sphere data is loaded (or for non-AP lists), same as before.
+  const pool = buildSpherePool(allObjectives).slice(0, boardSize * boardSize);
+  const distances = _computeExplorationDistances(boardSize, initialReveal);
+  const orderedCells = _orderCellsByDistance(boardSize, distances);
+
+  explorationBoard = [];
+  visibleMap = [];
+  markedMap = [];
+
+  for (let r = 0; r < boardSize; r++) {
+    explorationBoard[r] = [];
+    visibleMap[r] = [];
+    markedMap[r] = [];
+    for (let c = 0; c < boardSize; c++) {
+      visibleMap[r][c] = false;
+      markedMap[r][c] = false;
+    }
+  }
+
+  orderedCells.forEach(({ r, c }, i) => {
+    explorationBoard[r][c] = pool[i];
+  });
 
   initialReveal.forEach((pos) => (visibleMap[pos.r][pos.c] = true));
 
@@ -683,18 +690,21 @@ function startRoguelikeBingo() {
     return;
   }
 
-  const pool = shuffle([...allObjectives]);
-  let poolIdx = 0;
+  const pool = buildSpherePool(allObjectives);
 
   for (let r = 0; r < cfg.rows; r++) {
     rogueBoard[r] = [];
     rogueVisibleMap[r] = [];
     const rowNum = r + 1;
+    // Reset per row: picking one cell in a row discards the rest, so two
+    // tiers of the same collectible (e.g. "5 Postcards" and "8 Postcards")
+    // must never land in the same row together — see takeNextForRow.
+    const usedFamiliesThisRow = new Set();
 
     for (let c = 0; c < cfg.maxWidth; c++) {
       if (_isActiveCell(rowNum, c, cfg, widths)) {
         // Row 1 center = START
-        const obj = rowNum === 1 ? null : pool[poolIdx++];
+        const obj = rowNum === 1 ? null : takeNextForRow(pool, usedFamiliesThisRow);
         rogueBoard[r][c] = { obj, type: "active" };
         rogueVisibleMap[r][c] = false;
       } else if (_isPhantomCell(rowNum, c, cfg)) {

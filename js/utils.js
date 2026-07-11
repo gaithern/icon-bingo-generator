@@ -230,6 +230,54 @@ function _isPhantomCell(rowNum, col, cfg) {
   return isSpecial && col !== cfg.centerCol;
 }
 
+// Helper for Fog of War: grid-step distance from the nearest initial-reveal
+// square, via BFS flood fill (mirrors how revealNeighbors expands play).
+function _computeExplorationDistances(boardSize, initialReveal) {
+  const dist = Array.from({ length: boardSize }, () => Array(boardSize).fill(Infinity));
+  const queue = [];
+
+  initialReveal.forEach(({ r, c }) => {
+    if (dist[r][c] > 0) {
+      dist[r][c] = 0;
+      queue.push({ r, c });
+    }
+  });
+
+  const directions = [
+    { dr: -1, dc: 0 },
+    { dr: 1, dc: 0 },
+    { dr: 0, dc: -1 },
+    { dr: 0, dc: 1 },
+  ];
+
+  for (let head = 0; head < queue.length; head++) {
+    const { r, c } = queue[head];
+    directions.forEach(({ dr, dc }) => {
+      const nr = r + dr;
+      const nc = c + dc;
+      if (nr < 0 || nr >= boardSize || nc < 0 || nc >= boardSize) return;
+      if (dist[nr][nc] > dist[r][c] + 1) {
+        dist[nr][nc] = dist[r][c] + 1;
+        queue.push({ r: nr, c: nc });
+      }
+    });
+  }
+
+  return dist;
+}
+
+// Helper for Fog of War: every grid cell ordered nearest-to-start first
+// (ties shuffled), for zipping against a sphere-ordered objective pool.
+function _orderCellsByDistance(boardSize, distances) {
+  const cells = [];
+  for (let r = 0; r < boardSize; r++) {
+    for (let c = 0; c < boardSize; c++) {
+      cells.push({ r, c, d: distances[r][c] });
+    }
+  }
+  return shuffle(cells).sort((a, b) => a.d - b.d);
+}
+
 // Board page scroll wheel toggles
 const scrollToggles = [
   {
