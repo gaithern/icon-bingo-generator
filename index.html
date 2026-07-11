@@ -38,6 +38,18 @@
 
     <div id="listPreview" style="display:none;"></div>
 
+    <div id="apTrackerPanel" class="ap-tracker-panel">
+      <div class="control-headers" style="font-size:14px;">Archipelago Live Tracking</div>
+      <div class="control-hint">
+        KH1 AP Randomizer only — connect directly to your Archipelago server to auto-mark squares as you play.
+      </div>
+      <input id="apServerInput" placeholder="Server address (e.g. archipelago.gg:38281)">
+      <input id="apSlotNameInput" placeholder="Slot name">
+      <input id="apPasswordInput" type="password" placeholder="Password (if required)">
+      <button id="apConnectBtn" type="button">Connect</button>
+      <div id="apTrackerStatus" class="control-hint"></div>
+    </div>
+
   </div>
 
   <div class="control-row" id="modeOptions">
@@ -193,13 +205,18 @@
 
     <div id="wheel-toggle" class="in-game-sliders">
       <label class="custom-checkbox tag-checkbox" style="font-weight: bold;">
-          <span class="label-text">Wheel Mode: 
+          <span class="label-text">Wheel Mode:
           </span>
            <input type="checkbox" id="wheel-Checkbox" checked>
           <span class="slider"></span>
           <span id="wheel-mode-label">Mark</span>
       </label>
     </div>
+  </div>
+
+  <div id="apTrackerLive" class="hidden in-game-sliders">
+    <span id="apTrackerLiveStatus"></span>
+    <button id="apDisconnectBtn" type="button" class="game-ui">Stop Tracking</button>
   </div>
 
 </div>
@@ -296,5 +313,6 @@
 <script src="js/boardRender.js"></script>
 <script src="js/gameModes.js"></script>
 <script src="js/ui.js"></script>
+<script src="js/apTracker.js"></script>
 </body>
 </html>

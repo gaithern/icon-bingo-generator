@@ -1,39 +1,66 @@
 [
   {
     "name": "Leon",
-    "icon": "icons/kh1-ap/Leon.webp"
+    "icon": "icons/kh1-ap/Leon.webp",
+    "apLocations": [
+      "Traverse Town 1st District Leon Gift"
+    ]
   },
   {
     "name": "Guard Armor",
-    "icon": "icons/kh1-ap/GuardArmor.webp"
+    "icon": "icons/kh1-ap/GuardArmor.webp",
+    "apLocations": [
+      "Traverse Town Defeat Guard Armor Dodge Roll Event"
+    ]
   },
   {
     "name": "Opposite Armor",
-    "icon": "icons/kh1-ap/OppositeArmor.webp"
+    "icon": "icons/kh1-ap/OppositeArmor.webp",
+    "apLocations": [
+      "Traverse Town Defeat Opposite Armor Aero Event"
+    ]
   },
   {
     "name": "Trickmaster",
-    "icon": "icons/kh1-ap/Trickmaster.webp"
+    "icon": "icons/kh1-ap/Trickmaster.webp",
+    "apLocations": [
+      "Wonderland Defeat Trickmaster Blizzard Event"
+    ]
   },
   {
     "name": "Cloud",
-    "icon": "icons/kh1-ap/Cloud.webp"
+    "icon": "icons/kh1-ap/Cloud.webp",
+    "apLocations": [
+      "Olympus Coliseum Cloud Sonic Blade Event"
+    ]
   },
   {
     "name": "Cerberus",
-    "icon": "icons/kh1-ap/Cerberus.webp"
+    "icon": "icons/kh1-ap/Cerberus.webp",
+    "apLocations": [
+      "Olympus Coliseum Defeat Cerberus Inferno Band Event"
+    ]
   },
   {
     "name": "Sabor",
-    "icon": "icons/kh1-ap/Sabor.webp"
+    "icon": "icons/kh1-ap/Sabor.webp",
+    "apLocations": [
+      "Deep Jungle Defeat Sabor White Fang Event"
+    ]
   },
   {
     "name": "Clayton",
-    "icon": "icons/kh1-ap/Clayton.webp"
+    "icon": "icons/kh1-ap/Clayton.webp",
+    "apLocations": [
+      "Deep Jungle Defeat Clayton Cure Event"
+    ]
   },
   {
     "name": "Pot Centipede",
-    "icon": "icons/kh1-ap/PotCentipede.webp"
+    "icon": "icons/kh1-ap/PotCentipede.webp",
+    "apLocations": [
+      "Agrabah Defeat Pot Centipede Ray of Light Event"
+    ]
   },
   {
     "name": "Cave of Wonders Guardian",
@@ -41,503 +68,1287 @@
   },
   {
     "name": "Jafar",
-    "icon": "icons/kh1-ap/Jafar.webp"
+    "icon": "icons/kh1-ap/Jafar.webp",
+    "apLocations": [
+      "Agrabah Defeat Jafar Blizzard Event"
+    ]
   },
   {
     "name": "Parasite Cage 1",
-    "icon": "icons/kh1-ap/ParasiteCage1.webp"
+    "icon": "icons/kh1-ap/ParasiteCage1.webp",
+    "apLocations": [
+      "Monstro Defeat Parasite Cage I Goofy Cheer Event"
+    ]
   },
   {
     "name": "Parasite Cage 2",
-    "icon": "icons/kh1-ap/ParasiteCage2.webp"
+    "icon": "icons/kh1-ap/ParasiteCage2.webp",
+    "apLocations": [
+      "Monstro Defeat Parasite Cage II Stop Event"
+    ]
   },
   {
     "name": "Lock, Shock, and Barrel",
-    "icon": "icons/kh1-ap/LSB.webp"
+    "icon": "icons/kh1-ap/LSB.webp",
+    "apLocations": [
+      "Halloween Town Defeat Oogie Boogie Holy Circlet Event"
+    ]
   },
   {
     "name": "Oogie",
-    "icon": "icons/kh1-ap/Oogie.webp"
+    "icon": "icons/kh1-ap/Oogie.webp",
+    "apLocations": [
+      "Halloween Town Defeat Oogie Boogie Holy Circlet Event"
+    ]
   },
   {
     "name": "Glut",
     "icon": "icons/kh1-ap/Shark.webp",
-    "tags": ["Atlantica"]
+    "tags": [
+      "Atlantica"
+    ]
   },
   {
     "name": "Ursula",
     "icon": "icons/kh1-ap/Ursula.webp",
-    "tags": ["Atlantica"]
+    "tags": [
+      "Atlantica"
+    ],
+    "apLocations": [
+      "Atlantica Defeat Ursula I Mermaid Kick Event"
+    ]
   },
   {
     "name": "Giant Ursula",
     "icon": "icons/kh1-ap/BigUrsula.webp",
-    "tags": ["Atlantica"]
+    "tags": [
+      "Atlantica"
+    ],
+    "apLocations": [
+      "Atlantica Defeat Ursula II Thunder Event"
+    ]
   },
   {
     "name": "Anti-Sora",
-    "icon": "icons/kh1-ap/AntiSora-v2.webp"
+    "icon": "icons/kh1-ap/AntiSora-v2.webp",
+    "apLocations": [
+      "Neverland Defeat Anti Sora Raven's Claw Event"
+    ]
   },
   {
     "name": "Captain Hook",
-    "icon": "icons/kh1-ap/CaptainHook.webp"
+    "icon": "icons/kh1-ap/CaptainHook.webp",
+    "apLocations": [
+      "Neverland Defeat Captain Hook Ars Arcanum Event"
+    ]
   },
   {
     "name": "Riku 1",
-    "icon": "icons/kh1-ap/Riku1.webp"
+    "icon": "icons/kh1-ap/Riku1.webp",
+    "apLocations": [
+      "Hollow Bastion Defeat Riku I White Trinity Event"
+    ]
   },
   {
     "name": "Maleficent",
-    "icon": "icons/kh1-ap/Maleficent.webp"
+    "icon": "icons/kh1-ap/Maleficent.webp",
+    "apLocations": [
+      "Hollow Bastion Defeat Maleficent Donald Cheer Event"
+    ]
   },
   {
     "name": "Dragon Maleficent",
-    "icon": "icons/kh1-ap/DragonMal.webp"
+    "icon": "icons/kh1-ap/DragonMal.webp",
+    "apLocations": [
+      "Hollow Bastion Defeat Dragon Maleficent Fireglow Event"
+    ]
   },
   {
     "name": "Riku 2",
-    "icon": "icons/kh1-ap/Riku2.webp"
+    "icon": "icons/kh1-ap/Riku2.webp",
+    "apLocations": [
+      "Hollow Bastion Defeat Riku II Ragnarok Event"
+    ]
   },
   {
     "name": "Behemoth (Hollow Bastion)",
-    "icon": "icons/kh1-ap/Behemoth.webp"
+    "icon": "icons/kh1-ap/Behemoth.webp",
+    "apLocations": [
+      "Hollow Bastion Defeat Behemoth Omega Arts Event"
+    ]
   },
   {
     "name": "Chernabog",
-    "icon": "icons/kh1-ap/Chernabog.webp"
+    "icon": "icons/kh1-ap/Chernabog.webp",
+    "apLocations": [
+      "End of the World Defeat Chernabog Superglide Event"
+    ]
   },
   {
     "name": "Fire",
-    "icon": "icons/kh1-ap/MagicFire1.webp"
+    "icon": "icons/kh1-ap/MagicFire1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Fire",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Fira",
-    "icon": "icons/kh1-ap/MagicFire2.webp"
+    "icon": "icons/kh1-ap/MagicFire2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Fire",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Firaga",
-    "icon": "icons/kh1-ap/MagicFire3.webp"
+    "icon": "icons/kh1-ap/MagicFire3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Fire",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Blizzard",
-    "icon": "icons/kh1-ap/MagicBlizzard1.webp"
+    "icon": "icons/kh1-ap/MagicBlizzard1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Blizzard",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Blizzara",
-    "icon": "icons/kh1-ap/MagicBlizzard2.webp"
+    "icon": "icons/kh1-ap/MagicBlizzard2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Blizzard",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Blizzaga",
-    "icon": "icons/kh1-ap/MagicBlizzard3.webp"
+    "icon": "icons/kh1-ap/MagicBlizzard3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Blizzard",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Thunder",
-    "icon": "icons/kh1-ap/MagicThunder1.webp"
+    "icon": "icons/kh1-ap/MagicThunder1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Thunder",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Thundara",
-    "icon": "icons/kh1-ap/MagicThunder2.webp"
+    "icon": "icons/kh1-ap/MagicThunder2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Thunder",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Thundaga",
-    "icon": "icons/kh1-ap/MagicThunder3.webp"
+    "icon": "icons/kh1-ap/MagicThunder3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Thunder",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Cure",
-    "icon": "icons/kh1-ap/MagicCure1.webp"
+    "icon": "icons/kh1-ap/MagicCure1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Cure",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Cura",
-    "icon": "icons/kh1-ap/MagicCure2.webp"
+    "icon": "icons/kh1-ap/MagicCure2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Cure",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Curaga",
-    "icon": "icons/kh1-ap/MagicCure3.webp"
+    "icon": "icons/kh1-ap/MagicCure3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Cure",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Stop",
-    "icon": "icons/kh1-ap/MagicStop1.webp"
+    "icon": "icons/kh1-ap/MagicStop1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Stop",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Stopra",
-    "icon": "icons/kh1-ap/MagicStop2.webp"
+    "icon": "icons/kh1-ap/MagicStop2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Stop",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Stopga",
-    "icon": "icons/kh1-ap/MagicStop3.webp"
+    "icon": "icons/kh1-ap/MagicStop3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Stop",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Gravity",
-    "icon": "icons/kh1-ap/MagicGravity1.webp"
+    "icon": "icons/kh1-ap/MagicGravity1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Gravity",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Gravira",
-    "icon": "icons/kh1-ap/MagicGravity2.webp"
+    "icon": "icons/kh1-ap/MagicGravity2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Gravity",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Graviga",
-    "icon": "icons/kh1-ap/MagicGravity3.webp"
+    "icon": "icons/kh1-ap/MagicGravity3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Gravity",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Aero",
-    "icon": "icons/kh1-ap/MagicAero1.webp"
+    "icon": "icons/kh1-ap/MagicAero1.webp",
+    "apItems": [
+      {
+        "name": "Progressive Aero",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Aerora",
-    "icon": "icons/kh1-ap/MagicAero2.webp"
+    "icon": "icons/kh1-ap/MagicAero2.webp",
+    "apItems": [
+      {
+        "name": "Progressive Aero",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "Aeroga",
-    "icon": "icons/kh1-ap/MagicAero3.webp"
+    "icon": "icons/kh1-ap/MagicAero3.webp",
+    "apItems": [
+      {
+        "name": "Progressive Aero",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "Bambi",
-    "icon": "icons/kh1-ap/Bambi.webp"
+    "icon": "icons/kh1-ap/Bambi.webp",
+    "apItems": [
+      {
+        "name": "Bambi",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Dumbo",
-    "icon": "icons/kh1-ap/Dumbo.webp"
+    "icon": "icons/kh1-ap/Dumbo.webp",
+    "apItems": [
+      {
+        "name": "Dumbo",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Genie",
-    "icon": "icons/kh1-ap/Genie.webp"
+    "icon": "icons/kh1-ap/Genie.webp",
+    "apItems": [
+      {
+        "name": "Genie",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Mushu",
-    "icon": "icons/kh1-ap/Mushu.webp"
+    "icon": "icons/kh1-ap/Mushu.webp",
+    "apItems": [
+      {
+        "name": "Mushu",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Simba",
-    "icon": "icons/kh1-ap/Simba.webp"
+    "icon": "icons/kh1-ap/Simba.webp",
+    "apItems": [
+      {
+        "name": "Simba",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Tinker Bell",
-    "icon": "icons/kh1-ap/TinkerBell.webp"
+    "icon": "icons/kh1-ap/TinkerBell.webp",
+    "apItems": [
+      {
+        "name": "Tinker Bell",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "1 Torn Page",
     "icon": "icons/kh1-ap/TornPages1.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apItems": [
+      {
+        "name": "Torn Page",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "2 Torn Pages",
     "icon": "icons/kh1-ap/TornPages2.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apItems": [
+      {
+        "name": "Torn Page",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "3 Torn Pages",
     "icon": "icons/kh1-ap/TornPages3.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apItems": [
+      {
+        "name": "Torn Page",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "4 Torn Pages",
     "icon": "icons/kh1-ap/TornPages4.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apItems": [
+      {
+        "name": "Torn Page",
+        "count": 4
+      }
+    ]
   },
   {
     "name": "5 Torn Pages",
     "icon": "icons/kh1-ap/TornPages5.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apItems": [
+      {
+        "name": "Torn Page",
+        "count": 5
+      }
+    ]
   },
   {
     "name": "Blue Trinity",
-    "icon": "icons/kh1-ap/BlueTrinity.webp"
+    "icon": "icons/kh1-ap/BlueTrinity.webp",
+    "apLocationThreshold": {
+      "count": 1,
+      "locations": [
+        "Traverse Town 1st District Blue Trinity Balcony Chest",
+        "Deep Jungle Climbing Trees Blue Trinity Chest",
+        "Deep Jungle Camp Blue Trinity Chest",
+        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
+        "Traverse Town Defeat Guard Armor Blue Trinity Event",
+        "Traverse Town 1st District Blue Trinity by Exit Door",
+        "Traverse Town 3rd District Blue Trinity",
+        "Traverse Town Magician's Study Blue Trinity",
+        "Wonderland Lotus Forest Blue Trinity in Alcove",
+        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
+        "Agrabah Bazaar Blue Trinity",
+        "Monstro Mouth Blue Trinity",
+        "Monstro Chamber 5 Blue Trinity",
+        "Hollow Bastion Great Crest Blue Trinity",
+        "Hollow Bastion Dungeon Blue Trinity",
+        "Monstro Throat Blue Trinity"
+      ]
+    }
   },
   {
     "name": "Green Trinity",
-    "icon": "icons/kh1-ap/GreenTrinity.webp"
+    "icon": "icons/kh1-ap/GreenTrinity.webp",
+    "apLocationThreshold": {
+      "count": 1,
+      "locations": [
+        "Wonderland Rabbit Hole Green Trinity Chest",
+        "Wonderland Bizarre Room Green Trinity Chest",
+        "Agrabah Storage Green Trinity Chest",
+        "Monstro Mouth Green Trinity Top of Boat Chest",
+        "Agrabah Seal Keyhole Green Trinity Event",
+        "Olympus Coliseum Coliseum Gates Green Trinity",
+        "Deep Jungle Treetop Green Trinity"
+      ]
+    }
   },
   {
     "name": "Red Trinity",
-    "icon": "icons/kh1-ap/RedTrinity.webp"
+    "icon": "icons/kh1-ap/RedTrinity.webp",
+    "apLocationThreshold": {
+      "count": 1,
+      "locations": [
+        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
+        "Deep Jungle Seal Keyhole Red Trinity Event",
+        "Agrabah Cave of Wonders Treasure Room Red Trinity"
+      ]
+    }
   },
   {
     "name": "White Trinity",
-    "icon": "icons/kh1-ap/WhiteTrinity.webp"
+    "icon": "icons/kh1-ap/WhiteTrinity.webp",
+    "apLocationThreshold": {
+      "count": 1,
+      "locations": [
+        "Traverse Town Secret Waterway White Trinity Chest",
+        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
+        "Deep Jungle Cavern of Hearts White Trinity Chest",
+        "Agrabah Cave of Wonders Entrance White Trinity Chest",
+        "Atlantica Triton's Palace White Trinity Chest",
+        "Halloween Town Moonlight Hill White Trinity Chest",
+        "Olympus Coliseum Coliseum Gates White Trinity Chest",
+        "Neverland Pirate Ship Deck White Trinity Chest",
+        "Hollow Bastion Rising Falls White Trinity Chest",
+        "Monstro Chamber 6 White Trinity Chest",
+        "Hollow Bastion Defeat Riku I White Trinity Event"
+      ]
+    }
   },
   {
     "name": "Yellow Trinity",
-    "icon": "icons/kh1-ap/YellowTrinity.webp"
+    "icon": "icons/kh1-ap/YellowTrinity.webp",
+    "apLocationThreshold": {
+      "count": 1,
+      "locations": [
+        "Traverse Town Mystical House Yellow Trinity Chest",
+        "Neverland Hold Yellow Trinity Right Blue Chest",
+        "Neverland Hold Yellow Trinity Left Blue Chest",
+        "Neverland Hold Yellow Trinity Green Chest",
+        "Hercules Cup Yellow Trinity Event"
+      ]
+    }
   },
   {
     "name": "Agrabah Item",
-    "icon": "icons/kh1-ap/Agrabah.webp"
+    "icon": "icons/kh1-ap/Agrabah.webp",
+    "apItems": [
+      {
+        "name": "Agrabah",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Atlantica Item",
     "icon": "icons/kh1-ap/Atlantica.webp",
-    "tags": ["Atlantica"]
+    "tags": [
+      "Atlantica"
+    ],
+    "apItems": [
+      {
+        "name": "Atlantica",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Hollow Bastion Item",
-    "icon": "icons/kh1-ap/HollowBastion.webp"
+    "icon": "icons/kh1-ap/HollowBastion.webp",
+    "apItems": [
+      {
+        "name": "Hollow Bastion",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Olympus Coliseum Item",
-    "icon": "icons/kh1-ap/Olympus.webp"
+    "icon": "icons/kh1-ap/Olympus.webp",
+    "apItems": [
+      {
+        "name": "Olympus Coliseum",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "End of the World Item",
-    "icon": "icons/kh1-ap/EOTW.webp"
+    "icon": "icons/kh1-ap/EOTW.webp",
+    "apItems": [
+      {
+        "name": "End of the World",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Halloween Town Item",
-    "icon": "icons/kh1-ap/HalloweenTown.webp"
+    "icon": "icons/kh1-ap/HalloweenTown.webp",
+    "apItems": [
+      {
+        "name": "Halloween Town",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Destiny Islands Item",
-    "icon": "icons/kh1-ap/DestinyIslands.webp"
+    "icon": "icons/kh1-ap/DestinyIslands.webp",
+    "apItems": [
+      {
+        "name": "Destiny Islands",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Deep Jungle Item",
-    "icon": "icons/kh1-ap/DeepJungle.webp"
+    "icon": "icons/kh1-ap/DeepJungle.webp",
+    "apItems": [
+      {
+        "name": "Deep Jungle",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Monstro Item",
-    "icon": "icons/kh1-ap/Monstro.webp"
+    "icon": "icons/kh1-ap/Monstro.webp",
+    "apItems": [
+      {
+        "name": "Monstro",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Neverland Item",
-    "icon": "icons/kh1-ap/Neverland.webp"
+    "icon": "icons/kh1-ap/Neverland.webp",
+    "apItems": [
+      {
+        "name": "Neverland",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Wonderland Item",
-    "icon": "icons/kh1-ap/Wonderland.webp"
+    "icon": "icons/kh1-ap/Wonderland.webp",
+    "apItems": [
+      {
+        "name": "Wonderland",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Theon Vol. 6",
-    "icon": "icons/kh1-ap/Theon.webp"
+    "icon": "icons/kh1-ap/Theon.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Theon Vol. 6",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Hollow Bastion",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Evidence",
-    "icon": "icons/kh1-ap/Evidence.webp"
+    "icon": "icons/kh1-ap/Evidence.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Footprints",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Wonderland",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Jack in the Box",
-    "icon": "icons/kh1-ap/JackintheBox.webp"
+    "icon": "icons/kh1-ap/JackintheBox.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Jack-In-The-Box",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Halloween Town",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Slides",
-    "icon": "icons/kh1-ap/Slides.webp"
+    "icon": "icons/kh1-ap/Slides.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Slides",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Deep Jungle",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Crystal Trident",
     "icon": "icons/kh1-ap/CrystalTrident.webp",
-    "tags": ["Atlantica"]
+    "tags": [
+      "Atlantica"
+    ],
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Crystal Triden",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Atlantica",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Forget-Me-Not",
-    "icon": "icons/kh1-ap/Forget.webp"
+    "icon": "icons/kh1-ap/Forget.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Forget-Me-Not",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Halloween Town",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Entry Pass",
-    "icon": "icons/kh1-ap/EntryPass.webp"
+    "icon": "icons/kh1-ap/EntryPass.webp",
+    "apAnyOf": [
+      {
+        "apItems": [
+          {
+            "name": "Entry Pass",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "apItems": [
+          {
+            "name": "Olympus Coliseum",
+            "count": 2
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Second Chance",
-    "icon": "icons/kh1-ap/SecondChance.webp"
+    "icon": "icons/kh1-ap/SecondChance.webp",
+    "apItems": [
+      {
+        "name": "Second Chance",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Combo Master",
-    "icon": "icons/kh1-ap/ComboMaster.webp"
+    "icon": "icons/kh1-ap/ComboMaster.webp",
+    "apItems": [
+      {
+        "name": "Combo Master",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Glide",
-    "icon": "icons/kh1-ap/Glide.webp"
+    "icon": "icons/kh1-ap/Glide.webp",
+    "apItems": [
+      {
+        "name": "Progressive Glide",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "High Jump",
-    "icon": "icons/kh1-ap/HighJump.webp"
+    "icon": "icons/kh1-ap/HighJump.webp",
+    "apItems": [
+      {
+        "name": "High Jump",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Mermaid Kick",
-    "icon": "icons/kh1-ap/MermaidKick.webp"
+    "icon": "icons/kh1-ap/MermaidKick.webp",
+    "apItems": [
+      {
+        "name": "Mermaid Kick",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Dodge Roll",
-    "icon": "icons/kh1-ap/DodgeRoll.webp"
+    "icon": "icons/kh1-ap/DodgeRoll.webp",
+    "apItems": [
+      {
+        "name": "Dodge Roll",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Flame Emblem Piece",
-    "icon": "icons/kh1-ap/EmblemBlue.webp"
+    "icon": "icons/kh1-ap/EmblemBlue.webp",
+    "apItems": [
+      {
+        "name": "Emblem Piece (Flame)",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Statue Emblem Piece",
-    "icon": "icons/kh1-ap/EmblemGreen.webp"
+    "icon": "icons/kh1-ap/EmblemGreen.webp",
+    "apItems": [
+      {
+        "name": "Emblem Piece (Statue)",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Chest Emblem Piece",
-    "icon": "icons/kh1-ap/EmblemPink.webp"
+    "icon": "icons/kh1-ap/EmblemPink.webp",
+    "apItems": [
+      {
+        "name": "Emblem Piece (Chest)",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Fountain Emblem Piece",
-    "icon": "icons/kh1-ap/EmblemRed.webp"
+    "icon": "icons/kh1-ap/EmblemRed.webp",
+    "apItems": [
+      {
+        "name": "Emblem Piece (Fountain)",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Lionheart",
-    "icon": "icons/kh1-ap/Lionheart.webp"
+    "icon": "icons/kh1-ap/Lionheart.webp",
+    "apItems": [
+      {
+        "name": "Lionheart",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Spellbinder",
-    "icon": "icons/kh1-ap/Spellbinder.webp"
+    "icon": "icons/kh1-ap/Spellbinder.webp",
+    "apItems": [
+      {
+        "name": "Spellbinder",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Oathkeeper",
-    "icon": "icons/kh1-ap/Oathkeeper.webp"
+    "icon": "icons/kh1-ap/Oathkeeper.webp",
+    "apItems": [
+      {
+        "name": "Oathkeeper",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Lady Luck",
-    "icon": "icons/kh1-ap/LadyLuck.webp"
+    "icon": "icons/kh1-ap/LadyLuck.webp",
+    "apItems": [
+      {
+        "name": "Lady Luck",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Olympia",
-    "icon": "icons/kh1-ap/Olympia.webp"
+    "icon": "icons/kh1-ap/Olympia.webp",
+    "apItems": [
+      {
+        "name": "Olympia",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Jungle King",
-    "icon": "icons/kh1-ap/JungleKing.webp"
+    "icon": "icons/kh1-ap/JungleKing.webp",
+    "apItems": [
+      {
+        "name": "Jungle King",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Three Wishes",
-    "icon": "icons/kh1-ap/ThreeWishes.webp"
+    "icon": "icons/kh1-ap/ThreeWishes.webp",
+    "apItems": [
+      {
+        "name": "Three Wishes",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Wishing Star",
-    "icon": "icons/kh1-ap/WishingStar.webp"
+    "icon": "icons/kh1-ap/WishingStar.webp",
+    "apItems": [
+      {
+        "name": "Wishing Star",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Pumpkinhead",
-    "icon": "icons/kh1-ap/Pumpkinhead.webp"
+    "icon": "icons/kh1-ap/Pumpkinhead.webp",
+    "apItems": [
+      {
+        "name": "Pumpkinhead",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Crabclaw",
-    "icon": "icons/kh1-ap/Crabclaw.webp"
+    "icon": "icons/kh1-ap/Crabclaw.webp",
+    "apItems": [
+      {
+        "name": "Crabclaw",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Fairy Harp",
-    "icon": "icons/kh1-ap/FairyHarp.webp"
+    "icon": "icons/kh1-ap/FairyHarp.webp",
+    "apItems": [
+      {
+        "name": "Fairy Harp",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Divine Rose",
-    "icon": "icons/kh1-ap/DivineRose.webp"
+    "icon": "icons/kh1-ap/DivineRose.webp",
+    "apItems": [
+      {
+        "name": "Divine Rose",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "Oblivion",
-    "icon": "icons/kh1-ap/Oblivion.webp"
+    "icon": "icons/kh1-ap/Oblivion.webp",
+    "apItems": [
+      {
+        "name": "Oblivion",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "1 Postcard",
-    "icon": "icons/kh1-ap/Postcards1.webp"
+    "icon": "icons/kh1-ap/Postcards1.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 1
+      }
+    ]
   },
   {
     "name": "2 Postcards",
-    "icon": "icons/kh1-ap/Postcards2.webp"
+    "icon": "icons/kh1-ap/Postcards2.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 2
+      }
+    ]
   },
   {
     "name": "3 Postcards",
-    "icon": "icons/kh1-ap/Postcards3.webp"
+    "icon": "icons/kh1-ap/Postcards3.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 3
+      }
+    ]
   },
   {
     "name": "4 Postcards",
-    "icon": "icons/kh1-ap/Postcards4.webp"
+    "icon": "icons/kh1-ap/Postcards4.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 4
+      }
+    ]
   },
   {
     "name": "5 Postcards",
-    "icon": "icons/kh1-ap/Postcards5.webp"
+    "icon": "icons/kh1-ap/Postcards5.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 5
+      }
+    ]
   },
   {
     "name": "6 Postcards",
-    "icon": "icons/kh1-ap/Postcards6.webp"
+    "icon": "icons/kh1-ap/Postcards6.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 6
+      }
+    ]
   },
   {
     "name": "7 Postcards",
-    "icon": "icons/kh1-ap/Postcards7.webp"
+    "icon": "icons/kh1-ap/Postcards7.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 7
+      }
+    ]
   },
   {
     "name": "8 Postcards",
-    "icon": "icons/kh1-ap/Postcards8.webp"
+    "icon": "icons/kh1-ap/Postcards8.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 8
+      }
+    ]
   },
   {
     "name": "9 Postcards",
-    "icon": "icons/kh1-ap/Postcards9.webp"
+    "icon": "icons/kh1-ap/Postcards9.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 9
+      }
+    ]
   },
   {
     "name": "10 Postcards",
-    "icon": "icons/kh1-ap/Postcards10.webp"
+    "icon": "icons/kh1-ap/Postcards10.webp",
+    "apItems": [
+      {
+        "name": "Postcard",
+        "count": 10
+      }
+    ]
   },
   {
     "name": "10 Puppies",
-    "icon": "icons/kh1-ap/Puppies10.webp"
+    "icon": "icons/kh1-ap/Puppies10.webp",
+    "apLocations": [
+      "Traverse Town Piano Room Return 10 Puppies"
+    ]
   },
   {
     "name": "20 Puppies",
-    "icon": "icons/kh1-ap/Puppies20.webp"
+    "icon": "icons/kh1-ap/Puppies20.webp",
+    "apLocations": [
+      "Traverse Town Piano Room Return 20 Puppies"
+    ]
   },
   {
     "name": "30 Puppies",
-    "icon": "icons/kh1-ap/Puppies30.webp"
+    "icon": "icons/kh1-ap/Puppies30.webp",
+    "apLocations": [
+      "Traverse Town Piano Room Return 30 Puppies"
+    ]
   },
   {
     "name": "40 Puppies",
-    "icon": "icons/kh1-ap/Puppies40.webp"
+    "icon": "icons/kh1-ap/Puppies40.webp",
+    "apLocations": [
+      "Traverse Town Piano Room Return 40 Puppies"
+    ]
   },
   {
     "name": "50 Puppies",
-    "icon": "icons/kh1-ap/Puppies50.webp"
+    "icon": "icons/kh1-ap/Puppies50.webp",
+    "apLocations": [
+      "Traverse Town Piano Room Return 50 Puppies Reward 2"
+    ]
   },
   {
     "name": "60 Puppies",
     "icon": "icons/kh1-ap/Puppies60.webp",
-    "tags": [">50 Puppies"]
+    "tags": [
+      ">50 Puppies"
+    ],
+    "apLocations": [
+      "Traverse Town Piano Room Return 60 Puppies"
+    ]
   },
   {
     "name": "70 Puppies",
     "icon": "icons/kh1-ap/Puppies70.webp",
-    "tags": [">50 Puppies"]
+    "tags": [
+      ">50 Puppies"
+    ],
+    "apLocations": [
+      "Traverse Town Piano Room Return 70 Puppies"
+    ]
   },
   {
     "name": "80 Puppies",
     "icon": "icons/kh1-ap/Puppies80.webp",
-    "tags": [">50 Puppies"]
+    "tags": [
+      ">50 Puppies"
+    ],
+    "apLocations": [
+      "Traverse Town Piano Room Return 80 Puppies"
+    ]
   },
   {
     "name": "90 Puppies",
     "icon": "icons/kh1-ap/Puppies90.webp",
-    "tags": [">50 Puppies"]
+    "tags": [
+      ">50 Puppies"
+    ],
+    "apLocations": [
+      "Traverse Town Piano Room Return 90 Puppies"
+    ]
   },
   {
     "name": "99 Puppies",
     "icon": "icons/kh1-ap/Puppies99.webp",
-    "tags": [">50 Puppies"]
+    "tags": [
+      ">50 Puppies"
+    ],
+    "apLocations": [
+      "Traverse Town Piano Room Return 99 Puppies Reward 1"
+    ]
   },
   {
     "name": "Hades Cup 10th Seed",
     "icon": "icons/kh1-ap/HadesCup10.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ],
+    "apLocations": [
+      "Hades Cup Defeat Hades Event"
+    ]
   },
   {
     "name": "Hades Cup 20th Seed",
     "icon": "icons/kh1-ap/HadesCup20.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ],
+    "apLocations": [
+      "Hades Cup Defeat Cloud and Leon Event"
+    ]
   },
   {
     "name": "Hades Cup 30th Seed",
     "icon": "icons/kh1-ap/HadesCup30.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ],
+    "apLocations": [
+      "Hades Cup Defeat Cerberus Event"
+    ]
   },
   {
     "name": "Hades Cup 40th Seed",
     "icon": "icons/kh1-ap/HadesCupSeed40.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ],
+    "apLocations": [
+      "Hades Cup Defeat Behemoth Event"
+    ]
   },
   {
     "name": "Hades Cup 44th Seed",
     "icon": "icons/kh1-ap/HadesCup44.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ],
+    "apLocations": [
+      "Hades Cup Defeat Yuffie Event"
+    ]
   },
   {
     "name": "Hercules",
-    "icon": "icons/kh1-ap/Hercules.webp"
+    "icon": "icons/kh1-ap/Hercules.webp",
+    "apLocations": [
+      "Complete Hercules Cup"
+    ]
   },
   {
     "name": "Riku (Destiny Islands)",
@@ -562,35 +1373,66 @@
   {
     "name": "Pooh's Hunny Hunt",
     "icon": "icons/kh1-ap/Piglet.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apLocations": [
+      "100 Acre Wood Convert Torn Page 1"
+    ]
   },
   {
     "name": "Block Tigger",
     "icon": "icons/kh1-ap/Rabbit.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apLocations": [
+      "100 Acre Wood Convert Torn Page 2"
+    ]
   },
   {
     "name": "Pooh's Swing",
     "icon": "icons/kh1-ap/Pooh.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apLocations": [
+      "100 Acre Wood Convert Torn Page 3"
+    ]
   },
   {
     "name": "Tigger's Giant Pot",
     "icon": "icons/kh1-ap/Tigger.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apLocations": [
+      "100 Acre Wood Convert Torn Page 4"
+    ]
   },
   {
     "name": "Pooh's Muddy Path",
     "icon": "icons/kh1-ap/Eeyore.webp",
-    "tags": ["100 Acre Wood"]
+    "tags": [
+      "100 Acre Wood"
+    ],
+    "apLocations": [
+      "100 Acre Wood Convert Torn Page 5"
+    ]
   },
   {
     "name": "Phil's Training (Barrels)",
-    "icon": "icons/kh1-ap/Phil.webp"
+    "icon": "icons/kh1-ap/Phil.webp",
+    "apLocations": [
+      "Olympus Coliseum Clear Phil's Training Thunder Event"
+    ]
   },
   {
     "name": "Final Rest",
-    "icon": "icons/kh1-ap/FinalRest.webp"
+    "icon": "icons/kh1-ap/FinalRest.webp",
+    "apLocations": [
+      "End of the World Final Rest Chest"
+    ]
   },
   {
     "name": "Arch Behemoth (EOTW)",
@@ -599,75 +1441,272 @@
   {
     "name": "Hades Cup 1st Seed",
     "icon": "icons/kh1-ap/HadesCupSeed1.webp",
-    "tags": ["Hades Cup"]
+    "tags": [
+      "Hades Cup"
+    ]
   },
   {
     "name": "Jungle Slider 10 Fruits",
-    "icon": "icons/kh1-ap/Fruit10.webp"
+    "icon": "icons/kh1-ap/Fruit10.webp",
+    "apLocations": [
+      "Deep Jungle Jungle Slider 10 Fruits"
+    ]
   },
   {
     "name": "Jungle Slider 20 Fruits",
-    "icon": "icons/kh1-ap/Fruit20.webp"
+    "icon": "icons/kh1-ap/Fruit20.webp",
+    "apLocations": [
+      "Deep Jungle Jungle Slider 20 Fruits"
+    ]
   },
   {
     "name": "Jungle Slider 30 Fruits",
-    "icon": "icons/kh1-ap/Fruit30.webp"
+    "icon": "icons/kh1-ap/Fruit30.webp",
+    "apLocations": [
+      "Deep Jungle Jungle Slider 30 Fruits"
+    ]
   },
   {
     "name": "Jungle Slider 40 Fruits",
-    "icon": "icons/kh1-ap/Fruit40.webp"
+    "icon": "icons/kh1-ap/Fruit40.webp",
+    "apLocations": [
+      "Deep Jungle Jungle Slider 40 Fruits"
+    ]
   },
   {
     "name": "Jungle Slider 50 Fruits",
-    "icon": "icons/kh1-ap/Fruit50.webp"
+    "icon": "icons/kh1-ap/Fruit50.webp",
+    "apLocations": [
+      "Deep Jungle Jungle Slider 50 Fruits"
+    ]
   },
   {
     "name": "4 Blue Trinities",
-    "icon": "icons/kh1-ap/Blue4.webp"
+    "icon": "icons/kh1-ap/Blue4.webp",
+    "apLocationThreshold": {
+      "count": 4,
+      "locations": [
+        "Traverse Town 1st District Blue Trinity Balcony Chest",
+        "Deep Jungle Climbing Trees Blue Trinity Chest",
+        "Deep Jungle Camp Blue Trinity Chest",
+        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
+        "Traverse Town Defeat Guard Armor Blue Trinity Event",
+        "Traverse Town 1st District Blue Trinity by Exit Door",
+        "Traverse Town 3rd District Blue Trinity",
+        "Traverse Town Magician's Study Blue Trinity",
+        "Wonderland Lotus Forest Blue Trinity in Alcove",
+        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
+        "Agrabah Bazaar Blue Trinity",
+        "Monstro Mouth Blue Trinity",
+        "Monstro Chamber 5 Blue Trinity",
+        "Hollow Bastion Great Crest Blue Trinity",
+        "Hollow Bastion Dungeon Blue Trinity",
+        "Monstro Throat Blue Trinity"
+      ]
+    }
   },
   {
     "name": "8 Blue Trinities",
-    "icon": "icons/kh1-ap/Blue8.webp"
+    "icon": "icons/kh1-ap/Blue8.webp",
+    "apLocationThreshold": {
+      "count": 8,
+      "locations": [
+        "Traverse Town 1st District Blue Trinity Balcony Chest",
+        "Deep Jungle Climbing Trees Blue Trinity Chest",
+        "Deep Jungle Camp Blue Trinity Chest",
+        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
+        "Traverse Town Defeat Guard Armor Blue Trinity Event",
+        "Traverse Town 1st District Blue Trinity by Exit Door",
+        "Traverse Town 3rd District Blue Trinity",
+        "Traverse Town Magician's Study Blue Trinity",
+        "Wonderland Lotus Forest Blue Trinity in Alcove",
+        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
+        "Agrabah Bazaar Blue Trinity",
+        "Monstro Mouth Blue Trinity",
+        "Monstro Chamber 5 Blue Trinity",
+        "Hollow Bastion Great Crest Blue Trinity",
+        "Hollow Bastion Dungeon Blue Trinity",
+        "Monstro Throat Blue Trinity"
+      ]
+    }
   },
   {
     "name": "12 Blue Trinities",
-    "icon": "icons/kh1-ap/Blue12.webp"
+    "icon": "icons/kh1-ap/Blue12.webp",
+    "apLocationThreshold": {
+      "count": 12,
+      "locations": [
+        "Traverse Town 1st District Blue Trinity Balcony Chest",
+        "Deep Jungle Climbing Trees Blue Trinity Chest",
+        "Deep Jungle Camp Blue Trinity Chest",
+        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
+        "Traverse Town Defeat Guard Armor Blue Trinity Event",
+        "Traverse Town 1st District Blue Trinity by Exit Door",
+        "Traverse Town 3rd District Blue Trinity",
+        "Traverse Town Magician's Study Blue Trinity",
+        "Wonderland Lotus Forest Blue Trinity in Alcove",
+        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
+        "Agrabah Bazaar Blue Trinity",
+        "Monstro Mouth Blue Trinity",
+        "Monstro Chamber 5 Blue Trinity",
+        "Hollow Bastion Great Crest Blue Trinity",
+        "Hollow Bastion Dungeon Blue Trinity",
+        "Monstro Throat Blue Trinity"
+      ]
+    }
   },
   {
     "name": "16 Blue Trinities",
-    "icon": "icons/kh1-ap/Blue16.webp"
+    "icon": "icons/kh1-ap/Blue16.webp",
+    "apLocationThreshold": {
+      "count": 16,
+      "locations": [
+        "Traverse Town 1st District Blue Trinity Balcony Chest",
+        "Deep Jungle Climbing Trees Blue Trinity Chest",
+        "Deep Jungle Camp Blue Trinity Chest",
+        "Agrabah Cave of Wonders Silent Chamber Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Right Blue Trinity Chest",
+        "Olympus Coliseum Coliseum Gates Left Blue Trinity Chest",
+        "Traverse Town Defeat Guard Armor Blue Trinity Event",
+        "Traverse Town 1st District Blue Trinity by Exit Door",
+        "Traverse Town 3rd District Blue Trinity",
+        "Traverse Town Magician's Study Blue Trinity",
+        "Wonderland Lotus Forest Blue Trinity in Alcove",
+        "Wonderland Lotus Forest Blue Trinity by Moving Boulder",
+        "Agrabah Bazaar Blue Trinity",
+        "Monstro Mouth Blue Trinity",
+        "Monstro Chamber 5 Blue Trinity",
+        "Hollow Bastion Great Crest Blue Trinity",
+        "Hollow Bastion Dungeon Blue Trinity",
+        "Monstro Throat Blue Trinity"
+      ]
+    }
   },
   {
     "name": "2 Red Trinities",
-    "icon": "icons/kh1-ap/Red2.webp"
+    "icon": "icons/kh1-ap/Red2.webp",
+    "apLocationThreshold": {
+      "count": 2,
+      "locations": [
+        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
+        "Deep Jungle Seal Keyhole Red Trinity Event",
+        "Agrabah Cave of Wonders Treasure Room Red Trinity",
+        "Traverse Town Alleyway Behind Crates Chest",
+        "Hollow Bastion Entrance Hall Emblem Piece (Statue)"
+      ]
+    }
   },
   {
     "name": "3 Red Trinities",
-    "icon": "icons/kh1-ap/Red3.webp"
+    "icon": "icons/kh1-ap/Red3.webp",
+    "apLocationThreshold": {
+      "count": 3,
+      "locations": [
+        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
+        "Deep Jungle Seal Keyhole Red Trinity Event",
+        "Agrabah Cave of Wonders Treasure Room Red Trinity",
+        "Traverse Town Alleyway Behind Crates Chest",
+        "Hollow Bastion Entrance Hall Emblem Piece (Statue)"
+      ]
+    }
   },
   {
     "name": "4 Red Trinities",
-    "icon": "icons/kh1-ap/Red4.webp"
+    "icon": "icons/kh1-ap/Red4.webp",
+    "apLocationThreshold": {
+      "count": 4,
+      "locations": [
+        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
+        "Deep Jungle Seal Keyhole Red Trinity Event",
+        "Agrabah Cave of Wonders Treasure Room Red Trinity",
+        "Traverse Town Alleyway Behind Crates Chest",
+        "Hollow Bastion Entrance Hall Emblem Piece (Statue)"
+      ]
+    }
   },
   {
     "name": "5 Red Trinities",
-    "icon": "icons/kh1-ap/Red5.webp"
+    "icon": "icons/kh1-ap/Red5.webp",
+    "apLocationThreshold": {
+      "count": 5,
+      "locations": [
+        "Halloween Town Oogie's Manor Grounds Red Trinity Chest",
+        "Deep Jungle Seal Keyhole Red Trinity Event",
+        "Agrabah Cave of Wonders Treasure Room Red Trinity",
+        "Traverse Town Alleyway Behind Crates Chest",
+        "Hollow Bastion Entrance Hall Emblem Piece (Statue)"
+      ]
+    }
   },
   {
     "name": "2 Green Trinities",
-    "icon": "icons/kh1-ap/Green2.webp"
+    "icon": "icons/kh1-ap/Green2.webp",
+    "apLocationThreshold": {
+      "count": 2,
+      "locations": [
+        "Wonderland Rabbit Hole Green Trinity Chest",
+        "Wonderland Bizarre Room Green Trinity Chest",
+        "Agrabah Storage Green Trinity Chest",
+        "Monstro Mouth Green Trinity Top of Boat Chest",
+        "Agrabah Seal Keyhole Green Trinity Event",
+        "Olympus Coliseum Coliseum Gates Green Trinity",
+        "Deep Jungle Treetop Green Trinity"
+      ]
+    }
   },
   {
     "name": "4 Green Trinities",
-    "icon": "icons/kh1-ap/Green4.webp"
+    "icon": "icons/kh1-ap/Green4.webp",
+    "apLocationThreshold": {
+      "count": 4,
+      "locations": [
+        "Wonderland Rabbit Hole Green Trinity Chest",
+        "Wonderland Bizarre Room Green Trinity Chest",
+        "Agrabah Storage Green Trinity Chest",
+        "Monstro Mouth Green Trinity Top of Boat Chest",
+        "Agrabah Seal Keyhole Green Trinity Event",
+        "Olympus Coliseum Coliseum Gates Green Trinity",
+        "Deep Jungle Treetop Green Trinity"
+      ]
+    }
   },
   {
     "name": "6 Green Trinities",
-    "icon": "icons/kh1-ap/Green6.webp"
+    "icon": "icons/kh1-ap/Green6.webp",
+    "apLocationThreshold": {
+      "count": 6,
+      "locations": [
+        "Wonderland Rabbit Hole Green Trinity Chest",
+        "Wonderland Bizarre Room Green Trinity Chest",
+        "Agrabah Storage Green Trinity Chest",
+        "Monstro Mouth Green Trinity Top of Boat Chest",
+        "Agrabah Seal Keyhole Green Trinity Event",
+        "Olympus Coliseum Coliseum Gates Green Trinity",
+        "Deep Jungle Treetop Green Trinity"
+      ]
+    }
   },
   {
     "name": "8 Green Trinities",
-    "icon": "icons/kh1-ap/Green8.webp"
+    "icon": "icons/kh1-ap/Green8.webp",
+    "apLocationThreshold": {
+      "count": 7,
+      "locations": [
+        "Wonderland Rabbit Hole Green Trinity Chest",
+        "Wonderland Bizarre Room Green Trinity Chest",
+        "Agrabah Storage Green Trinity Chest",
+        "Monstro Mouth Green Trinity Top of Boat Chest",
+        "Agrabah Seal Keyhole Green Trinity Event",
+        "Olympus Coliseum Coliseum Gates Green Trinity",
+        "Deep Jungle Treetop Green Trinity"
+      ]
+    }
   },
   {
     "name": "1 Yellow Trinity",
@@ -687,43 +1726,132 @@
   },
   {
     "name": "2 White Trinities",
-    "icon": "icons/kh1-ap/White2.webp"
+    "icon": "icons/kh1-ap/White2.webp",
+    "apLocationThreshold": {
+      "count": 2,
+      "locations": [
+        "Traverse Town Secret Waterway White Trinity Chest",
+        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
+        "Deep Jungle Cavern of Hearts White Trinity Chest",
+        "Agrabah Cave of Wonders Entrance White Trinity Chest",
+        "Atlantica Triton's Palace White Trinity Chest",
+        "Halloween Town Moonlight Hill White Trinity Chest",
+        "Olympus Coliseum Coliseum Gates White Trinity Chest",
+        "Neverland Pirate Ship Deck White Trinity Chest",
+        "Hollow Bastion Rising Falls White Trinity Chest",
+        "Monstro Chamber 6 White Trinity Chest",
+        "Hollow Bastion Defeat Riku I White Trinity Event"
+      ]
+    }
   },
   {
     "name": "4 White Trinities",
-    "icon": "icons/kh1-ap/White4.webp"
+    "icon": "icons/kh1-ap/White4.webp",
+    "apLocationThreshold": {
+      "count": 4,
+      "locations": [
+        "Traverse Town Secret Waterway White Trinity Chest",
+        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
+        "Deep Jungle Cavern of Hearts White Trinity Chest",
+        "Agrabah Cave of Wonders Entrance White Trinity Chest",
+        "Atlantica Triton's Palace White Trinity Chest",
+        "Halloween Town Moonlight Hill White Trinity Chest",
+        "Olympus Coliseum Coliseum Gates White Trinity Chest",
+        "Neverland Pirate Ship Deck White Trinity Chest",
+        "Hollow Bastion Rising Falls White Trinity Chest",
+        "Monstro Chamber 6 White Trinity Chest",
+        "Hollow Bastion Defeat Riku I White Trinity Event"
+      ]
+    }
   },
   {
     "name": "6 White Trinities",
-    "icon": "icons/kh1-ap/White6.webp"
+    "icon": "icons/kh1-ap/White6.webp",
+    "apLocationThreshold": {
+      "count": 6,
+      "locations": [
+        "Traverse Town Secret Waterway White Trinity Chest",
+        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
+        "Deep Jungle Cavern of Hearts White Trinity Chest",
+        "Agrabah Cave of Wonders Entrance White Trinity Chest",
+        "Atlantica Triton's Palace White Trinity Chest",
+        "Halloween Town Moonlight Hill White Trinity Chest",
+        "Olympus Coliseum Coliseum Gates White Trinity Chest",
+        "Neverland Pirate Ship Deck White Trinity Chest",
+        "Hollow Bastion Rising Falls White Trinity Chest",
+        "Monstro Chamber 6 White Trinity Chest",
+        "Hollow Bastion Defeat Riku I White Trinity Event"
+      ]
+    }
   },
   {
     "name": "8 White Trinities",
-    "icon": "icons/kh1-ap/White8.webp"
+    "icon": "icons/kh1-ap/White8.webp",
+    "apLocationThreshold": {
+      "count": 8,
+      "locations": [
+        "Traverse Town Secret Waterway White Trinity Chest",
+        "Wonderland Lotus Forest Through the Painting White Trinity Chest",
+        "Deep Jungle Cavern of Hearts White Trinity Chest",
+        "Agrabah Cave of Wonders Entrance White Trinity Chest",
+        "Atlantica Triton's Palace White Trinity Chest",
+        "Halloween Town Moonlight Hill White Trinity Chest",
+        "Olympus Coliseum Coliseum Gates White Trinity Chest",
+        "Neverland Pirate Ship Deck White Trinity Chest",
+        "Hollow Bastion Rising Falls White Trinity Chest",
+        "Monstro Chamber 6 White Trinity Chest",
+        "Hollow Bastion Defeat Riku I White Trinity Event"
+      ]
+    }
   },
   {
     "name": "Ice Titan",
     "icon": "icons/kh1-ap/IceTitan.webp",
-    "tags": ["Superboss"]
+    "tags": [
+      "Superboss"
+    ],
+    "apLocations": [
+      "Olympus Coliseum Defeat Ice Titan Diamond Dust Event"
+    ]
   },
   {
     "name": "Kurt Zisa",
     "icon": "icons/kh1-ap/KurtZisa.webp",
-    "tags": ["Superboss"]
+    "tags": [
+      "Superboss"
+    ],
+    "apLocations": [
+      "Agrabah Defeat Kurt Zisa Zantetsuken Event"
+    ]
   },
   {
     "name": "Phantom",
     "icon": "icons/kh1-ap/Phantom.webp",
-    "tags": ["Superboss"]
+    "tags": [
+      "Superboss"
+    ],
+    "apLocations": [
+      "Neverland Defeat Phantom Stop Event"
+    ]
   },
   {
     "name": "Unknown",
     "icon": "icons/kh1-ap/Unknown.webp",
-    "tags": ["Superboss"]
+    "tags": [
+      "Superboss"
+    ],
+    "apLocations": [
+      "Hollow Bastion Defeat Unknown EXP Necklace Event"
+    ]
   },
   {
     "name": "Sephiroth",
     "icon": "icons/kh1-ap/Sephiroth.webp",
-    "tags": ["Superboss"]
+    "tags": [
+      "Superboss"
+    ],
+    "apLocations": [
+      "Olympus Coliseum Defeat Sephiroth One-Winged Angel Event"
+    ]
   }
 ]

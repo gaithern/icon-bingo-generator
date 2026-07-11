@@ -755,6 +755,42 @@ input {
   border: 1px solid #fff;
 }
 
+/* ===== ARCHIPELAGO LIVE TRACKING ===== */
+.ap-tracker-panel {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ap-tracker-panel.ap-disabled-rush #apConnectBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#apTrackerStatus.ap-error,
+#apTrackerLiveStatus.ap-error {
+  color: #e74c3c;
+}
+
+#apTrackerLive {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ap-trackable-badge {
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2ecc71;
+  box-shadow: 0 0 4px rgba(46, 204, 113, 0.85);
+  pointer-events: auto;
+}
+
 /* ===== FIELD HELP TEXT ===== */
 .control-hint {
   font-size: 0.75rem;
