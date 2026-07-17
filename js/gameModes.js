@@ -268,4 +268,5 @@ function generateGame() {
   }
 
   if (typeof onApGameGenerated === "function") onApGameGenerated();
+  if (typeof onSphereGameGenerated === "function") onSphereGameGenerated();
 }

@@ -31,6 +31,11 @@ let kh1LocationIdToName = null; // Map<string code, string name>, lazy-loaded
 let kh1ItemIdToName = null; // Map<string code, string name>, lazy-loaded
 let locationSphereMap = null; // Map<locationName, sphereIndex>, from the uploaded patch zip
 let itemSphereMap = null; // Map<itemName, sphereIndex[]> (sorted ascending), from the uploaded patch zip
+// The exact objectives currently on the board (set by startExplorationBingo/
+// startRoguelikeBingo), independent of arrangement — this is what "which
+// objectives are on the board" reproducibility rests on, and what a later
+// sphere upload rearranges without reselecting.
+let lastSelectedPool = null;
 
 const sphereFileInput = document.getElementById("sphereFileInput");
 const sphereStatus = document.getElementById("sphereStatus");
@@ -108,6 +113,10 @@ async function handleSphereFileUpload(file) {
         `and ${itemSpheres.size} item type${itemSpheres.size === 1 ? "" : "s"}.`;
       sphereStatus.classList.remove("ap-error");
     }
+
+    // The panel only exists in-game now, so a board (with a captured pool)
+    // always already exists by the time this can run.
+    reorderCurrentBoardBySphere();
   } catch (err) {
     locationSphereMap = null;
     itemSphereMap = null;
@@ -126,6 +135,7 @@ function clearSphereData() {
     sphereStatus.textContent = "";
     sphereStatus.classList.remove("ap-error");
   }
+  reorderCurrentBoardBySphere(); // falls back to the pool's existing shuffled order
 }
 
 sphereFileInput?.addEventListener("change", (e) => handleSphereFileUpload(e.target.files[0]));
@@ -270,16 +280,25 @@ function takeNextForRow(pool, usedFamiliesThisRow) {
 // resolvable sphere first (shallow to deep, shuffled within ties), then
 // everything unresolved shuffled after them. Roguelike consumes this
 // front-to-back by row; Fog of War zips it against cells ordered by
-// distance from the initial reveal squares. Falls back to a plain shuffle
-// when no sphere data is loaded, or for any list whose objectives don't
-// carry apLocations/apItems at all.
-function buildSpherePool(objectives) {
-  if (!locationSphereMap) return shuffle([...objectives]);
+// distance from the initial reveal squares. Falls back to the pool's
+// existing (already seed-shuffled) order when no sphere data is loaded, or
+// for any list whose objectives don't carry apLocations/apItems at all.
+//
+// Deliberately takes an ALREADY-SELECTED, fixed-size pool rather than the
+// full objective list — which objectives end up on the board is purely a
+// function of (seed, list, settings), decided before this ever runs, so a
+// board link is reproducible by anyone regardless of whether they have
+// sphere data. This only ever reorders that fixed set into a different
+// arrangement (and, for Roguelike, which row); it can't change who's on the
+// board, which is what lets it re-run later from the board page itself once
+// a matching .zip gets uploaded, without needing to regenerate anything.
+function orderPoolBySphere(pool) {
+  if (!locationSphereMap) return pool;
 
   const withSphere = [];
   const withoutSphere = [];
 
-  objectives.forEach((obj) => {
+  pool.forEach((obj) => {
     const sphere = computeObjectiveSphere(obj, locationSphereMap, itemSphereMap);
     if (sphere === null) withoutSphere.push(obj);
     else
@@ -291,7 +310,7 @@ function buildSpherePool(objectives) {
       });
   });
 
-  if (!withSphere.length) return shuffle([...objectives]);
+  if (!withSphere.length) return pool;
 
   const ordered = shuffle(withSphere).sort(
     (a, b) => a.sphere - b.sphere || a.effort - b.effort || a.magnitude - b.magnitude,
@@ -299,17 +318,37 @@ function buildSpherePool(objectives) {
   return [...ordered.map((entry) => entry.obj), ...shuffle(withoutSphere)];
 }
 
-function updateSpherePanelVisibility() {
+// Re-lays out the current board using the objectives already on it (see
+// lastSelectedPool, set by startExplorationBingo/startRoguelikeBingo) —
+// called after a sphere .zip is uploaded or cleared from the board page, so
+// arranging by sphere depth is a pure rearrangement, never a reselection.
+function reorderCurrentBoardBySphere() {
+  if (!lastSelectedPool) return;
+
+  if (selectedMode === "exploration") {
+    startExplorationBingo(lastSelectedPool);
+  } else if (selectedMode === "roguelike") {
+    startRoguelikeBingo(lastSelectedPool);
+  } else {
+    return;
+  }
+
+  if (typeof apConnected !== "undefined" && apConnected) {
+    buildApLocationIndex();
+    applyApCheckedSquares();
+  }
+}
+
+// Called once from generateGame() (gameModes.js) after a board exists —
+// mirrors onApGameGenerated in apTracker.js. The panel only ever appears
+// in-game now, so eligibility is a one-time fact about the board that was
+// just generated, not something that needs to react to further UI changes.
+function onSphereGameGenerated() {
   const panel = document.getElementById("spherePanel");
   if (!panel) return;
   const eligible =
     gameSelect.value === "kh1" &&
     listSelect.value === "kh1-ap.json" &&
     (selectedMode === "roguelike" || selectedMode === "exploration");
-  panel.style.display = eligible ? "flex" : "none";
+  panel.classList.toggle("hidden", !eligible);
 }
-
-gameSelect?.addEventListener("change", updateSpherePanelVisibility);
-listSelect?.addEventListener("change", updateSpherePanelVisibility);
-modeSelect?.addEventListener("change", updateSpherePanelVisibility);
-document.addEventListener("DOMContentLoaded", updateSpherePanelVisibility);

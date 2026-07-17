@@ -633,6 +633,17 @@ body {
   border-radius: 6px;
 }
 
+/* Fixed rather than shrink-to-fit — otherwise the box's width is dictated
+   by whichever child happens to be widest at a given moment, and since the
+   sphere/AP <details> panels only add their file input/form fields to that
+   calculation once expanded, opening one would visibly resize the whole
+   box. 460px comfortably fits the widest content (the sphere panel's file
+   input row) at its natural, untruncated size. */
+#inGameOptions {
+  width: 500px;
+  max-width: 90vw;
+}
+
 /* Remove flat colors from sections but keep identity via border */
 /* #gameOptions { border-left: 4px solid #f1c40f; }
 #modeOptions { border-left: 4px solid #2ecc71; }
@@ -666,6 +677,21 @@ button:hover {
 button:active {
   background: linear-gradient(to bottom, #1448b3, #103b93) !important;
   box-shadow: none;
+}
+
+/* Otherwise a disabled button (e.g. Connect while already connected) looks
+   pixel-identical to an enabled one — the base rule's !important background
+   wins regardless of the disabled attribute unless overridden here too. */
+button:disabled {
+  background: linear-gradient(to bottom, #555, #333) !important;
+  border-color: #222 !important;
+  color: #999 !important;
+  text-shadow: none;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: linear-gradient(to bottom, #555, #333) !important;
 }
 
 /* Special main button (slightly gold highlight) */
@@ -757,15 +783,63 @@ input {
 
 /* ===== ARCHIPELAGO LIVE TRACKING ===== */
 .ap-tracker-panel {
-  display: none;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px 10px;
+  box-sizing: border-box;
 }
 
-.ap-tracker-panel.ap-disabled-rush #apConnectBtn {
-  opacity: 0.5;
-  cursor: not-allowed;
+.ap-tracker-fields input,
+.ap-tracker-fields button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 0;
+}
+
+.ap-tracker-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.ap-tracker-fields .control-hint {
+  max-width: none;
+}
+
+.ap-tracker-inline-row {
+  display: flex;
+  gap: 8px;
+}
+
+/* flex:1 on both would force a 50/50 split regardless of actual content
+   need — a file input's native "Choose File" + filename label can't be
+   compressed below its real width without the browser silently clipping
+   the label text (invisible in scrollWidth/getBoundingClientRect, since
+   it's inside the widget's own internal layout, not ours to measure). So
+   the file input takes its natural width and only the button flexes to
+   fill whatever's left — #inGameOptions is sized with this in mind. */
+.ap-tracker-inline-row input {
+  width: auto;
+  flex: 0 1 auto;
+}
+
+.ap-tracker-inline-row button {
+  width: auto;
+  min-width: 0;
+  flex: 1;
+}
+
+/* Matches .dropdown's darker blue instead of the brighter default button
+   color, since this sits right below the mode dropdowns in the same group. */
+#sphereClearBtn {
+  background: linear-gradient(to bottom, #1e3294, #16257a) !important;
+  border: 2px solid #1a2a88 !important;
+}
+
+#sphereClearBtn:hover {
+  border-color: #4e7de2 !important;
 }
 
 #apTrackerStatus.ap-error,

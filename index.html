@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Icon Bingo Generator</title>
 <link href="style.css" rel="stylesheet">
+<link rel="icon" href="data:,">
 </head>
 
 <body class="preload">
@@ -37,18 +38,6 @@
     </div>
 
     <div id="listPreview" style="display:none;"></div>
-
-    <div id="apTrackerPanel" class="ap-tracker-panel">
-      <div class="control-headers" style="font-size:14px;">Archipelago Live Tracking</div>
-      <div class="control-hint">
-        KH1 AP Randomizer only — connect directly to your Archipelago server to auto-mark squares as you play.
-      </div>
-      <input id="apServerInput" placeholder="Server address (e.g. archipelago.gg:38281)">
-      <input id="apSlotNameInput" placeholder="Slot name">
-      <input id="apPasswordInput" type="password" placeholder="Password (if required)">
-      <button id="apConnectBtn" type="button">Connect</button>
-      <div id="apTrackerStatus" class="control-hint"></div>
-    </div>
 
   </div>
 
@@ -137,18 +126,6 @@
       </label>
     </div>
 
-    <!-- Shown for both Roguelike and Fog of War — lives outside the -->
-    <!-- per-mode boxes above so it isn't hidden when they're toggled. -->
-    <div id="spherePanel" class="ap-tracker-panel" style="display:none;">
-      <div class="control-headers" style="font-size:14px;">Sphere-based Placement</div>
-      <div class="control-hint">
-        KH1 AP Randomizer only — upload your patch .zip for this seed (the same one you use to
-        patch your game) to lay out objectives by logical playthrough depth instead of pure random.
-      </div>
-      <input id="sphereFileInput" type="file" accept="application/zip,.zip">
-      <button id="sphereClearBtn" type="button">Clear</button>
-      <div id="sphereStatus" class="control-hint"></div>
-    </div>
   </div>
 
   <div class="control-row" id="modifiers">
@@ -226,6 +203,28 @@
       </label>
     </div>
   </div>
+
+  <details id="spherePanel" class="hidden ap-tracker-panel">
+    <summary class="info-toggle">Sphere-based Placement</summary>
+    <div class="ap-tracker-fields">
+      <div class="ap-tracker-inline-row">
+        <input id="sphereFileInput" type="file" accept="application/zip,.zip">
+        <button id="sphereClearBtn" type="button">Clear</button>
+      </div>
+      <div id="sphereStatus" class="control-hint"></div>
+    </div>
+  </details>
+
+  <details id="apTrackerPanel" class="hidden ap-tracker-panel">
+    <summary class="info-toggle">Archipelago Live Tracking</summary>
+    <div class="ap-tracker-fields">
+      <input id="apServerInput" placeholder="Server address (e.g. archipelago.gg:38281)">
+      <input id="apSlotNameInput" placeholder="Slot name">
+      <input id="apPasswordInput" type="password" placeholder="Password (if required)">
+      <button id="apConnectBtn" type="button">Connect</button>
+      <div id="apTrackerStatus" class="control-hint"></div>
+    </div>
+  </details>
 
   <div id="apTrackerLive" class="hidden in-game-sliders">
     <span id="apTrackerLiveStatus"></span>

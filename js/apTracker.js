@@ -13,7 +13,13 @@ runs exactly as it would for a manual click.
 */
 
 const AP_GAME_NAME = "Kingdom Hearts";
-const AP_STORAGE_KEY = "apTrackerConnection"; // {address, slotName} only — never the password
+// {address, slotName} only — never the password. Prefills the connect form
+// on a later visit, purely a convenience; it never triggers a connection by
+// itself. The connect panel only exists once a board is showing (see
+// index.html), and every board starts disconnected — connecting is always a
+// manual click, so there's no "was this reconnect legitimate?" question to
+// answer here.
+const AP_STORAGE_KEY = "apTrackerConnection";
 const AP_RECONNECT_DELAYS_MS = [3000, 6000, 12000, 30000];
 const AP_HANDSHAKE_GRACE_MS = 2500;
 
@@ -108,6 +114,10 @@ function apConnect() {
   apReconnectAttempt = 0;
   apExplicitDisconnect = false;
   apTriedInsecureFallback = false;
+
+  // Cancel any pending automatic reconnect (apScheduleReconnect) so a manual
+  // click here can't race a delayed retry into opening a second socket.
+  clearTimeout(apReconnectTimer);
 
   apConnectBtn.disabled = true;
   setApStatus("Connecting...");
@@ -328,14 +338,26 @@ function apHandleSocketDown() {
   }
 
   apConnected = false;
-  apTrackerLive?.classList.add("hidden");
   apTrackerPanel?.classList.remove("ap-connected");
 
+  // Re-enable Connect on any drop, not just explicit ones — an unexpected
+  // drop otherwise leaves the button stuck disabled (it was last set true by
+  // the original successful apConnect()) with no way to manually retry
+  // before the automatic backoff gets around to it.
+  apConnectBtn.disabled = false;
+
   if (apExplicitDisconnect) {
+    apTrackerLive?.classList.add("hidden");
     setApStatus("Disconnected.");
     return;
   }
 
+  // Keep apTrackerLive visible (rather than hiding it) so "Connection lost.
+  // Reconnecting..." is actually seen — it's the one place that's visible
+  // whether or not the connect <details> panel happens to be expanded. Also
+  // update the panel's own status, which otherwise stays frozen on whatever
+  // it last said (e.g. "Connected as Gicu.") and reads as still-connected.
+  setApStatus("Connection lost. Reconnecting...", true, false);
   setApStatus("Connection lost. Reconnecting...", true, true);
   apScheduleReconnect();
 }
@@ -507,6 +529,12 @@ function applyFogCompletion(squareId, r, c) {
   setSquareState(el, squareId, 2);
   updateFogScore();
   revealNeighbors(r, c);
+  // A manual click gets a re-check for free via the board-wide click
+  // listener below, which catches any newly revealed neighbor that happens
+  // to already be satisfied. An AP-triggered completion like this one never
+  // fires a click event, so without this it would otherwise sit there
+  // revealed-but-unmarked until something else happened to trigger a scan.
+  applyApCheckedSquares();
 }
 
 function applyRogueCompletion(squareId, r, c) {
@@ -515,6 +543,9 @@ function applyRogueCompletion(squareId, r, c) {
   if (!el) return;
   setSquareState(el, squareId, 2);
   _progressRogue(r, c, squareId);
+  // Same reasoning as applyFogCompletion: the next layer this just revealed
+  // might already be satisfied, and nothing else will catch that here.
+  applyApCheckedSquares();
 }
 
 // ================= Trackable badge ====================
@@ -579,25 +610,18 @@ new MutationObserver(markApTrackableSquares).observe(board, { childList: true })
 
 // ================= Wiring into the rest of the app ====================
 
+// Called once per board (onApGameGenerated()), after the mode is already
+// locked in for that board — so "eligible" here is a one-time, stable fact,
+// not something that needs to keep reacting to further UI changes. Rush
+// mode never supports live tracking, so the panel just doesn't exist for it
+// rather than showing up disabled with an explanation.
 function updateApPanelVisibility() {
   if (!apTrackerPanel) return;
-  const eligible = gameSelect.value === "kh1" && listSelect.value === "kh1-ap.json";
-  apTrackerPanel.style.display = eligible ? "flex" : "none";
-
-  const isRush = selectedMode === "rush";
-  apConnectBtn.disabled = isRush || apConnected || apConnecting;
-  apTrackerPanel.classList.toggle("ap-disabled-rush", isRush);
-
-  if (eligible && isRush && !apConnected) {
-    setApStatus("Live tracking isn't available in Rush mode — pick another mode to connect.");
-  } else if (eligible && !isRush && !apConnected && !apConnecting) {
-    setApStatus("");
-  }
+  const eligible =
+    gameSelect.value === "kh1" && listSelect.value === "kh1-ap.json" && selectedMode !== "rush";
+  apTrackerPanel.classList.toggle("hidden", !eligible);
+  apConnectBtn.disabled = apConnected || apConnecting;
 }
-
-gameSelect?.addEventListener("change", updateApPanelVisibility);
-listSelect?.addEventListener("change", updateApPanelVisibility);
-modeSelect?.addEventListener("change", updateApPanelVisibility);
 
 // Recheck immediately after a manual mark, so a square that becomes newly
 // visible (fog reveal, roguelike layer advance) can pick up an
@@ -624,48 +648,18 @@ board.addEventListener(
   { passive: true },
 );
 
-// Called once from generateGame() after a board exists.
+// Called once from generateGame() after a board exists. The connect panel
+// (index.html) doesn't exist until this point, so apConnected is always
+// false here — every board starts disconnected, full stop, and connecting
+// afterward is always a manual click. This just reveals the panel (if the
+// generated board is even eligible for tracking) and syncs its labels/
+// disabled state to whatever game/list/mode was actually generated.
 function onApGameGenerated() {
   updateApPanelVisibility();
-
-  if (!apConnected) {
-    apAutoReconnect();
-    return;
-  }
-
-  buildApLocationIndex();
-  applyApCheckedSquares();
 }
 
-// Only works for unprotected rooms — the password is intentionally never
-// persisted, so a password-protected room will reach the server, get
-// ConnectionRefused: InvalidPassword, and surface that through the normal
-// friendly-message path, requiring a manual reconnect.
-function apAutoReconnect() {
-  if (gameSelect.value !== "kh1" || listSelect.value !== "kh1-ap.json") return;
-  if (selectedMode === "rush") return;
-
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("view") !== "game") return;
-
-  const saved = localStorage.getItem(AP_STORAGE_KEY);
-  if (!saved) return;
-
-  let prefs;
-  try {
-    prefs = JSON.parse(saved);
-  } catch {
-    return;
-  }
-  if (!prefs?.address || !prefs.slotName) return;
-
-  apServerInput.value = prefs.address;
-  apSlotNameInput.value = prefs.slotName;
-  apConnect();
-}
-
-// Pre-fill the server/slot inputs from a previous session, without
-// auto-connecting on the plain options screen.
+// Pre-fill the server/slot inputs from a previous session — convenience
+// only, never auto-connects.
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem(AP_STORAGE_KEY);
   if (saved && apServerInput && apSlotNameInput) {
